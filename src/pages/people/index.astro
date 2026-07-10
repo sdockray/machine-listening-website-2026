@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getEntry, render } from 'astro:content';
+
+const peopleEntry = await getEntry('people', 'people');
+const peopleRender = peopleEntry ? await render(peopleEntry) : null;
+const PeopleContent = peopleRender?.Content;
+---
+<BaseLayout title="People">
+  <h1>People</h1>
+  {PeopleContent ? <PeopleContent /> : <p>People content not found.</p>}
+</BaseLayout>

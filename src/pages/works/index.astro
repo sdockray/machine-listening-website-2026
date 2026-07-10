@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { extractFirstMarkdownImage } from '../../lib/content-images';
+
+const works = (await getCollection('works'))
+  .filter((entry) => !entry.data.hideFromIndex)
+  .sort((a, b) => {
+    const priorityDiff = (b.data.priority ?? 1) - (a.data.priority ?? 1);
+    if (priorityDiff !== 0) return priorityDiff;
+
+    const yearA = a.data.year ?? 0;
+    const yearB = b.data.year ?? 0;
+    if (yearB !== yearA) return yearB - yearA;
+
+    return a.data.title.localeCompare(b.data.title);
+  });
+
+const getListingImage = (entry: (typeof works)[number]) => entry.data.coverImage || extractFirstMarkdownImage(entry.body || '');
+---
+<BaseLayout title="Works">
+  <h1>Works</h1>
+  <ul class="collection-grid">
+    {works.map((work) => {
+      const listingImage = getListingImage(work);
+      return (
+        <li class="collection-card">
+          <a href={`/works/${work.id}/`}>
+            {listingImage && (
+              <img src={listingImage} alt={work.data.title} loading="lazy" />
+            )}
+            <h2>{work.data.title}</h2>
+            {work.data.year && <p class="collection-meta">{work.data.year}</p>}
+          </a>
+        </li>
+      );
+    })}
+  </ul>
+</BaseLayout>

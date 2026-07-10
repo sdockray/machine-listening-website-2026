@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection, getEntry, render } from 'astro:content';
+
+const introEntry = await getEntry('interviews', 'interviews');
+const introRender = introEntry ? await render(introEntry) : null;
+const IntroContent = introRender?.Content;
+
+const interviews = (await getCollection('interviews'))
+  .filter((entry) => entry.data.entryType === 'interview')
+  .sort((a, b) => {
+    const priorityDiff = (b.data.priority ?? 1) - (a.data.priority ?? 1);
+    if (priorityDiff !== 0) return priorityDiff;
+    return a.data.title.localeCompare(b.data.title);
+  });
+
+const renderedInterviews = await Promise.all(
+  interviews.map(async (entry) => {
+    const rendered = await render(entry);
+    return { entry, Content: rendered.Content };
+  })
+);
+---
+<BaseLayout title="Interviews">
+  <h1>Interviews</h1>
+
+  {IntroContent && <IntroContent />}
+
+  {renderedInterviews.map(({ entry, Content }) => {
+    const transcriptLabel = entry.data.transcriptLabel || 'Transcript';
+    const transcriptType = entry.data.transcriptType || 'none';
+    const transcriptTarget = entry.data.transcriptTarget || '';
+    const transcriptHref = transcriptType === 'wiki'
+      ? `/interviews/${transcriptTarget}/`
+      : transcriptType === 'url'
+        ? transcriptTarget
+        : '';
+
+    return (
+      <section>
+        <h3>{entry.data.name || entry.data.title}</h3>
+        <Content />
+
+        {entry.data.dateText && <p>{entry.data.dateText}</p>}
+
+        {transcriptHref && (
+          <p>
+            <a href={transcriptHref}>{transcriptLabel}</a>
+          </p>
+        )}
+
+        {(entry.data.audioFiles || []).map((audio) => (
+          <p>
+            <a href={audio.url}>{audio.label}</a>
+          </p>
+        ))}
+      </section>
+    );
+  })}
+</BaseLayout>

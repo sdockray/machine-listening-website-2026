@@ -1,0 +1,60 @@
+---
+title: "Events"
+location: ""
+---
+- **28 June 2026**, [How to Play a Dataset](https://machinelistening.exposed/site-map/works-1/how-to-play-a-dataset), Govett Brewster
+- **8 May 2026,** Salon, HAIR Gallery Melbourne
+- **9 April 2026,** *Models: How vision machines see the world*, presentation and in conversation with Andrew Brooks, Chris O'Neill, Elizabeth Stephens, and Nick Croggon, at [Vision Machines](https://www.vrp.org.au/vision-machines#models), MCA x The Power Institute, Sydney.
+- **4 April - 11 October 2026**, *Environments 12* plays daily in the Len Lye Cinema at 1:30pm on 4 April – 3 June, 25 June – 26 August, 10 September – 11 October, at [Direct Bodily Empathy — Sound, Signal, Feedback](https://govettbrewster.com/exhibitions/2026/direct-bodily-empathy-sound-signal-feedback), Govett-Brewster Art Gallery, New Plymouth, New Zealand.
+- **7 March 2026**, *Konvolute (hate speech),* performance at [Absorb(ed) V](https://events.humanitix.com/absorb-ed-v), Miscellania, Melbourne.
+- **14 December 2025,** *How to read a dataset* workshop, at [FOPA](https://fopa.info), Melbourne.
+- **13 November 2025,** Environments 12 at [*Mono55](https://www.ima.org.au/ima-events/mono-55/),* [Room 40](https://room40.org) at [Institute of Modern Art](https://www.ima.org.au) (IMA), Brisbane.
+- **19 October 2025,** *After-Care* panel: Sean Dockray on [[55-falls-ambient-assisted-living|55 Falls,]] [un Projects](https://unprojects.org.au) for [Same Page Art Book Fair](https://samepageartbookfair.com), Gertrude Contemporary, Melbourne.
+- **24 July 2025**, [[55-falls-ambient-assisted-living|55 Falls / Ambient Assisted Living]] opening at [The Mourning After](https://www.google.com/search?client=safari&rls=en&q=the+mourning+after+rmit&ie=UTF-8&oe=UTF-8), RMIT Design Hub, Melbourne.
+- **10 July 2025,** What did wake words do?, [AUSSTS: Signals and Noises](https://aussts.org/aussts-2025/draft-programme-and-conference-information/), Deakin University, Melbourne.
+- **9 July 2025,** Voyce Walker workshop, [AUSSTS: Signals and Noises](https://aussts.org/aussts-2025/draft-programme-and-conference-information/), National Communication Museum, Melbourne.
+- **19 June 2025,** What wake words do: on the jurisprudence of machine listening, lecture at *Le Son et Le Droit*, Science Po, Paris.
+- **19 June 2025,** Environments 12 LP launch for [La Générale](https://www.lagenerale.fr/fr/locations), Paris.
+- **18 June 2025,** Environments 12 LP launch for [Earthly Futures Studio, Montreuil](https://events.humanitix.com/host/earthly-futures-studio), Paris.
+- **17 June 2025,** Environments 12 LP launch at [After 8 Books](https://after8books.com/events/), Paris.
+- **16 June 2025,** Environments 12 LP launch at [Q-O2,](https://www.q-o2.be/en/event/machine-listening-environments-12-lp-launch-futura-resistenza/)  presented by Futura Resistenza, Brussels.
+- **14 June 2025,** Environments 12 LP launch for [Ephemera Festival at Museum of Modern Art](https://ephemerafestival.com/), Warsaw.
+- **12 June 2025,** Environments 12 LP launch for [Deep Assignments at Apiary Studios](https://deepassignmentsldn.substack.com/p/deep-assignments-01), London.
+- **25 May 2025,** Joel Stern performance at [Hear the Machine](https://www.instagram.com/hearthemachine/), Melbourne.
+- **10 May 2025,** Joel Stern and Frances Barrett, performance at [Cantos 5](https://www.eventbrite.com.au/e/cantos-no-5-tickets-1351458822719?fbclid=PAZXh0bgNhZW0CMTEAAacHPDaz2dJG1ljJF-0QxyVPLeCcLS5pllghejCtFzACZqwW1k8kEtoiSl3Wgw_aem_0CIrV5iPVMrAPp-b4me7IA), Melbourne.
+- **12 April - 11 September 2025,** [Signal to Noise](https://ncm.org.au/exhibitions/signal-to-noise), National Communication Museum, Melbourne.
+- **19 February 2025,** [[egocentric-perception-workshop|Egocentric Perception Workshop]], Monash University Museum of Art as part of the public program Recompositions, Melbourne.
+- **23 October 2024,** [Eryk Salvaggio: Gaussian Pop](https://machinelistening.exposed/site-map/eryk-salvaggio-gaussian-pop), RMIT Gallery, Melbourne.
+- **15 October 2024**, tracks from Songbook: 5-X, as part of Futile Futures at Civic Art Bureau, Canberra.
+- **31 August 2024 -** Songbook: 5-X, presented by Soft Centre as part of Now or Never Festival, Trades Hall, Melbourne.
+- **30 August 2024** - The Search for the Perfect Language, presented by Soft Centre as part of Now or Never Festival, Trades Hall, Melbourne.
+- Jenny and Tomomi events
+- **23 August - 16 November 2024,** [This Hideous Replica](https://rmitgallery.com/exhibitions/this-hideous-replica/), RMIT Gallery, Melbourne..
+- **17 March 2024** - [Radio as Social Sculpture, Cashmere Radio](https://cashmereradio.com/shows/radio-as-social-sculpture-cashmere-x-neptune-live-at-melbourne/), Melbourne/Berlin.
+- **12 December 2023** - [[data-audit-workshop|Why Listen to Datasets? (a workshop)]] at Khoj Studios, New Delhi, India.
+- **5 December 2023** - [[data-audit-workshop|Why Listen to Datasets? (a workshop)]] | [[environments-12|Environments 12]] (listening session), at Soho Poly Arts Club, hosted by the Legal Otologies | Hear Law Sound residency at the Westminster Law & Theory Lab.
+- **30 November 2023 -** [[clone-metamorphosis|Clone Metamorphosis]] workshop as part of [Inventing the Human](https://humanposthuman.arinex.one/) conference, University of Melbourne & Online.
+- **29 November 2023** - Lecture on the planetisation of machine listening, presented by the Centre for Critical Thought, University of Kent.
+- **27 November 2023** - Lecture on the planetisation of machine listening co-presented by the Faculty of Music and [SONCITIES](https://www.soncities.org), University of Oxford.
+- **21 November 2023 -** [Bodies, Data, Models, Worlds](https://criticalai.art/bodies.html) panel as part of [Critical AI in the Art Museum: Practices & Politics](https://criticalai.art/), Australian National University & online.
+- **17 November 2023 -** [[machine-listening-songbook-dada-data|Machine Listening Songbook #1: Clone Ursonate]] plays on [BBC Late Junction](https://www.bbc.co.uk/sounds/play/m001s5zm) .
+- **16 November 2023** - Presentation on the planetisation of machine listening, at the [Centre for Research Architecture Roundtable](https://research-architecture.org/Roundtables-1), Goldsmiths, London.
+- **9 Nov 2023** - [[after-words|After Words]] opens at Galerie Nord | Kunstverein Tiergarten in Berlin as part of the exhibition [v01ces – The Human Voice in the Age of Artificial Intelligence](https://kunstverein-tiergarten.de/en/archive/exhibition/v01ces-the-human-voice-in-the-age-of-artificial-intelligence/).
+- **1-8 October 2023 - [[unsound-residency|Unsound Residency]]** ([[machine-listening-songbook-dada-data|Machine Listening Songbook]]; [[data-audit-workshop|Dataset Audit workshop]]).
+- **1-8 October 2023 -**  [[after-words|After Words]] staged at Unsound Festival in Krakow, Poland.
+- **2 September 2023 -** [Planetary Auditions](https://nowornever.melbourne.vic.gov.au/event/planetary-auditions) public program at RMIT Design Hub as part of the exhibition [Wild Hope: Conversations for a Planetary Commons](https://designhub.rmit.edu.au/exhibitions-programs/wild-hope-conversations-for-a-planetary-commons/).
+- **25 August 2023** - [[after-words|After Words]] broadcast at [Radiophrenia](https://radiophrenia.scot/schedule/), Glasgow.
+- **15 August 2023** - [[environments-12|Environments 12]] opens at RMIT Design Hub as part of the exhibition [Wild Hope: Conversations for a Planetary Commons](https://designhub.rmit.edu.au/exhibitions-programs/wild-hope-conversations-for-a-planetary-commons/).
+- **23 May 2023** - [Machine Listener Ep 4](https://jajajaneeneenee.com/shows/machine-listener-machine-listening/), an audio documentary by Aimée Theriot we were interviewed for, airs
+- **11 May 2023** **-** After Words shown at [*Articulating Data*](https://articulatingdata.com/), with introduction and discussion
+- **27 April 2023** - Presentation on machine listening at earth magnitude at Automated Space, run by ADM+S
+- **16 – 20 February 2023 -** [[data-relations-summer-school|Data relations summer school]]
+- **12 December 2022 -** [[ego-trip|Ego Trip]] presented as part of [You and I Are Water Earth Fire Air of Life and Death](https://youandiarewaterearthfireairoflifeanddeath.com/project/i-2022)
+- **10 Dec 2022 – 19 Mar 2023 -** [[after-words|After Words]] shows at [Data Relations, Australian Centre for Contemporary Art](https://acca.melbourne/exhibition/data-relations/)
+- **21 July 2022** - Presentation of ‘Listening to everything, everywhere, all of the time, forever’ at ADM+S Symposium
+- **18 Jan 2022** - [[listening-to-misrecognition|Listening to Misrecognition]], live on zoom and other platforms with Liquid Architecture and UQ Art Museum
+- **4 August 2021** - Presentation on the [[word-processor-v1|Word Processor]] at ‘Score Event’, Darmstadt
+- **13 March 2021** - [[ep-4-improvisation-and-control|Improvisation and Control]], live on zoom and other platforms with Liquid Architecture, NTU Singapore and Unsound
+- **4 October 2020 -** [[ep-3-listening-with-the-pandemic|Listening with the pandemic]], live on zoom and other platforms at Unsound
+- **3 October 2020 -** [[ep-2-lessons-in-how-not-to-be-heard|Lessons in how (not) to be heard]], live on zoom and other platforms at Unsound
+- **2 October 2020 -** [[ep-1-against-the-coming-world-of-listening-machi|(Against) the coming world of listening machines]], live on zoom and other platforms at Unsound

@@ -1,0 +1,107 @@
+# Notion to Astro Migration Plan (Dry Run)
+
+- Source: /Users/sdoc0001/Downloads/ML-website
+- Markdown files scanned: 83
+- Mapped files: 75
+- Unresolved files: 5
+- Duplicate destinations removed: 3
+
+## Summary by collection
+- curation: 11
+- curriculum: 1
+- events: 12
+- interviews: 7
+- people: 1
+- performances: 9
+- software: 5
+- texts: 6
+- works: 23
+
+## Mapped files
+- Machine Listening/site map/Curation c7b30c6c11744f938f5ba2318470589c.md -> src/content/curation/curation.md
+- Machine Listening/site map/Curation/Curation/Data Relations Summer School 7c03d45778e6496b985f0dc92dd334fe.md -> src/content/curation/data-relations-summer-school.md
+- Machine Listening/site map/Curation/Curation/Eavesdropping ff65703b5ac64b2ca1fe3777d10b9f4b.md -> src/content/curation/eavesdropping.md
+- Machine Listening/site map/Curation/Curation/Ep 1 (Against) the coming world of listening machi 3be938b0c8f64ba59e04513c52df4161.md -> src/content/curation/ep-1-against-the-coming-world-of-listening-machi.md
+- Machine Listening/site map/Curation/Curation/Ep 2 Lessons in how (not) to be heard 2c519bad459442b3a8866cb7d1909068.md -> src/content/curation/ep-2-lessons-in-how-not-to-be-heard.md
+- Machine Listening/site map/Curation/Curation/Ep 3 Listening with the pandemic 48e78be463fa4849bfa2d006862cc9f6.md -> src/content/curation/ep-3-listening-with-the-pandemic.md
+- Machine Listening/site map/Curation/Curation/Ep 4 Improvisation and Control d122358156304b84904bb55a7f16d2e1.md -> src/content/curation/ep-4-improvisation-and-control.md
+- Machine Listening/site map/Curation/Curation/Ep 5 Unnatural Language Processing fdfc7e38e5cb43a2a86ebb47cc4e3131.md -> src/content/curation/ep-5-unnatural-language-processing.md
+- Machine Listening/site map/Curation/Curation/Listening to Misrecognition 37641485002e435f9a82bbfcb36056c6.md -> src/content/curation/listening-to-misrecognition.md
+- Machine Listening/site map/Curation/Curation/Planetary Auditions 851edf939d074386bb8c2af53fe6d59a.md -> src/content/curation/planetary-auditions.md
+- Machine Listening/site map/Curation/Curation/This Hideous Replica 24521d7b0efc8017894cd055b65f998a.md -> src/content/curation/this-hideous-replica.md
+- Machine Listening/site map/Curriculum 9da9a27f220b4aa08618945c399ab6f1.md -> src/content/curriculum/curriculum.md
+- Machine Listening/site map/CA2024 - Uncomputable d51efb827bc94393867cdf85e5e040fd.md -> src/content/events/ca2024-uncomputable.md
+- Machine Listening/site map/Clone Metamorphosis ccf66ead55894ae98cf717b080db3f14.md -> src/content/events/clone-metamorphosis.md
+- Machine Listening/site map/CV2024 - Uncomputable cd886b58e0f34b079156d1e95e7ca579.md -> src/content/events/cv2024-uncomputable.md
+- Machine Listening/site map/Data audit workshop a623ac4d7f3e42659ab980aa1698a262.md -> src/content/events/data-audit-workshop.md
+- Machine Listening/site map/Egocentric Perception Workshop 19721d7b0efc80b3a088d7c86675201d.md -> src/content/events/egocentric-perception-workshop.md
+- Machine Listening/site map/Environments 12 ae3abb64e1384f33ac658ec0500ebde1.md -> src/content/events/environments-12.md
+- Machine Listening/site map/Eryk Salvaggio Gaussian Pop 5680e71024ed4773b843293f43885e71.md -> src/content/events/eryk-salvaggio-gaussian-pop.md
+- Machine Listening/site map/Events 91e38706dcc44b5ab3522ada35f304c0.md -> src/content/events/events.md
+- Machine Listening/site map/Machine Listening Dataset LARP 24621d7b0efc80df9079c49b62d4adf4.md -> src/content/events/machine-listening-dataset-larp.md
+- Machine Listening/site map/Machine Listening Euro Tour 2025 1f221d7b0efc80a09850ecf13b5f7bf3.md -> src/content/events/machine-listening-euro-tour-2025.md
+- Machine Listening/site map/Now or Never support materials c892284887e1492f8aac0b11beea9aed.md -> src/content/events/now-or-never-support-materials.md
+- Machine Listening/site map/Unsound residency b02d57155dd245a79d593229cd5a83f3.md -> src/content/events/unsound-residency.md
+- Machine Listening/site map/Audrey Amsellem transcript 321f16e9c3724d94bb4f8315b3f8a422.md -> src/content/interviews/audrey-amsellem-transcript.md
+- Machine Listening/site map/Bernard Mont Reynaud transcript e4b246c8027d4981b1874a1d83d1ec42.md -> src/content/interviews/bernard-mont-reynaud-transcript.md
+- Machine Listening/site map/Beth Semel transcript d70d8209fcda4dc395f7b3b5b71ddfc3.md -> src/content/interviews/beth-semel-transcript.md
+- Machine Listening/site map/Guillaume Heuguet transcript badf4d97c1b8475b870b140a885fb7bf.md -> src/content/interviews/guillaume-heuguet-transcript.md
+- Machine Listening/site map/Interviews 4fe1ca0db0344410835994d899cb2470.md -> src/content/interviews/interviews.md
+- Machine Listening/site map/Max Ritts transcript 426840680cae4076b60e76e8db642dd0.md -> src/content/interviews/max-ritts-transcript.md
+- Machine Listening/site map/Santiago Rentiera transcript a4fc0b1a74924554920756c68958cc89.md -> src/content/interviews/santiago-rentiera-transcript.md
+- Machine Listening/People 7b19e5e04c7c4fd6831417f746d1456f.md -> src/content/people/people.md
+- Machine Listening/site map/Performances/Performances/Environments 12 (live shows) 24121d7b0efc80e3acacfbf7efaa6b76.md -> src/content/performances/environments-12-live-shows.md
+- Machine Listening/site map/Performances/Performances/I am sitting in a courtroom 490bf53600aa4032b3595f31fb804608.md -> src/content/performances/i-am-sitting-in-a-courtroom.md
+- Machine Listening/site map/Performances/Performances/Konvolute (hate speech) 33a21d7b0efc80949bdef714b1786ecc.md -> src/content/performances/konvolute-hate-speech.md
+- Machine Listening/site map/Performances/Performances/Machine Listening Songbook 5-x 20321d7b0efc8066b060d10f5f62e9ef.md -> src/content/performances/machine-listening-songbook-5-x.md
+- Machine Listening/site map/Performances/Performances/Machine listening songbook dada data 95a0e2a49e164da883ebcbdd238f4ba0.md -> src/content/performances/machine-listening-songbook-dada-data.md
+- Machine Listening/site map/Performances e364632cf2594233bf2bc303c61b3ab1.md -> src/content/performances/performances.md
+- Machine Listening/site map/Performances/Performances/s2t 5d1834554e294c86acd4e9587d9d1e97.md -> src/content/performances/s2t.md
+- Machine Listening/site map/Performances/Performances/Stenographer’s memorial f2775367dcae4471a49202c39b8d3823.md -> src/content/performances/stenographers-memorial.md
+- Machine Listening/site map/Performances/Performances/Untitled 33a21d7b0efc80fcb4dbcc8754b085e4.md -> src/content/performances/untitled.md
+- Machine Listening/site map/Software/Software/Assisted listener e31a56884cde4a4e93f8330f70683c26.md -> src/content/software/assisted-listener.md
+- Machine Listening/site map/Software/Software/Listening to the diagnostic ear ce03c42398324236be01ea4964cf42d2.md -> src/content/software/listening-to-the-diagnostic-ear.md
+- Machine Listening/site map/Software 9da8098500664bd58197fc1c26ff0bf3.md -> src/content/software/software.md
+- Machine Listening/site map/Software/Software/Word Processor v1 27ae0d6dde924d94b29c516c486099d8.md -> src/content/software/word-processor-v1.md
+- Machine Listening/site map/Software/Software/Word processor v2 0964e8b42aaf4d27b38cfbfa2156f0c3.md -> src/content/software/word-processor-v2.md
+- Machine Listening/site map/(Against) the coming world of listening machines ( ee57456160a143e299df9e8581750d90.md -> src/content/texts/against-the-coming-world-of-listening-machines.md
+- Machine Listening/site map/Improvisation and control (essay, 2021) a291e164fdf14bf39cca4fccfe8ac6bd.md -> src/content/texts/improvisation-and-control-essay-2021.md
+- Machine Listening/site map/Lessons in how (not) to be heard (essay, 2020) ea94e9e50f1c454099d4e5286219f4e4.md -> src/content/texts/lessons-in-how-not-to-be-heard-essay-2020.md
+- Machine Listening/site map/Listening with the pandemic (essay, 2020) 723b302b1b134b0ba0670ee593fbcc84.md -> src/content/texts/listening-with-the-pandemic-essay-2020.md
+- Machine Listening/site map/Texts 9f1f75c9fe674f2893af16567d58adb8.md -> src/content/texts/texts.md
+- Machine Listening/site map/The Planetization of Machine Listening 27321d7b0efc801a9147deaf042fed99.md -> src/content/texts/the-planetization-of-machine-listening.md
+- Machine Listening/55 Falls Ambient Assisted Living (with documentati 2a721d7b0efc80b689f5e0fccff53476.md -> src/content/works/55-falls-ambient-assisted-living-with-documentati.md
+- Machine Listening/site map/Works 2663-503a/55 Falls Ambient Assisted Living 23f21d7b0efc80faa125dae6a50f8c8c.md -> src/content/works/55-falls-ambient-assisted-living.md
+- Machine Listening/site map/Works 2663-503a/After Words 32af74e4e8544b0dbe89251ba67f6169.md -> src/content/works/after-words.md
+- Machine Listening/site map/Works 2663-503a/Always Learning 6fcb4d2e3183458bb1b137a8b78615ed.md -> src/content/works/always-learning.md
+- Machine Listening/site map/Works 2663-503a/#C 1b421d7b0efc80348d9ad778c340ebd3.md -> src/content/works/c.md
+- Machine Listening/site map/Works 2663-503a/Ego Trip 05f360c6a15d4e97ac9d9f5f956d3d8d.md -> src/content/works/ego-trip.md
+- Machine Listening/Environments 12 New Concepts in Acoustic Enrichmen e9ac6f90f0774a7cbdee03c0f7e0ca51.md -> src/content/works/environments-12-new-concepts-in-acoustic-enrichmen.md
+- Machine Listening/site map/Works 2663-503a/Environments 12 5fadf9b6670147f2862e595aba1bc910.md -> src/content/works/environments-12.md
+- Machine Listening/site map/Works 2663-503a/How to read a dataset/Example articles (2) 2e921d7b0efc80e5bfe7dfc13594a8a7.md -> src/content/works/example-articles-2.md
+- Machine Listening/site map/Works 2663-503a/Here is a Dataset 2af21d7b0efc800280c1cc10a5337360.md -> src/content/works/here-is-a-dataset.md
+- Machine Listening/site map/Works 2663-503a/How to play a dataset 38c21d7b0efc8065a96de824daa9bf0f.md -> src/content/works/how-to-play-a-dataset.md
+- Machine Listening/site map/Works 2663-503a/How to read a dataset 2e921d7b0efc80b389dfd79b76212f0f.md -> src/content/works/how-to-read-a-dataset.md
+- Machine Listening/site map/Works 2663-503a/Improvisation and Control 89f69fddd6e940ee96148347fc9c2e5e.md -> src/content/works/improvisation-and-control.md
+- Machine Listening/site map/Works 2663-503a/Learning from Youtube e37b6f0d56a24baebad6b29c65fb1f09.md -> src/content/works/learning-from-youtube.md
+- Machine Listening/site map/Works 2663-503a/Listening to the Diagnostic Ear e4cb2ec296604fcbad122bc30a369d37.md -> src/content/works/listening-to-the-diagnostic-ear.md
+- Machine Listening/site map/Works 2663-503a/Machine Listening Songbook (5-x) Songs about fucki 69899b6a9cbe407ca3ed56e30d19d73a.md -> src/content/works/machine-listening-songbook-5-x-songs-about-fucki.md
+- Machine Listening/site map/Works 2663-503a/Machine Listening Songbook Dada Data 96fdfc7c175a4df8944b9b82aaa0a99d.md -> src/content/works/machine-listening-songbook-dada-data.md
+- Machine Listening/site map/Works 2663-503a/How to read a dataset/Proceedings of SemEval 2020 Task 11 (1) 2e921d7b0efc8037b578c49d4a8d85d3.md -> src/content/works/proceedings-of-semeval-2020-task-11-1.md
+- Machine Listening/site map/Works 2663-503a/How to read a dataset/Proceedings of SemEval 2020 Task 11 2e921d7b0efc81c9b786f311f124bce7.md -> src/content/works/proceedings-of-semeval-2020-task-11.md
+- Machine Listening/site map/Works 2663-503a/Unnatural Language Processing 8d1d5d65093446bba3bc68fa18c875a2.md -> src/content/works/unnatural-language-processing.md
+- Machine Listening/site map/Works 2663-503a/Voyce Walkr 1ee21d7b0efc8004891fc1204d433f59.md -> src/content/works/voyce-walkr.md
+- Machine Listening/site map/Works 2663-503a/Word Processor v1 9e8912d21f9440a09dfe58bc741fc9c8.md -> src/content/works/word-processor-v1.md
+- Machine Listening/site map/Works 344089d2d61f45849cab8df463fd8858.md -> src/content/works/works.md
+
+## Duplicate destination conflicts (auto-resolved)
+- src/content/curation/this-hideous-replica.md: kept Machine Listening/site map/Curation/Curation/This Hideous Replica 24521d7b0efc8017894cd055b65f998a.md, dropped Machine Listening/This Hideous Replica ca697762e883456c92ede6cee42d84a0.md
+- src/content/events/machine-listening-euro-tour-2025.md: kept Machine Listening/site map/Machine Listening Euro Tour 2025 1f221d7b0efc80a09850ecf13b5f7bf3.md, dropped Machine Listening/Machine Listening - Euro Tour 2025 1f221d7b0efc801ca55ef20ff7591ac7.md
+- src/content/works/environments-12.md: kept Machine Listening/site map/Works 2663-503a/Environments 12 5fadf9b6670147f2862e595aba1bc910.md, dropped Machine Listening/Environments 12 82d888418fdf4ba9855131dd17293475.md
+
+## Unresolved files
+- Machine Listening 371984e1715f4c599ad005da5ba4edf8.md (No collection mapping rule matched)
+- Machine Listening/complaints 66bf1874ff114f889da92b851a9db7c1.md (No collection mapping rule matched)
+- Machine Listening/site map cc74027d89e946078c35880cfd3e7ea9.md (No collection mapping rule matched)
+- Machine Listening/site map/Data audit workshop/After Words 544c11ffac1d4d5a88f126e0389461bf.md (No collection mapping rule matched)
+- Machine Listening/Terms and Conditions 2a421d7b0efc802c9d73df71b1592681.md (No collection mapping rule matched)

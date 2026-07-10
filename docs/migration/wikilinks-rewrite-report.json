@@ -1,0 +1,19 @@
+{
+  "generatedAt": "2026-07-10T03:17:56.896Z",
+  "apply": true,
+  "filesScanned": 77,
+  "filesUpdated": 18,
+  "linksSeen": 1059,
+  "linksConverted": 68,
+  "skippedExternal": 794,
+  "skippedNonMd": 196,
+  "skippedAmbiguous": 0,
+  "skippedNotFound": 1,
+  "ambiguous": [],
+  "notFound": [
+    {
+      "file": "src/content/events/clone-metamorphosis.md",
+      "target": "../../Machine%20Listening%20371984e1715f4c599ad005da5ba4edf8.md"
+    }
+  ]
+}

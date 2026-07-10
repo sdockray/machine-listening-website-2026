@@ -1,0 +1,53 @@
+---
+title: "Lessons in how (not) to be heard (essay, 2020)"
+author: ""
+---
+*This text was originally published as a topic essay in the Curriculum. An archival version with embedded audio is available here, and in German translation here. But we have also extracted the text for the purposes of legibility.*
+
+![](https://machinelistening.exposed/images/01-1280x706.gif)
+
+Lesson III of Hito Steyerl’s [www⁄*How Not to be Seen: A Fucking Didactic Educational .MOV File (2013)*](https://www.artforum.com/video/hito-steyerl-how-not-to-be-seen-a-fucking-didactic-educational-mov-file-2013-51651) is entitled “How to Become Invisible by Becoming a Picture”. There are seven ways, the narrator explains: “to camouflage; to conceal; to cloak; to mask; to be painted; to disguise; to mimicry; to key.” Steyerl smears her hands across her cheeks, and the marks she leaves quickly merge with those of the colour chart behind her; as if she is becoming transparent; becoming the picture of the lesson’s title (of course, from the viewer’s perspecitve, she already was). Now a hand appears, and begins applying what might be “concealer”, as if by a makeup artist. And then we see a satellite image zooming in on a location in the California desert. Three blocks of colour: two white; one black. Around 2000, we are told, a new standard for satellite resolution targets like the one we are looking at was introduced. “In 1996, photographic resolution in the area is about 12-metres per pixel. Today it is one foot. To become invisible, one has to become smaller or equal to one pixel.”
+
+There is so much in this passage. It brings to mind the practices of camouflage and masking developed by [www⁄*protestors*](https://www.nytimes.com/2019/07/26/technology/hong-kong-protests-facial-recognition-surveillance.html) in Hong Kong, in an attempt to thwart facial-recognition systems embedded throughout the city; but also the gender politics of makeup, and Zach Blas' [www⁄*Face Cages*](https://zachblas.info/works/face-cages/), which both obscure the face and encase it. Such is the logic of all masks, of course. Blas just makes the point particularly clearly. His cages “exaggerate and perform the irreconcilability of the biometric diagram with the materiality of the human face”. But they also gesture in the opposite direction. Under conditions of ubiquitous computer vision, anonymity also comes at a cost.
+
+The ambivalent politics of (in)visibility are made even starker in [www⁄*Forensic Architecture’s*](https://forensic-architecture.org/) work on Western drone strikes in Pakistan, Afghanistan, Yemen, Somalia, and Gaza.
+
+> “The pixel resolution of contemporary, publicly available satellite images is not only a product of optics, data storage, or bandwidth capacity, but of legal regulations that bear upon political and even geopolitical rationales. Throughout the height of the drone campaign and for the entire duration of our investigation, the resolution at which satellite images were made publicly available was legally kept at 0.5 meters per pixel [ie about a foot]. The reason for halting the process of improving the resolution of publicly available satellite images was that at 0.5 meters, the pixel resolution corresponds to the dimensions of the human body - an area 0.5 meters by 0.5 meters is roughly the size of the human body as seen from above.” 1
+> 
+
+So for Forensic Architecture, as for many others, the political challenge is not (or not just) how to become invisible, but how to ensure that certain state practices and injustices do not remain so. “War is invisible,” Steyerl tells us, more wryly. “Capital is invisible.”
+
+What would it mean to think about machine listening this way (as indeed Steyerl has [www⁄*already*](https://youtu.be/iyyM4vDg0xw) begun doing)? To recognise the importance of *not*being heard: to make inaudibility a political demand; to develop a structural critique of surveillant and extractive listenings alongside more insurgent tactics for rendering oneself or one’s community inaudible. But at the same time to recognise that audibility is also something to be fought for; that very often it is a condition of poilitical participation, or of justice; to follow Lawrence Abu Hamdan in imagining a politically radical *forensic*listening, that was not already captured by legal institutions and the state;[2](https://machinelistening.exposed/topic/lessons-in-how-not-to-be-heard/#fn:2)to hold open the possibility of a machinic counter-listening; of listening-back.
+
+What is the acoustic equivalent of resolution? Perhaps fidelity; a word that also suggests responsibility, that points perhaps in the direction of law or justice. In this way of thinking, the question is not so much whether to be heard or not, but rather *how* one is heard, why and by whom.
+
+### **Lesson 1: How to become (in)audible by disabling silicon ears[¶](https://machinelistening.exposed/topic/lessons-in-how-not-to-be-heard/#lesson-1-how-to-become-inaudible-by-disabling-silicon-ears)**
+
+With difficulty; name machine listening as an object of political contestation and struggle; describe some of its features, as they are clarified by the pandemic; become an artist becoming a paradigm dissident; dismantle capitalism and abolish big data, since they are increasingly difficult to disentangle; follow machine listening’s history, beyond itself; produce a diverse counterculture of machine listening; imagine a machine listening centered in country;[3](https://machinelistening.exposed/topic/lessons-in-how-not-to-be-heard/#fn:3) demonstrate and mock machine listening in its thoughtlessness; demonstrate and mock the machine listening industry in its thoughtlessness; write a policy document, but with artists as well as lawyers; seize the data centres.
+
+### **Lesson 2: How to be (in)audible in the presence of microphones[¶](https://machinelistening.exposed/topic/lessons-in-how-not-to-be-heard/#lesson-2-how-to-be-inaudible-in-the-presence-of-microphones)**
+
+Tear them down or rip them out; [⁄*develop*](https://machinelistening.exposed/topic/lessons-in-how-not-to-be-heard/%28https://github.com/project-spectra%29) a community-based open source voice training app for trans folk;[4](https://machinelistening.exposed/topic/lessons-in-how-not-to-be-heard/#fn:4) autotune everything; be somewhere loud; mask your speech with noise; invent the privacy industry; never use a telephone, or a smart speaker, or a car, or a city; ask Siri; cover your laptop with sticky tape; have a speech disorder or an accent; write a manifesto on audio luddism; invent new languages; be female and over 50, or indigenous; speak Wiradjuri.
+
+### **Lesson 3: How to make yourself (in)audible by being out of earshot[¶](https://machinelistening.exposed/topic/lessons-in-how-not-to-be-heard/#lesson-3-how-to-make-yourself-inaudible-by-being-out-of-earshot)**
+
+Be very quiet; refuse to attend the teleconference; live in the right neighbourhood; live in the wrong neighbourhood; use encrypted audio.
+
+### **Lesson 4: How to become (in)audible by merging into a world of operational sound[¶](https://machinelistening.exposed/topic/lessons-in-how-not-to-be-heard/#lesson-4-how-to-become-inaudible-by-merging-into-a-world-of-operational-sound)**
+
+Speak in code; become the code you speak; live for a week as Alexa;[5](https://machinelistening.exposed/topic/lessons-in-how-not-to-be-heard/#fn:5)[www⁄*listen to Bach as a reindeer*](https://www.nytimes.com/2017/05/19/arts/music/reviving-the-ghostly-sounds-of-maryanne-amacher.html); listen to [www⁄*adversarial Bach*](https://nicholas.carlini.com/code/audio_adversarial_examples/) as a machine; entitle your next album Adversarial Music Synthesizer (Threat Model); embed subliminal messages in it, but for Alexa; get an Amazon Halo for Christmas; get your cough medicine delivered the day before you start coughing; allow machine listening’s attempted perfection of the subject to extinguish the subject.
+
+### **Lesson 5: How to be (in)audible by having nothing to hide[¶](https://machinelistening.exposed/topic/lessons-in-how-not-to-be-heard/#lesson-5-how-to-be-inaudible-by-having-nothing-to-hide)**
+
+Enjoy being listened to; get your coronavirus diagnosis over the phone; get your coronavirus diagnosis without ever asking to be tested; let google book your haircut for you; ask your voice assistant for advice about your polyamorous relationship;[6](https://machinelistening.exposed/topic/lessons-in-how-not-to-be-heard/#fn:6) listen to “ambient music for reading” on your smart headphones, forever; become an evangelist of technosolutionism; allow yourself to be convinced that the main problem is privacy; petition the court for access to your partner’s Alexa archive; enjoy extraordinary rendition and extrajudicial drone killings; enjoy being unable to get a loan or access state services and not knowing why.
+
+## **Resources[¶](https://machinelistening.exposed/topic/lessons-in-how-not-to-be-heard/#resources)**
+
+---
+
+1. Eyal Weisman, *Forensic Architecture, Violence at the Threshold of Detectability*(Zone, 2017),p27. [↩︎](https://machinelistening.exposed/topic/lessons-in-how-not-to-be-heard/#fnref:1)
+2. [⦚bib:731924ff-868d-4692-a184-b28e335e1871not found](https://machinelistening.exposed/library/BROWSE_LIBRARY.html#/book/731924ff-868d-4692-a184-b28e335e1871); James Parker, [www⁄*“Forensic Listening in Lawrence Abu Hamdan’s Saydnaya (the missing 19dB)"*](http://index-journal.org/media/pages/issues/law/part-2-lacunae/forensic-listeningin-lawrence-abu-hamdans-saydnaya-the-missing-19db-by-james-parker/1548323910-1602118907/james-parker.pdf) *Index* (2020) HTTPS://DOI.ORG/10.38030/INDEX-JOURNAL.2020.2.7 [↩︎](https://machinelistening.exposed/topic/lessons-in-how-not-to-be-heard/#fnref:2)
+3. Interview with Angie Abdilla, founder of [www⁄*Old Ways, New*](https://oldwaysnew.com/) on 2 September 2020 [↩︎](https://machinelistening.exposed/topic/lessons-in-how-not-to-be-heard/#fnref:3)
+4. LIBRARY Alex Ahmed, ‘Online Community-based Design of Free and Open Source Software for Transgender Voice Training’ (2020); [⦚bib:2a16a513-96d8-4d68-bd70-23f74a71a609not found](https://machinelistening.exposed/library/BROWSE_LIBRARY.html#/book/2a16a513-96d8-4d68-bd70-23f74a71a609) [↩︎](https://machinelistening.exposed/topic/lessons-in-how-not-to-be-heard/#fnref:4)
+5. Interview with [www⁄*Lauren McCarthy*](https://lauren-mccarthy.com/LAUREN) recorded on 22 September 2020. [↩︎](https://machinelistening.exposed/topic/lessons-in-how-not-to-be-heard/#fnref:5)
+6. Interview with [www⁄*Kathy Reid*](https://blog.kathyreid.id.au/) on 11 August 2020 [↩︎](https://machinelistening.exposed/topic/lessons-in-how-not-to-be-heard/#fnref:6)

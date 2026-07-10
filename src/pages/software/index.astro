@@ -1,0 +1,35 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { extractFirstMarkdownImage } from '../../lib/content-images';
+
+const softwareItems = (await getCollection('software'))
+  .filter((entry) => !entry.data.hideFromIndex)
+  .sort((a, b) => {
+    const priorityDiff = (b.data.priority ?? 1) - (a.data.priority ?? 1);
+    if (priorityDiff !== 0) return priorityDiff;
+
+    return a.data.title.localeCompare(b.data.title);
+  });
+
+const getListingImage = (entry: (typeof softwareItems)[number]) => entry.data.coverImage || extractFirstMarkdownImage(entry.body || '');
+---
+<BaseLayout title="Software">
+  <h1>Software</h1>
+  <ul class="collection-grid">
+    {softwareItems.map((item) => {
+      const listingImage = getListingImage(item);
+      return (
+        <li class="collection-card">
+          <a href={`/software/${item.id}/`}>
+            {listingImage && (
+              <img src={listingImage} alt={item.data.title} loading="lazy" />
+            )}
+            <h2>{item.data.title}</h2>
+            {item.data.description && <p class="collection-meta">{item.data.description}</p>}
+          </a>
+        </li>
+      );
+    })}
+  </ul>
+</BaseLayout>

@@ -1,0 +1,59 @@
+---
+// src/layouts/BaseLayout.astro
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+
+const NAV_LINKS = [
+  { label: 'People', href: '/people' },
+  { label: 'Works', href: '/works' },
+  { label: 'Performances', href: '/performances' },
+  { label: 'Curation', href: '/curation' },
+  { label: 'Software', href: '/software' },
+  { label: 'Curriculum', href: '/curriculum' },
+  { label: 'Texts', href: '/texts' },
+  { label: 'Interviews', href: '/interviews' },
+  { label: 'Events', href: '/events' },
+];
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title} · Machine Listening</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="/" class="site-title">Machine Listening</a>
+      <nav class="site-nav">
+        <ul>
+          {NAV_LINKS.map((link) => (
+            <li><a href={link.href}>{link.label}</a></li>
+          ))}
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <p class="acknowledgement">
+        This project takes place online, and across multiple unceded Indigenous Lands.
+        We acknowledge the people of the Kulin Nation as the custodians of the lands
+        on which we work. We pay our respects to Indigenous Elders, past and present.
+      </p>
+      <div class="footer-links">
+        <a href="/complaints">Complaints</a>
+        <a href="/terms-and-conditions">Terms and Conditions</a>
+        <a href="mailto:machinelistening2020@gmail.com">Contact</a>
+        <a href="https://www.instagram.com/machinelistening/">Instagram</a>
+      </div>
+    </footer>
+  </body>
+</html>

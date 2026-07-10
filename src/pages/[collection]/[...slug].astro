@@ -1,0 +1,41 @@
+---
+// src/pages/[collection]/[...slug].astro
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+
+  const COLLECTIONS = [
+    'works', 'performances', 'curation',
+    'software', 'curriculum', 'texts', 'interviews', 'events',
+    // removed 'people'
+  ];
+
+  const paths = [];
+  for (const collectionName of COLLECTIONS) {
+    const entries = await getCollection(collectionName);
+    for (const entry of entries) {
+      if (collectionName === 'interviews') {
+        if (entry.id === 'interviews' || entry.data.entryType === 'interview') {
+          continue;
+        }
+      }
+
+      paths.push({
+        params: { collection: collectionName, slug: entry.id },
+        props: { entry, collectionName },
+      });
+    }
+  }
+  return paths;
+}
+
+const { entry, collectionName } = Astro.props;
+const { Content } = await render(entry);
+const heading = entry.data.title ?? entry.data.name; // "works" uses title, "people" uses name
+---
+<BaseLayout title={heading}>
+  <p><a href="/">Home</a> / {collectionName}</p>
+  <h1>{heading}</h1>
+  <Content />
+</BaseLayout>

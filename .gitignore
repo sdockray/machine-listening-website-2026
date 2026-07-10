@@ -20,5 +20,8 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 
+# redundant migration archive media
+src/content/_assets/notion-import/
+
 # jetbrains setting folder
 .idea/

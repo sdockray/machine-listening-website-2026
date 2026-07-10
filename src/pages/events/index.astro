@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getEntry, render } from 'astro:content';
+
+const entry = await getEntry('events', 'events');
+const title = entry?.data.title || 'Events';
+const rendered = entry ? await render(entry) : null;
+const Content = rendered?.Content;
+---
+<BaseLayout title={title}>
+  <h1>{title}</h1>
+  {Content ? <Content /> : <p>No events index content found.</p>}
+</BaseLayout>

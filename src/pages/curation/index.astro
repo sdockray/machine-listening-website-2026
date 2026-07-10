@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { extractFirstMarkdownImage } from '../../lib/content-images';
+
+const curationItems = (await getCollection('curation'))
+  .filter((entry) => !entry.data.hideFromIndex)
+  .sort((a, b) => {
+    const priorityDiff = (b.data.priority ?? 1) - (a.data.priority ?? 1);
+    if (priorityDiff !== 0) return priorityDiff;
+
+    const dateA = a.data.date ? new Date(a.data.date).getTime() : 0;
+    const dateB = b.data.date ? new Date(b.data.date).getTime() : 0;
+    if (dateB !== dateA) return dateB - dateA;
+
+    return a.data.title.localeCompare(b.data.title);
+  });
+
+const getListingImage = (entry: (typeof curationItems)[number]) => entry.data.coverImage || extractFirstMarkdownImage(entry.body || '');
+---
+<BaseLayout title="Curation">
+  <h1>Curation</h1>
+  <ul class="collection-grid">
+    {curationItems.map((item) => {
+      const listingImage = getListingImage(item);
+      return (
+        <li class="collection-card">
+          <a href={`/curation/${item.id}/`}>
+            {listingImage && (
+              <img src={listingImage} alt={item.data.title} loading="lazy" />
+            )}
+            <h2>{item.data.title}</h2>
+            {item.data.date && <p class="collection-meta">{new Date(item.data.date).getFullYear()}</p>}
+          </a>
+        </li>
+      );
+    })}
+  </ul>
+</BaseLayout>

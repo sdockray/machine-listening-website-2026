@@ -1,0 +1,326 @@
+{
+  "generatedAt": "2026-07-10T03:01:43.445Z",
+  "apply": true,
+  "overwrite": false,
+  "filesScanned": 75,
+  "filesUpdated": 39,
+  "linksSeen": 1068,
+  "linksRewritten": 170,
+  "assetsCopied": 170,
+  "assetsSkippedExists": 0,
+  "assetsMissing": 0,
+  "details": [
+    {
+      "markdown": "src/content/curation/data-relations-summer-school.md",
+      "linksSeen": 62,
+      "linksRewritten": 1,
+      "assetsCopied": 1,
+      "assetsSkippedExists": 0,
+      "assetsMissing": 0
+    },
+    {
+      "markdown": "src/content/curation/eavesdropping.md",
+      "linksSeen": 4,
+      "linksRewritten": 1,
+      "assetsCopied": 1,
+      "assetsSkippedExists": 0,
+      "assetsMissing": 0
+    },
+    {
+      "markdown": "src/content/curation/ep-3-listening-with-the-pandemic.md",
+      "linksSeen": 10,
+      "linksRewritten": 1,
+      "assetsCopied": 1,
+      "assetsSkippedExists": 0,
+      "assetsMissing": 0
+    },
+    {
+      "markdown": "src/content/curation/ep-4-improvisation-and-control.md",
+      "linksSeen": 12,
+      "linksRewritten": 1,
+      "assetsCopied": 1,
+      "assetsSkippedExists": 0,
+      "assetsMissing": 0
+    },
+    {
+      "markdown": "src/content/curation/ep-5-unnatural-language-processing.md",
+      "linksSeen": 4,
+      "linksRewritten": 1,
+      "assetsCopied": 1,
+      "assetsSkippedExists": 0,
+      "assetsMissing": 0
+    },
+    {
+      "markdown": "src/content/curation/listening-to-misrecognition.md",
+      "linksSeen": 4,
+      "linksRewritten": 1,
+      "assetsCopied": 1,
+      "assetsSkippedExists": 0,
+      "assetsMissing": 0
+    },
+    {
+      "markdown": "src/content/curation/planetary-auditions.md",
+      "linksSeen": 2,
+      "linksRewritten": 1,
+      "assetsCopied": 1,
+      "assetsSkippedExists": 0,
+      "assetsMissing": 0
+    },
+    {
+      "markdown": "src/content/curation/this-hideous-replica.md",
+      "linksSeen": 5,
+      "linksRewritten": 2,
+      "assetsCopied": 2,
+      "assetsSkippedExists": 0,
+      "assetsMissing": 0
+    },
+    {
+      "markdown": "src/content/curriculum/curriculum.md",
+      "linksSeen": 4,
+      "linksRewritten": 1,
+      "assetsCopied": 1,
+      "assetsSkippedExists": 0,
+      "assetsMissing": 0
+    },
+    {
+      "markdown": "src/content/events/ca2024-uncomputable.md",
+      "linksSeen": 23,
+      "linksRewritten": 5,
+      "assetsCopied": 5,
+      "assetsSkippedExists": 0,
+      "assetsMissing": 0
+    },
+    {
+      "markdown": "src/content/events/cv2024-uncomputable.md",
+      "linksSeen": 18,
+      "linksRewritten": 4,
+      "assetsCopied": 4,
+      "assetsSkippedExists": 0,
+      "assetsMissing": 0
+    },
+    {
+      "markdown": "src/content/events/environments-12.md",
+      "linksSeen": 2,
+      "linksRewritten": 2,
+      "assetsCopied": 2,
+      "assetsSkippedExists": 0,
+      "assetsMissing": 0
+    },
+    {
+      "markdown": "src/content/events/machine-listening-dataset-larp.md",
+      "linksSeen": 10,
+      "linksRewritten": 3,
+      "assetsCopied": 3,
+      "assetsSkippedExists": 0,
+      "assetsMissing": 0
+    },
+    {
+      "markdown": "src/content/events/machine-listening-euro-tour-2025.md",
+      "linksSeen": 13,
+      "linksRewritten": 3,
+      "assetsCopied": 3,
+      "assetsSkippedExists": 0,
+      "assetsMissing": 0
+    },
+    {
+      "markdown": "src/content/interviews/interviews.md",
+      "linksSeen": 119,
+      "linksRewritten": 23,
+      "assetsCopied": 23,
+      "assetsSkippedExists": 0,
+      "assetsMissing": 0
+    },
+    {
+      "markdown": "src/content/performances/i-am-sitting-in-a-courtroom.md",
+      "linksSeen": 3,
+      "linksRewritten": 1,
+      "assetsCopied": 1,
+      "assetsSkippedExists": 0,
+      "assetsMissing": 0
+    },
+    {
+      "markdown": "src/content/performances/machine-listening-songbook-5-x.md",
+      "linksSeen": 13,
+      "linksRewritten": 4,
+      "assetsCopied": 4,
+      "assetsSkippedExists": 0,
+      "assetsMissing": 0
+    },
+    {
+      "markdown": "src/content/performances/machine-listening-songbook-dada-data.md",
+      "linksSeen": 13,
+      "linksRewritten": 3,
+      "assetsCopied": 3,
+      "assetsSkippedExists": 0,
+      "assetsMissing": 0
+    },
+    {
+      "markdown": "src/content/performances/s2t.md",
+      "linksSeen": 3,
+      "linksRewritten": 1,
+      "assetsCopied": 1,
+      "assetsSkippedExists": 0,
+      "assetsMissing": 0
+    },
+    {
+      "markdown": "src/content/performances/stenographers-memorial.md",
+      "linksSeen": 4,
+      "linksRewritten": 3,
+      "assetsCopied": 3,
+      "assetsSkippedExists": 0,
+      "assetsMissing": 0
+    },
+    {
+      "markdown": "src/content/software/word-processor-v1.md",
+      "linksSeen": 8,
+      "linksRewritten": 1,
+      "assetsCopied": 1,
+      "assetsSkippedExists": 0,
+      "assetsMissing": 0
+    },
+    {
+      "markdown": "src/content/texts/texts.md",
+      "linksSeen": 26,
+      "linksRewritten": 8,
+      "assetsCopied": 8,
+      "assetsSkippedExists": 0,
+      "assetsMissing": 0
+    },
+    {
+      "markdown": "src/content/texts/the-planetization-of-machine-listening.md",
+      "linksSeen": 3,
+      "linksRewritten": 1,
+      "assetsCopied": 1,
+      "assetsSkippedExists": 0,
+      "assetsMissing": 0
+    },
+    {
+      "markdown": "src/content/works/55-falls-ambient-assisted-living-with-documentati.md",
+      "linksSeen": 6,
+      "linksRewritten": 4,
+      "assetsCopied": 4,
+      "assetsSkippedExists": 0,
+      "assetsMissing": 0
+    },
+    {
+      "markdown": "src/content/works/55-falls-ambient-assisted-living.md",
+      "linksSeen": 6,
+      "linksRewritten": 4,
+      "assetsCopied": 4,
+      "assetsSkippedExists": 0,
+      "assetsMissing": 0
+    },
+    {
+      "markdown": "src/content/works/after-words.md",
+      "linksSeen": 18,
+      "linksRewritten": 8,
+      "assetsCopied": 8,
+      "assetsSkippedExists": 0,
+      "assetsMissing": 0
+    },
+    {
+      "markdown": "src/content/works/always-learning.md",
+      "linksSeen": 10,
+      "linksRewritten": 3,
+      "assetsCopied": 3,
+      "assetsSkippedExists": 0,
+      "assetsMissing": 0
+    },
+    {
+      "markdown": "src/content/works/ego-trip.md",
+      "linksSeen": 5,
+      "linksRewritten": 1,
+      "assetsCopied": 1,
+      "assetsSkippedExists": 0,
+      "assetsMissing": 0
+    },
+    {
+      "markdown": "src/content/works/environments-12.md",
+      "linksSeen": 25,
+      "linksRewritten": 6,
+      "assetsCopied": 6,
+      "assetsSkippedExists": 0,
+      "assetsMissing": 0
+    },
+    {
+      "markdown": "src/content/works/here-is-a-dataset.md",
+      "linksSeen": 18,
+      "linksRewritten": 7,
+      "assetsCopied": 7,
+      "assetsSkippedExists": 0,
+      "assetsMissing": 0
+    },
+    {
+      "markdown": "src/content/works/how-to-play-a-dataset.md",
+      "linksSeen": 40,
+      "linksRewritten": 20,
+      "assetsCopied": 20,
+      "assetsSkippedExists": 0,
+      "assetsMissing": 0
+    },
+    {
+      "markdown": "src/content/works/how-to-read-a-dataset.md",
+      "linksSeen": 59,
+      "linksRewritten": 29,
+      "assetsCopied": 29,
+      "assetsSkippedExists": 0,
+      "assetsMissing": 0
+    },
+    {
+      "markdown": "src/content/works/improvisation-and-control.md",
+      "linksSeen": 10,
+      "linksRewritten": 2,
+      "assetsCopied": 2,
+      "assetsSkippedExists": 0,
+      "assetsMissing": 0
+    },
+    {
+      "markdown": "src/content/works/learning-from-youtube.md",
+      "linksSeen": 3,
+      "linksRewritten": 1,
+      "assetsCopied": 1,
+      "assetsSkippedExists": 0,
+      "assetsMissing": 0
+    },
+    {
+      "markdown": "src/content/works/listening-to-the-diagnostic-ear.md",
+      "linksSeen": 6,
+      "linksRewritten": 1,
+      "assetsCopied": 1,
+      "assetsSkippedExists": 0,
+      "assetsMissing": 0
+    },
+    {
+      "markdown": "src/content/works/machine-listening-songbook-dada-data.md",
+      "linksSeen": 13,
+      "linksRewritten": 3,
+      "assetsCopied": 3,
+      "assetsSkippedExists": 0,
+      "assetsMissing": 0
+    },
+    {
+      "markdown": "src/content/works/unnatural-language-processing.md",
+      "linksSeen": 5,
+      "linksRewritten": 3,
+      "assetsCopied": 3,
+      "assetsSkippedExists": 0,
+      "assetsMissing": 0
+    },
+    {
+      "markdown": "src/content/works/voyce-walkr.md",
+      "linksSeen": 11,
+      "linksRewritten": 4,
+      "assetsCopied": 4,
+      "assetsSkippedExists": 0,
+      "assetsMissing": 0
+    },
+    {
+      "markdown": "src/content/works/word-processor-v1.md",
+      "linksSeen": 9,
+      "linksRewritten": 2,
+      "assetsCopied": 2,
+      "assetsSkippedExists": 0,
+      "assetsMissing": 0
+    }
+  ]
+}

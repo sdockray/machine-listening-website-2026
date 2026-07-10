@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { extractFirstMarkdownImage } from '../../lib/content-images';
+
+const performances = (await getCollection('performances'))
+  .filter((entry) => !entry.data.hideFromIndex)
+  .sort((a, b) => {
+    const priorityDiff = (b.data.priority ?? 1) - (a.data.priority ?? 1);
+    if (priorityDiff !== 0) return priorityDiff;
+
+    const dateA = a.data.date ? new Date(a.data.date).getTime() : 0;
+    const dateB = b.data.date ? new Date(b.data.date).getTime() : 0;
+    if (dateB !== dateA) return dateB - dateA;
+
+    return a.data.title.localeCompare(b.data.title);
+  });
+
+const getListingImage = (entry: (typeof performances)[number]) => entry.data.coverImage || extractFirstMarkdownImage(entry.body || '');
+---
+<BaseLayout title="Performances">
+  <h1>Performances</h1>
+  <ul class="collection-grid">
+    {performances.map((performance) => {
+      const listingImage = getListingImage(performance);
+      return (
+        <li class="collection-card">
+          <a href={`/performances/${performance.id}/`}>
+            {listingImage && (
+              <img src={listingImage} alt={performance.data.title} loading="lazy" />
+            )}
+            <h2>{performance.data.title}</h2>
+            {performance.data.date && (
+              <p class="collection-meta">{new Date(performance.data.date).getFullYear()}</p>
+            )}
+          </a>
+        </li>
+      );
+    })}
+  </ul>
+</BaseLayout>
