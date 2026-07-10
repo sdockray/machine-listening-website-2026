@@ -11,12 +11,14 @@
             "id": "59d3f25dadeb6c3a",
             "type": "leaf",
             "state": {
-              "type": "audio",
+              "type": "markdown",
               "state": {
-                "file": "_assets/notion-import/Machine Listening/complaints/Complaints_Hotline.mp3"
+                "file": "works/after-words.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-audio",
-              "title": "Complaints_Hotline"
+              "icon": "lucide-file",
+              "title": "after-words"
             }
           }
         ]
@@ -92,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_assets/notion-import/Machine Listening/complaints/Complaints_Hotline.mp3",
+                "file": "works/after-words.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Complaints_Hotline"
+              "title": "Backlinks for after-words"
             }
           },
           {
@@ -111,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_assets/notion-import/Machine Listening/complaints/Complaints_Hotline.mp3",
+                "file": "works/after-words.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Complaints_Hotline"
+              "title": "Outgoing links from after-words"
             }
           },
           {
@@ -154,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_assets/notion-import/Machine Listening/complaints/Complaints_Hotline.mp3",
+                "file": "works/after-words.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Complaints_Hotline"
+              "title": "Outline of after-words"
             }
           }
         ]
@@ -178,11 +180,20 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "attachment-manager:Toggle visibility of attachment folder": false,
+      "templater-obsidian:Templater": false
     }
   },
   "active": "59d3f25dadeb6c3a",
   "lastOpenFiles": [
+    "_assets/works/after-words/IMG_3149.jpg",
+    "works/after-words.md",
+    "works/_assets/${notepath}/after-words/IMG_3149.jpg",
+    "works/_assets/${notepath}/after-words",
+    "works/_assets/${notepath}",
+    "works/_assets",
+    "_assets/notion-import/Machine Listening/complaints/Complaints_Hotline.mp3",
     "_assets/notion-import/Machine Listening/Untitled.png",
     "_assets/notion-import/Machine Listening/instagram-logo-instagram-icon-transparent-free-png.webp",
     "works/how-to-play-a-dataset.md",
@@ -205,7 +216,6 @@
     "works/machine-listening-songbook-dada-data.md",
     "_assets/works/machine-listening-songbook-5-x-songs-about-fucki/SOFT_CENTRE_-_LATE_NIGHT_-_soft_centre_-_Josh_Pickup_-_pickupjosh-7.jpg",
     "works/55-falls-ambient-assisted-living.md",
-    "works/after-words.md",
     "works/environments-12.md",
     "works/c.md",
     "interviews/interviews.md",
@@ -221,13 +231,6 @@
     "_assets/works/c/Screenshot_2025-03-12_at_4.36.51_pm.png",
     "_assets/works/proceedings-of-semeval-2020-task-11/odonnell-jowett-2018-what-is-propaganda.pdf",
     "_assets/works/proceedings-of-semeval-2020-task-11-1/odonnell-jowett-2018-what-is-propaganda.pdf",
-    "_assets/works/environments-12/Machine_Listening_(Dockray_Parker_Stern)_Environments_2012_2023._Wild_Hope_Exhibition_RMIT_Design_Hub._2023._Photo_by_Tobias_Titz_2.jpg",
-    "_assets/works/environments-12/Evironments_12_(2023).mp3",
-    "_assets/works/after-words/After_Words_(2022).mp3",
-    "_assets/texts/texts/Dockray_et_al._-_Lektionen_wie_man_(nicht)_gehort_wird.pdf",
-    "_assets/texts/texts/Dockray_et_al._-_(Gegen)_die_kommende_Welt_horender_Maschinen.pdf",
-    "_assets/texts/improvisation-and-control-essay-2021/Untitled.gif",
-    "_assets/performances/konvolute-hate-speech/IMG_0016.mov",
-    "_assets/performances/konvolute-hate-speech/ml_misc.jpg"
+    "_assets/works/environments-12/Evironments_12_(2023).mp3"
   ]
 }
