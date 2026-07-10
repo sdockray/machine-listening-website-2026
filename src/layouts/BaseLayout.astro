@@ -7,17 +7,20 @@ interface Props {
 }
 
 const { title } = Astro.props;
+const baseUrl = import.meta.env.BASE_URL;
+const normalizedBaseUrl = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
+const withBase = (path: string) => `${normalizedBaseUrl}${path.replace(/^\//, '')}`;
 
 const NAV_LINKS = [
-  { label: 'People', href: '/people' },
-  { label: 'Works', href: '/works' },
-  { label: 'Performances', href: '/performances' },
-  { label: 'Curation', href: '/curation' },
-  { label: 'Software', href: '/software' },
-  { label: 'Curriculum', href: '/curriculum' },
-  { label: 'Texts', href: '/texts' },
-  { label: 'Interviews', href: '/interviews' },
-  { label: 'Events', href: '/events' },
+  { label: 'People', href: withBase('/people/') },
+  { label: 'Works', href: withBase('/works/') },
+  { label: 'Performances', href: withBase('/performances/') },
+  { label: 'Curation', href: withBase('/curation/') },
+  { label: 'Software', href: withBase('/software/') },
+  { label: 'Curriculum', href: withBase('/curriculum/') },
+  { label: 'Texts', href: withBase('/texts/') },
+  { label: 'Interviews', href: withBase('/interviews/') },
+  { label: 'Events', href: withBase('/events/') },
 ];
 ---
 <html lang="en">
@@ -28,7 +31,7 @@ const NAV_LINKS = [
   </head>
   <body>
     <header class="site-header">
-      <a href="/" class="site-title">Machine Listening</a>
+      <a href={withBase('/')} class="site-title">Machine Listening</a>
       <nav class="site-nav">
         <ul>
           {NAV_LINKS.map((link) => (
@@ -49,8 +52,8 @@ const NAV_LINKS = [
         on which we work. We pay our respects to Indigenous Elders, past and present.
       </p>
       <div class="footer-links">
-        <a href="/complaints">Complaints</a>
-        <a href="/terms-and-conditions">Terms and Conditions</a>
+        <a href={withBase('/complaints/')}>Complaints</a>
+        <a href={withBase('/terms-and-conditions/')}>Terms and Conditions</a>
         <a href="mailto:machinelistening2020@gmail.com">Contact</a>
         <a href="https://www.instagram.com/machinelistening/">Instagram</a>
       </div>

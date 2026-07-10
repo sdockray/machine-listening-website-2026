@@ -25,7 +25,7 @@ const getListingImage = (entry: (typeof works)[number]) => entry.data.coverImage
       const listingImage = getListingImage(work);
       return (
         <li class="collection-card">
-          <a href={`/works/${work.id}/`}>
+          <a href={`./${work.id}/`}>
             {listingImage && (
               <img src={listingImage} alt={work.data.title} loading="lazy" />
             )}

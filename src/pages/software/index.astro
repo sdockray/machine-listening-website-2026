@@ -21,7 +21,7 @@ const getListingImage = (entry: (typeof softwareItems)[number]) => entry.data.co
       const listingImage = getListingImage(item);
       return (
         <li class="collection-card">
-          <a href={`/software/${item.id}/`}>
+          <a href={`./${item.id}/`}>
             {listingImage && (
               <img src={listingImage} alt={item.data.title} loading="lazy" />
             )}

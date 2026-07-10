@@ -31,7 +31,7 @@ const renderedInterviews = await Promise.all(
     const transcriptType = entry.data.transcriptType || 'none';
     const transcriptTarget = entry.data.transcriptTarget || '';
     const transcriptHref = transcriptType === 'wiki'
-      ? `/interviews/${transcriptTarget}/`
+      ? `./${transcriptTarget}/`
       : transcriptType === 'url'
         ? transcriptTarget
         : '';

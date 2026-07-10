@@ -25,7 +25,7 @@ const getListingImage = (entry: (typeof curationItems)[number]) => entry.data.co
       const listingImage = getListingImage(item);
       return (
         <li class="collection-card">
-          <a href={`/curation/${item.id}/`}>
+          <a href={`./${item.id}/`}>
             {listingImage && (
               <img src={listingImage} alt={item.data.title} loading="lazy" />
             )}

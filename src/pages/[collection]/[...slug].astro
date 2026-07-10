@@ -35,7 +35,7 @@ const { Content } = await render(entry);
 const heading = entry.data.title ?? entry.data.name; // "works" uses title, "people" uses name
 ---
 <BaseLayout title={heading}>
-  <p><a href="/">Home</a> / {collectionName}</p>
+  <p><a href="../../">Home</a> / {collectionName}</p>
   <h1>{heading}</h1>
   <Content />
 </BaseLayout>

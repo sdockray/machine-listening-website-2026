@@ -25,7 +25,7 @@ const getListingImage = (entry: (typeof performances)[number]) => entry.data.cov
       const listingImage = getListingImage(performance);
       return (
         <li class="collection-card">
-          <a href={`/performances/${performance.id}/`}>
+          <a href={`./${performance.id}/`}>
             {listingImage && (
               <img src={listingImage} alt={performance.data.title} loading="lazy" />
             )}
