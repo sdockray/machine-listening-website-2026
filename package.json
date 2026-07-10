@@ -9,9 +9,22 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "migration:plan": "node scripts/notion-migration-plan.mjs",
+    "migration:import:dry": "node scripts/notion-migrate-content.mjs",
+    "migration:import": "node scripts/notion-migrate-content.mjs --apply",
+    "migration:media:dry": "node scripts/notion-copy-media.mjs",
+    "migration:media": "node scripts/notion-copy-media.mjs --apply",
+    "migration:attachments:dry": "node scripts/notion-normalize-attachments.mjs",
+    "migration:attachments": "node scripts/notion-normalize-attachments.mjs --apply",
+    "migration:attachments:fix:dry": "node scripts/notion-fix-missing-attachments.mjs",
+    "migration:attachments:fix": "node scripts/notion-fix-missing-attachments.mjs --apply",
+    "migration:wikilinks:dry": "node scripts/notion-rewrite-wikilinks.mjs",
+    "migration:wikilinks": "node scripts/notion-rewrite-wikilinks.mjs --apply"
   },
   "dependencies": {
-    "astro": "^7.0.7"
+    "@astrojs/markdown-remark": "^7.2.1",
+    "astro": "^7.0.7",
+    "unist-util-visit": "^5.1.0"
   }
 }
