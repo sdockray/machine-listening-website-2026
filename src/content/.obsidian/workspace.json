@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "works/after-words.md",
+                "file": "works/c.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "after-words"
+              "title": "c"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "works/after-words.md",
+                "file": "works/c.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for after-words"
+              "title": "Backlinks for c"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "works/after-words.md",
+                "file": "works/c.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from after-words"
+              "title": "Outgoing links from c"
             }
           },
           {
@@ -156,21 +156,20 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "works/after-words.md",
+                "file": "works/c.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of after-words"
+              "title": "Outline of c"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -187,8 +186,27 @@
   },
   "active": "59d3f25dadeb6c3a",
   "lastOpenFiles": [
-    "_assets/works/after-words/IMG_3149.jpg",
+    "interviews/entries/santiago-rentiera.md",
     "works/after-words.md",
+    "interviews/entries/kathy-reid.md",
+    "interviews/entries/liz-pelly.md",
+    "interviews/entries/mark-andrejevic.md",
+    "interviews/entries/max-ritts.md",
+    "interviews/interviews.md",
+    "performances/machine-listening-songbook-5-x.md",
+    "software/software.md",
+    "curation/curation.md",
+    "curriculum/how-to-read-a-dataset/proceedings-of-semeval-2020-task-11.md",
+    "performances/performances.md",
+    "performances/untitled.md",
+    "works/environments-12-new-concepts-in-acoustic-enrichmen.md",
+    "works/works.md",
+    "_assets/curriculum/how-to-read-a-dataset/proceedings-of-semeval-2020-task-11-1",
+    "_assets/curriculum/how-to-read-a-dataset/proceedings-of-semeval-2020-task-11",
+    "_assets/curriculum/how-to-read-a-dataset",
+    "curriculum/how-to-read-a-dataset/example-articles-2.md",
+    "curriculum/how-to-read-a-dataset",
+    "_assets/works/after-words/IMG_3149.jpg",
     "works/_assets/${notepath}/after-words/IMG_3149.jpg",
     "works/_assets/${notepath}/after-words",
     "works/_assets/${notepath}",
@@ -206,31 +224,13 @@
     "works/machine-listening-songbook-5-x-songs-about-fucki.md",
     "_templates/events.md",
     "_templates/interviews.md",
-    "_templates/texts.md",
-    "_templates/curriculum.md",
-    "_templates/software.md",
-    "_templates/curation.md",
-    "_templates/performances.md",
-    "_templates/people.md",
     "_templates",
-    "works/machine-listening-songbook-dada-data.md",
     "_assets/works/machine-listening-songbook-5-x-songs-about-fucki/SOFT_CENTRE_-_LATE_NIGHT_-_soft_centre_-_Josh_Pickup_-_pickupjosh-7.jpg",
-    "works/55-falls-ambient-assisted-living.md",
-    "works/environments-12.md",
-    "works/c.md",
-    "interviews/interviews.md",
-    "interviews/entries/yolande-strengers-and-jenny-kennedy.md",
-    "interviews/entries/thomas-stachura.md",
-    "interviews/entries/vladan-joler.md",
     "interviews/entries",
     "_assets/performances/machine-listening-songbook-5-x/SOFT_CENTRE_-_LATE_NIGHT_-_soft_centre_-_Josh_Pickup_-_pickupjosh-5.jpg",
     "_assets/works/c/25-2_MUMA_Image_5.jpg",
     "_assets/works/c/25-2_MUMA_Image_7.jpg",
     "_assets/works/c/25-2_MUMA_Image_8.jpg",
-    "_assets/works/c/guitar_pencil.mp4",
-    "_assets/works/c/Screenshot_2025-03-12_at_4.36.51_pm.png",
-    "_assets/works/proceedings-of-semeval-2020-task-11/odonnell-jowett-2018-what-is-propaganda.pdf",
-    "_assets/works/proceedings-of-semeval-2020-task-11-1/odonnell-jowett-2018-what-is-propaganda.pdf",
-    "_assets/works/environments-12/Evironments_12_(2023).mp3"
+    "_assets/works/c/Screenshot_2025-03-12_at_4.36.51_pm.png"
   ]
 }

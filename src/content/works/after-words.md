@@ -28,7 +28,7 @@ Data is never mined. It is always made. A computational theatre. Many datasets a
 
 ---
 
-[After Words (2022), stereo mix.](../_assets/works/after-words/After_Words_(2022).mp3)
+[After Words (2022), stereo mix.](../../_assets/works/after-words/After_Words_(2022).mp3)
 
 After Words (2022), stereo mix.
 

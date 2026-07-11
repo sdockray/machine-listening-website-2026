@@ -49,11 +49,23 @@ const renderedInterviews = await Promise.all(
           </p>
         )}
 
-        {(entry.data.audioFiles || []).map((audio) => (
-          <p>
-            <a href={audio.url}>{audio.label}</a>
-          </p>
-        ))}
+        {(entry.data.audioFiles || []).map((audio) => {
+          const isMp3 = /\.mp3(?:[?#].*)?$/i.test(audio.url);
+
+          if (isMp3) {
+            return (
+              <p>
+                <audio class="content-audio" controls preload="none" src={audio.url}></audio>
+              </p>
+            );
+          }
+
+          return (
+            <p>
+              <a href={audio.url}>{audio.label}</a>
+            </p>
+          );
+        })}
       </section>
     );
   })}

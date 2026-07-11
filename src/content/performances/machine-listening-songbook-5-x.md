@@ -2,7 +2,7 @@
 title: "Machine Listening Songbook: 5-x"
 location: ""
 ---
-![Machine Listening, *Machine Listening Songbook (5-x) ft.* Jennifer Walshe and Tomomi Adachi*,* 2024, performance at SOFT CENTRE SUPERMODEL, Victorian Trades Hall. 31 August 2025. **Photo by Will Hamilton-Coates[.](https://www.instagram.com/will.hamiltoncoates/)](../_assets/performances/machine-listening-songbook-5-x/SOFT_CENTRE_-_LATE_NIGHT_-_soft_centre_-_Josh_Pickup_-_pickupjosh-5.jpg)
+![Machine Listening, *Machine Listening Songbook (5-x) ft.* Jennifer Walshe and Tomomi Adachi*,* 2024, performance at SOFT CENTRE SUPERMODEL, Victorian Trades Hall. 31 August 2025. **Photo by Will Hamilton-Coates](../_assets/performances/machine-listening-songbook-5-x/SOFT_CENTRE_-_LATE_NIGHT_-_soft_centre_-_Josh_Pickup_-_pickupjosh-5.jpg)
 
 Machine Listening, *Machine Listening Songbook (5-x) ft.* Jennifer Walshe and Tomomi Adachi*,* 2024, performance at SOFT CENTRE SUPERMODEL, Victorian Trades Hall. 31 August 2025. **Photo by Will Hamilton-Coates[.](https://www.instagram.com/will.hamiltoncoates/)
 

@@ -3,16 +3,14 @@ title: "#C"
 year: 2025
 description: ""
 ---
-Date: 2025
 
 ![Machine Listening, *#C,* 2025, 4-channel video, audio, 75 mins, (Video Still).](../_assets/works/c/Screenshot_2025-03-12_at_4.36.51_pm.png)
 
-Machine Listening, *#C,* 2025, 4-channel video, audio, 75 mins, (Video Still).
+^ Machine Listening, *#C,* 2025, 4-channel video, audio, 75 mins, (Video Still).
 
-*#C***,** 2025
-4-channel video, audio, 75 minutes
-
-Machine Listening (Sean Dockray, James Parker, and Joel Stern)
+## *#C*, 2025
+### 4-channel video, audio, 75 minutes
+### Machine Listening (Sean Dockray, James Parker, and Joel Stern)
 
 In #C, Machine Listening examines [Ego4D](https://ego4d-data.org), a dataset released by Facebook AI in 2021 to advance the automation of ‘egocentric perception’. This is the ‘first person’ perspective of virtual reality, robotics, smart glasses and the Metaverse. To train machines to see the world this way, Facebook commissioned 9000 videos, captured by 855 camera wearers across nine countries, and painstakingly annotated by low-paid ‘narrators’. ‘#C’ is the subject of every one of the 3.85 million resulting annotations: #C opens the washing machine. #C cuts spinach with a sickle. #C hits the guitar strings with a pencil. Officially, #C denotes the camera wearer, but it also names a new subject position: the protagonist of an emergent, doubly egocentric image economy.
 

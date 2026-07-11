@@ -1,8 +1,8 @@
 ---
-title: "Proceedings of SemEval 2020 Task 11"
+title: "Proceedings of SemEval 2020 Task 11 (1)"
 description: ""
 ---
-[odonnell-jowett-2018-what-is-propaganda.pdf](../_assets/works/proceedings-of-semeval-2020-task-11/odonnell-jowett-2018-what-is-propaganda.pdf)
+[odonnell-jowett-2018-what-is-propaganda.pdf](_assets/curriculum/how-to-read-a-dataset/proceedings-of-semeval-2020-task-11-1/odonnell-jowett-2018-what-is-propaganda.pdf)
 
 [https://aclanthology.org/volumes/2020.semeval-1/](https://aclanthology.org/volumes/2020.semeval-1/)
 
