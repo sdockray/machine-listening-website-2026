@@ -19,7 +19,7 @@ function normalizeBasePath(basePath) {
   return withTrailingSlash(withLeadingSlash(String(basePath).trim()));
 }
 
-function normalizeMediaUrl(url, basePath = '/') {
+function normalizeMediaUrl(url, basePath = '/', mediaBaseUrl = '') {
   const value = String(url || '').trim();
   if (!value) return value;
 
@@ -28,10 +28,15 @@ function normalizeMediaUrl(url, basePath = '/') {
     return value;
   }
 
-  const basePrefix = normalizeBasePath(basePath);
+  const normalizedMediaBaseUrl = String(mediaBaseUrl || process.env.MEDIA_BASE_URL || '').replace(/\/+$/, '');
+
   if (value.includes('_assets/')) {
     const parts = value.split('_assets/');
     const assetTail = parts[parts.length - 1];
+    if (normalizedMediaBaseUrl) {
+      return `${normalizedMediaBaseUrl}/${assetTail}`;
+    }
+    const basePrefix = normalizeBasePath(basePath);
     return `${basePrefix}_assets/${assetTail}`;
   }
 
@@ -78,13 +83,13 @@ function getYouTubeId(urlString) {
   return null;
 }
 
-function toAudioHtml(url, basePath) {
-  const safeUrl = escapeAttr(normalizeMediaUrl(url, basePath));
+function toAudioHtml(url, basePath, mediaBaseUrl) {
+  const safeUrl = escapeAttr(normalizeMediaUrl(url, basePath, mediaBaseUrl));
   return `<audio class="content-audio" controls preload="none" src="${safeUrl}"></audio>`;
 }
 
-function toVideoHtml(url, basePath) {
-  const safeUrl = escapeAttr(normalizeMediaUrl(url, basePath));
+function toVideoHtml(url, basePath, mediaBaseUrl) {
+  const safeUrl = escapeAttr(normalizeMediaUrl(url, basePath, mediaBaseUrl));
   return `<video class="content-video" controls preload="metadata" playsinline><source src="${safeUrl}" type="video/mp4" /></video>`;
 }
 
@@ -183,7 +188,7 @@ function toCaptionParagraphNode(sourceParagraph) {
   };
 }
 
-function splitMediaAndSameParagraphCaption(node, basePath) {
+function splitMediaAndSameParagraphCaption(node, basePath, mediaBaseUrl) {
   if (!node || node.type !== 'paragraph' || !Array.isArray(node.children) || node.children.length === 0) {
     return null;
   }
@@ -204,10 +209,10 @@ function splitMediaAndSameParagraphCaption(node, basePath) {
       mediaHtml = toYouTubeHtml(youtubeId);
       mediaKind = 'embed';
     } else if (AUDIO_RE.test(url)) {
-      mediaHtml = toAudioHtml(url, basePath);
+      mediaHtml = toAudioHtml(url, basePath, mediaBaseUrl);
       mediaKind = 'embed';
     } else if (VIDEO_RE.test(url)) {
-      mediaHtml = toVideoHtml(url, basePath);
+      mediaHtml = toVideoHtml(url, basePath, mediaBaseUrl);
       mediaKind = 'embed';
     }
   } else if (first.type === 'html') {
@@ -251,7 +256,7 @@ function splitMediaAndSameParagraphCaption(node, basePath) {
   return { mode: 'embed-figure', mediaHtml, captionHtml };
 }
 
-function toMediaHtmlFromParagraph(node, basePath) {
+function toMediaHtmlFromParagraph(node, basePath, mediaBaseUrl) {
   if (!node || node.type !== 'paragraph' || !Array.isArray(node.children)) return null;
   if (node.children.length !== 1) return null;
 
@@ -276,14 +281,15 @@ function toMediaHtmlFromParagraph(node, basePath) {
 
   const youtubeId = getYouTubeId(url);
   if (youtubeId) return { mediaHtml: toYouTubeHtml(youtubeId), mediaType: child.type };
-  if (AUDIO_RE.test(url)) return { mediaHtml: toAudioHtml(url, basePath), mediaType: child.type };
-  if (VIDEO_RE.test(url)) return { mediaHtml: toVideoHtml(url, basePath), mediaType: child.type };
+  if (AUDIO_RE.test(url)) return { mediaHtml: toAudioHtml(url, basePath, mediaBaseUrl), mediaType: child.type };
+  if (VIDEO_RE.test(url)) return { mediaHtml: toVideoHtml(url, basePath, mediaBaseUrl), mediaType: child.type };
 
   return null;
 }
 
 export function remarkMediaEmbeds(options = {}) {
   const basePath = normalizeBasePath(options.basePath || '/');
+  const mediaBaseUrl = String(options.mediaBaseUrl || process.env.MEDIA_BASE_URL || '').replace(/\/+$/, '');
 
   return (tree) => {
     visit(tree, (node) => Array.isArray(node?.children), (parent) => {
@@ -308,7 +314,7 @@ export function remarkMediaEmbeds(options = {}) {
           }
         }
 
-        const splitResult = splitMediaAndSameParagraphCaption(current, basePath);
+        const splitResult = splitMediaAndSameParagraphCaption(current, basePath, mediaBaseUrl);
         if (splitResult?.mode === 'image-split') {
           children.splice(i, 1, splitResult.imageParagraph, splitResult.captionParagraph);
           i += 1;
@@ -321,7 +327,7 @@ export function remarkMediaEmbeds(options = {}) {
           continue;
         }
 
-        const mediaResult = toMediaHtmlFromParagraph(current, basePath);
+        const mediaResult = toMediaHtmlFromParagraph(current, basePath, mediaBaseUrl);
         if (!mediaResult) continue;
 
         const next = children[i + 1];
@@ -335,5 +341,13 @@ export function remarkMediaEmbeds(options = {}) {
         }
       }
     });
+
+    if (mediaBaseUrl) {
+      visit(tree, ['link', 'image'], (node) => {
+        if (node.url && node.url.includes('_assets/')) {
+          node.url = normalizeMediaUrl(node.url, basePath, mediaBaseUrl);
+        }
+      });
+    }
   };
 }

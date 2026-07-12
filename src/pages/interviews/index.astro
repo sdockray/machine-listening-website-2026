@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection, getEntry, render } from 'astro:content';
+import { resolveMediaUrl } from '../../lib/media-url';
 
 const introEntry = await getEntry('interviews', 'interviews');
 const introRender = introEntry ? await render(introEntry) : null;
@@ -50,19 +51,20 @@ const renderedInterviews = await Promise.all(
         )}
 
         {(entry.data.audioFiles || []).map((audio) => {
-          const isMp3 = /\.mp3(?:[?#].*)?$/i.test(audio.url);
+          const audioUrl = resolveMediaUrl(audio.url) || audio.url;
+          const isMp3 = /\.mp3(?:[?#].*)?$/i.test(audioUrl);
 
           if (isMp3) {
             return (
               <p>
-                <audio class="content-audio" controls preload="none" src={audio.url}></audio>
+                <audio class="content-audio" controls preload="none" src={audioUrl}></audio>
               </p>
             );
           }
 
           return (
             <p>
-              <a href={audio.url}>{audio.label}</a>
+              <a href={audioUrl}>{audio.label}</a>
             </p>
           );
         })}

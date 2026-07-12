@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 import { extractFirstMarkdownImage } from '../../lib/content-images';
+import { resolveMediaUrl } from '../../lib/media-url';
 
 const softwareItems = (await getCollection('software'))
   .filter((entry) => !entry.data.hideFromIndex)
@@ -12,7 +13,7 @@ const softwareItems = (await getCollection('software'))
     return a.data.title.localeCompare(b.data.title);
   });
 
-const getListingImage = (entry: (typeof softwareItems)[number]) => entry.data.coverImage || extractFirstMarkdownImage(entry.body || '');
+const getListingImage = (entry: (typeof softwareItems)[number]) => resolveMediaUrl(entry.data.coverImage || extractFirstMarkdownImage(entry.body || ''));
 ---
 <BaseLayout title="Software">
   <h1>Software</h1>

@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
 import { extractFirstMarkdownImage } from '../../lib/content-images';
+import { resolveMediaUrl } from '../../lib/media-url';
 
 const works = (await getCollection('works'))
   .filter((entry) => !entry.data.hideFromIndex)
@@ -16,7 +17,7 @@ const works = (await getCollection('works'))
     return a.data.title.localeCompare(b.data.title);
   });
 
-const getListingImage = (entry: (typeof works)[number]) => entry.data.coverImage || extractFirstMarkdownImage(entry.body || '');
+const getListingImage = (entry: (typeof works)[number]) => resolveMediaUrl(entry.data.coverImage || extractFirstMarkdownImage(entry.body || ''));
 ---
 <BaseLayout title="Works">
   <h1>Works</h1>
