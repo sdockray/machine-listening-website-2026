@@ -1,5 +1,5 @@
 // astro.config.mjs
-import { defineConfig } from 'astro/config';
+import { defineConfig } from 'astro/config'; // force config cache reload
 import { unified } from '@astrojs/markdown-remark';
 import { remarkWikiLinks } from './src/lib/remark-wikilinks.mjs';
 import { remarkMediaEmbeds } from './src/lib/remark-media-embeds.mjs';
@@ -17,7 +17,10 @@ export default defineConfig({
   },
   markdown: {
     processor: unified({
-      remarkPlugins: [remarkWikiLinks, [remarkMediaEmbeds, { basePath: BASE_PATH, mediaBaseUrl: MEDIA_BASE_URL }]],
+      remarkPlugins: [
+        [remarkWikiLinks, { basePath: BASE_PATH }],
+        [remarkMediaEmbeds, { basePath: BASE_PATH, mediaBaseUrl: MEDIA_BASE_URL }],
+      ],
     }),
   },
 });
