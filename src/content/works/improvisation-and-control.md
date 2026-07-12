@@ -7,7 +7,7 @@ Date: 2021
 
 ![Machine Listening, *Improvisation and Control*, 2021, Zoom essays, audio-video, 30 mins. (video still)](../_assets/works/improvisation-and-control/Screen_Shot_2023-06-28_at_5.35.00_pm.png)
 
-Machine Listening, *Improvisation and Control*, 2021, Zoom essays, audio-video, 30 mins. (video still)
+^ Machine Listening, *Improvisation and Control*, 2021, Zoom essays, audio-video, 30 mins. (video still)
 
 *Improvisation and Control*, 2021
 Zoom essays, audio-video, 30 mins 
@@ -29,7 +29,7 @@ These works play with the essay format and with the expectations and limitations
 
 ![Machine Listening, *Improvisation and Control*, 2021, Zoom essays, audio-video, 30 mins. (video stills)](../_assets/works/improvisation-and-control/Screenshot_2025-04-03_at_11.30.23_am.png)
 
-Machine Listening, *Improvisation and Control*, 2021, Zoom essays, audio-video, 30 mins. (video stills)
+^ Machine Listening, *Improvisation and Control*, 2021, Zoom essays, audio-video, 30 mins. (video stills)
 
 **Presentations:**
 

@@ -7,7 +7,7 @@ Date: 2022
 
 ![Machine Listening, *Ego Trip,* 2022, video, 48 min.](../_assets/works/ego-trip/Screenshot_2023-08-16_at_11.37.52_am.png)
 
-Machine Listening, *Ego Trip,* 2022, video, 48 min.
+^ Machine Listening, *Ego Trip,* 2022, video, 48 min.
 
 *Ego Trip,* 2022
 online video, 48 min

@@ -7,7 +7,7 @@ Date: 2018
 
 ![Sean Dockray, *Always Learning,* 2018, audio-video (video still).](../_assets/works/always-learning/Sean-Dockray-Always-Learning.png)
 
-Sean Dockray, *Always Learning,* 2018, audio-video (video still).
+^ Sean Dockray, *Always Learning,* 2018, audio-video (video still).
 
 *Always Learning,* 2018, audio-video
 Researched, written and produced: Sean Dockray
@@ -23,15 +23,15 @@ Sean Dockray, *Always Learning,* 2018, audio-video (excerpt)
 
 [Sean Dockray, *Always Listening*, presentation at Ian Potter Museum in collaboration with Liquid Architecture, 2018.](https://www.youtube.com/watch?v=4fVviaTvUYA)
 
-Sean Dockray, *Always Listening*, presentation at Ian Potter Museum in collaboration with Liquid Architecture, 2018.
+^ Sean Dockray, *Always Listening*, presentation at Ian Potter Museum in collaboration with Liquid Architecture, 2018.
 
 ![Sean Dockray, Always Learning, Liquid Architecture, 2018.](../_assets/works/always-learning/eavesdropping-sean-dockray-and-jasmine-guffond-keelan-o_hehir-108-copy-1200x801.jpg)
 
-Sean Dockray, Always Learning, Liquid Architecture, 2018.
+^ Sean Dockray, Always Learning, Liquid Architecture, 2018.
 
 ![Sean Dockray, Always Learning, Liquid Architecture, 2018.](../_assets/works/always-learning/eavesdropping-sean-dockray-and-jasmine-guffond-keelan-o_hehir-137-1200x801.jpg)
 
-Sean Dockray, Always Learning, Liquid Architecture, 2018.
+^ Sean Dockray, Always Learning, Liquid Architecture, 2018.
 
 **Presentations:**
 

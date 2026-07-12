@@ -22,7 +22,7 @@ The courtroom is also a (juridical) machine.
 
 Language is also a (juridical) machine.
 
-Excerpt from  ‘***Speaking of atmospheres: more than voice and voice of the more-than’ by* Norie Neumark**
+Excerpt from  ‘*Speaking of atmospheres: more than voice and voice of the more-than*’ by Norie Neumark
 
 One of the works in the *Acoustic Justice* event that made the atmosphere most palpable for me was Joel Stern’s *Calling the matter of Joel Stern v Alvin Lucier* (2017). What he did in the work was re-place Alvin Lucier’s famous sitting in a room musical composition with sitting in a courtroom. Stern’s work has been haunting me for a while as I’ve wondered where and how I could think/write about it.  I went to the performance partly drawn by the chance to go inside a courtroom where civil and criminal trials take place.  I found myself sitting in the back of the public gallery—a legal gallery not art gallery—even though art was taking place here. When Stern’s work began, I was immediately immersed in a strange atmosphere (legal and art entangled) as the ‘court clerk’ called Joel Stern to the stand—and called me in, called me to order and re-called Alvin Lucier to my memory.
 

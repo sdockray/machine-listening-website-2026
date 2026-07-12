@@ -7,7 +7,7 @@ Date: 2018
 
 ![Sean Dockray, *Learning From YouTube,* 2018, Machine Listening, a curriculum, Session 1, (Against) The World of Coming Listening Machines 2020 (video still).](../_assets/works/learning-from-youtube/image1seandockray-learningfromyoutube2018-copy-1800x.webp)
 
-Sean Dockray, *Learning From YouTube,* 2018, Machine Listening, a curriculum, Session 1, (Against) The World of Coming Listening Machines 2020 (video still).
+^ Sean Dockray, *Learning From YouTube,* 2018, Machine Listening, a curriculum, Session 1, (Against) The World of Coming Listening Machines 2020 (video still).
 
 *Learning from Youtube*, 2018
 single-channel screen-capture video essay, 11 min 32 sec
@@ -20,7 +20,7 @@ A single-channel video essay originally commissioned for the Eavesdropping exhib
 
 [Sean Dockray 'Learning from YouTube' (2018), presented at [Against] The Coming World of Listening Machines, 2 October 2020.](https://youtu.be/iUbglqQLdrI?si=KIEGbwL9UQTvQv9K&t=2902)
 
-Sean Dockray 'Learning from YouTube' (2018), presented at [Against] The Coming World of Listening Machines, 2 October 2020.
+^ Sean Dockray 'Learning from YouTube' (2018), presented at [Against] The Coming World of Listening Machines, 2 October 2020.
 
 **Presentations:**
 

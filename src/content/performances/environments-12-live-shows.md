@@ -4,7 +4,7 @@ location: ""
 ---
 ![Machine Listening, *Environments 12*, 2023, presented at Deep Assignments London July 2025.](../_assets/performances/environments-12-live-shows/dc39f340-c27d-4e02-8821-426b7cdf1e5b_4032x3024.webp)
 
-Machine Listening, *Environments 12*, 2023, presented at Deep Assignments London July 2025.
+^ Machine Listening, *Environments 12*, 2023, presented at Deep Assignments London July 2025.
 
 [[environments-12|Environments 12]], 2023
 Listening environment: 8-channel sound installation, 35 minutes (looped); turntable, vinyl record and record sleeves.
@@ -24,7 +24,7 @@ In sum, Environments 12 is deeply perplexing, beautifully garish, and an unbridl
 **Presentations:**
 
 - *Wild Hope: Conversations for Planetary Commons*, RMIT Design Hub, 14 August - 29 September 2023.
-- ****Environments 12 LP launch, [Earthly Futures Studio, Montreuil, Paris](https://events.humanitix.com/host/earthly-futures-studio), 18 June 2025.
+- *Environments 12* LP launch, [Earthly Futures Studio, Montreuil, Paris](https://events.humanitix.com/host/earthly-futures-studio), 18 June 2025.
 - *Environments 12* LP launch, [After 8 Books](https://after8books.com/events/), Paris, 17 June 2025.
 - *Environments 12* LP launch, [Q-O2, Brussels](https://www.q-o2.be/en/event/machine-listening-environments-12-lp-launch-futura-resistenza/), presented by Futura Resistenza, 16 June 2025.
 - *Environments 12* LP launch, [Ephemera Festival at Museum of Modern Art](https://ephemerafestival.com/),  Warsaw, 14 June 2025.

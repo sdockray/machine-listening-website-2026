@@ -8,7 +8,7 @@ Date 1: August 1, 2023
 
 ![Machine Listening, *Environments 12*, 2023, cover art.](../_assets/works/environments-12/e12.png)
 
-Machine Listening, *Environments 12*, 2023, cover art.
+^ Machine Listening, *Environments 12*, 2023, cover art.
 
 [Evironments 12 (2023).mp3](../_assets/works/environments-12/Evironments_12_(2023).mp3)
 
@@ -34,7 +34,7 @@ Link to [sleeve art and liner notes.](https://drive.google.com/open?id=15EeFrev
 
 ![Wild Hope Exhibition, RMIT Design Hub. 2023. Photo by Tobias Titz](../_assets/works/environments-12/Machine_Listening_(Dockray_Parker_Stern)_Environments_2012_2023._Wild_Hope_Exhibition_RMIT_Design_Hub._2023._Photo_by_Tobias_Titz_2.jpg)
 
-Wild Hope Exhibition, RMIT Design Hub. 2023. Photo by Tobias Titz
+^ Wild Hope Exhibition, RMIT Design Hub. 2023. Photo by Tobias Titz
 
 ![Screenshot 2023-08-16 at 10.46.38 am.png](../_assets/works/environments-12/Screenshot_2023-08-16_at_10.46.38_am.png)
 
@@ -42,9 +42,9 @@ Wild Hope Exhibition, RMIT Design Hub. 2023. Photo by Tobias Titz
 
 ![Wild Hope Exhibition, RMIT Design Hub. 2023. Photo by Tobias Titz](../_assets/works/environments-12/Machine_Listening_Environments_12_2023._Wild_Hope_exhibition_RMIT_Design_Hub_Gallery_2023._Photo_by_Tobias_Titz.png)
 
-Wild Hope Exhibition, RMIT Design Hub. 2023. Photo by Tobias Titz
+^ Wild Hope Exhibition, RMIT Design Hub. 2023. Photo by Tobias Titz
 
-***Environments 12*, 2025, Stereo LP, 35 mins. Future Resistenza.**
+**_Environments 12_, 2025, Stereo LP, 35 mins. Future Resistenza.**
 
 [https://futuraresistenza.bandcamp.com/album/environments-12-new-concepts-in-acoustic-enrichment](https://futuraresistenza.bandcamp.com/album/environments-12-new-concepts-in-acoustic-enrichment)
 
@@ -55,7 +55,7 @@ In sum, Environments 12 is deeply perplexing, beautifully garish, and an unbridl
 **Presentations:**
 
 - *Wild Hope: Conversations for Planetary Commons*, RMIT Design Hub, 14 August - 29 September 2023.
-- ****Environments 12 LP launch, [Earthly Futures Studio, Montreuil, Paris](https://events.humanitix.com/host/earthly-futures-studio), 18 June 2025.
+- *Environments 12* LP launch, [Earthly Futures Studio, Montreuil, Paris](https://events.humanitix.com/host/earthly-futures-studio), 18 June 2025.
 - *Environments 12* LP launch, [After 8 Books](https://after8books.com/events/), Paris, 17 June 2025.
 - *Environments 12* LP launch, [Q-O2, Brussels](https://www.q-o2.be/en/event/machine-listening-environments-12-lp-launch-futura-resistenza/), presented by Futura Resistenza, 16 June 2025.
 - *Environments 12* LP launch, [Ephemera Festival at Museum of Modern Art](https://ephemerafestival.com/),  Warsaw, 14 June 2025.

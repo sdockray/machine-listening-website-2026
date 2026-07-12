@@ -6,7 +6,7 @@ Date: 2021 - ongoing
 
 ![Machine Listening, *Word Processor*, 2021-ongoing, software instrument, (detail).](../_assets/works/word-processor-v1/Untitled.png)
 
-Machine Listening, *Word Processor*, 2021-ongoing, software instrument, (detail).
+^ Machine Listening, *Word Processor*, 2021-ongoing, software instrument, (detail).
 
 *Word Processor*, 2021-ongoing
 
@@ -30,4 +30,4 @@ In 2023, we have begun to develop the next iteration of Word Processor (WP2) for
 
 ![Machine Listening, *Word Processor*, 2021-ongoing, software instrument, (detail).](../_assets/works/word-processor-v1/Screenshot_2025-04-03_at_11.09.51_am.png)
 
-Machine Listening, *Word Processor*, 2021-ongoing, software instrument, (detail).
+^ Machine Listening, *Word Processor*, 2021-ongoing, software instrument, (detail).

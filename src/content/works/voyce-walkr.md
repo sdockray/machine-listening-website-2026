@@ -7,7 +7,7 @@ Date: 2025
 
 ![Machine Listening, *Voyce Walkr,* 2025, Multi-channel audio, 4 vintage radios, analogue synthesiser. Photo by Phoebe Powell, 2025.](../_assets/works/voyce-walkr/WEB_NCM_SignalOfNoise_PPOWELL_177.jpg)
 
-Machine Listening, *Voyce Walkr,* 2025, Multi-channel audio, 4 vintage radios, analogue synthesiser. Photo by Phoebe Powell, 2025.
+^ Machine Listening, *Voyce Walkr,* 2025, Multi-channel audio, 4 vintage radios, analogue synthesiser. Photo by Phoebe Powell, 2025.
 
 *Voyce Walkr*, 2025
 
@@ -33,11 +33,11 @@ The piece is meant to evoke radio’s various golden age(s) at the same time as 
 
 ![Machine Listening, *Voyce Walkr,* 2025, Multi-channel audio, 4 vintage radios, analogue synthesiser. Photo by Phoebe Powell, 2025.](../_assets/works/voyce-walkr/WEB_NCM_SignalOfNoise_PPOWELL_016.jpg)
 
-Machine Listening, *Voyce Walkr,* 2025, Multi-channel audio, 4 vintage radios, analogue synthesiser. Photo by Phoebe Powell, 2025.
+^ Machine Listening, *Voyce Walkr,* 2025, Multi-channel audio, 4 vintage radios, analogue synthesiser. Photo by Phoebe Powell, 2025.
 
 ![Machine Listening, *Voyce Walkr,* 2025, Multi-channel audio, 4 vintage radios, analogue synthesiser. Photo by Phoebe Powell, 2025.](../_assets/works/voyce-walkr/WEB_NCM_SignalOfNoise_PPOWELL_025.jpg)
 
-Machine Listening, *Voyce Walkr,* 2025, Multi-channel audio, 4 vintage radios, analogue synthesiser. Photo by Phoebe Powell, 2025.
+^ Machine Listening, *Voyce Walkr,* 2025, Multi-channel audio, 4 vintage radios, analogue synthesiser. Photo by Phoebe Powell, 2025.
 
 ![WEB_NCM_SignalOfNoise_PPOWELL_175.JPG](../_assets/works/voyce-walkr/WEB_NCM_SignalOfNoise_PPOWELL_175.jpg)
 

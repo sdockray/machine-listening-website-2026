@@ -22,16 +22,17 @@ This multichannel work loops 20 four-minute videos from Ego4D—just 0.03% of th
 
 ![25-2_MUMA_Image_7.jpg](../_assets/works/c/25-2_MUMA_Image_7.jpg)
 
-![Machine Listening, *#C***,** 2025, 4-channel video, audio, 75 minutes. Installation view at Monash University Museum of Art (MUMA). Image courtesy MUMA. Photo: Christian Capurro.](../_assets/works/c/25-2_MUMA_Image_5.jpg)
+![Machine Listening, *#C*, 2025, 4-channel video, audio, 75 minutes. Installation view at Monash University Museum of Art (MUMA). Image courtesy MUMA. Photo: Christian Capurro.](../_assets/works/c/25-2_MUMA_Image_5.jpg)
 
-Machine Listening, *#C***,** 2025, 4-channel video, audio, 75 minutes. Installation view at Monash University Museum of Art (MUMA). Image courtesy MUMA. Photo: Christian Capurro.
+^ Machine Listening, *#C*, 2025, 4-channel video, audio, 75 minutes. Installation view at Monash University Museum of Art (MUMA). Image courtesy MUMA. Photo: Christian Capurro.
 
 **Exhibitions:**
 
-• [*Image Economies](https://www.monash.edu/muma/exhibitions/current/upcoming/image-economies),* 8 February - 17 April 2025, Monash University Museum of Art (MUMA)
+• [*Image Economies*](https://www.monash.edu/muma/exhibitions/current/upcoming/image-economies), 8 February - 17 April 2025, Monash University Museum of Art (MUMA)
 
 **Presentations:**
-•  ****[*Egocentric Perception Workshop*](https://machinelistening.exposed/egocentric-perception-workshop), 19 February 2025, Monash University Museum of Art (MUMA), part of the public program '[Recompositions](https://westspace.org.au/program/recompositions)' in collaboration with Liquid Architecture and West Space. 
+
+•  [*Egocentric Perception Workshop*](https://machinelistening.exposed/egocentric-perception-workshop), 19 February 2025, Monash University Museum of Art (MUMA), part of the public program '[Recompositions](https://westspace.org.au/program/recompositions)' in collaboration with Liquid Architecture and West Space. 
 
 **Reviews:**
 

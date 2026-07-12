@@ -77,7 +77,7 @@ Australian Centre for Contemporary Art, Melbourne
 
 **lecture performance and conversation with Mehak Sawhney**
 
-“In much of my work I’m bringing forward different rituals, and ways of being that can feed into new stories, positionings, and understandings of technologies. More often than not these new stories aren’t entirely new. They might consist in part of my own ideas, but often I’m simply making space for older ways of being that have been discarded along the paths of modernity, coloniality, and globalisation.” Through a series of media and artworks, Mimi Ọnụọha’s ****performance-lecture explores absence, knowledge, and how what is missing is still there.
+“In much of my work I’m bringing forward different rituals, and ways of being that can feed into new stories, positionings, and understandings of technologies. More often than not these new stories aren’t entirely new. They might consist in part of my own ideas, but often I’m simply making space for older ways of being that have been discarded along the paths of modernity, coloniality, and globalisation.” Through a series of media and artworks, Mimi Ọnụọha’s performance-lecture explores absence, knowledge, and how what is missing is still there.
 
 ### **Winnie Soon: The Poetics of Unerasable Characters**
 

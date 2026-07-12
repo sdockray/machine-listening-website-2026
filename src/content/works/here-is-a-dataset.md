@@ -43,7 +43,7 @@ All of this is paired with a [Buchla synthesiser](https://buchla.com/music-easel
 
 ![MFCC dataset map, produced in Konvolute.](../_assets/works/here-is-a-dataset/image.png)
 
-MFCC dataset map, produced in Konvolute.
+^ MFCC dataset map, produced in Konvolute.
 
 **Notes on Datasets:**
 

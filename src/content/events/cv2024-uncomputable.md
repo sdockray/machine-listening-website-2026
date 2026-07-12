@@ -46,19 +46,19 @@ UNCOMPUTABLE Contributing Artists
 
 [Simulation, presented at Machine Listening: Unnatural Language Processing (2021)](https://www.youtube.com/live/L8Vzqaoeul8?si=OqmuFVfs46r6YT4m&t=7651)
 
-Simulation, presented at Machine Listening: Unnatural Language Processing (2021)
+^ Simulation, presented at Machine Listening: Unnatural Language Processing (2021)
 
 - [**Monica Lim**](https://www.monicalim.online/) is a Malaysian-born Australian sound artist whose work spans installations, performance art, contemporary dance and screen.
 
 [Automoton, presented at Logical Conclusions / Automation Effects (2022)](https://youtu.be/gXF2YvGqDts?si=JXLMRHoYX-wgjZji&t=136)
 
-Automoton, presented at Logical Conclusions / Automation Effects (2022)
+^ Automoton, presented at Logical Conclusions / Automation Effects (2022)
 
 - [**Catherine Ryan](https://www.catherineryan.com.au/)** uses performance, sound, text, video and installationto prompt questions and debate about the present social order - particularly about gaps and silences in public discourse where urgent social issues are not confronted, or where the collective political imaginary has proven inadequate to the challenges of the present.
 
 [Krell and the Destruction of Worlds, presented by MESS/Liquid Architecture, 2022](https://vimeo.com/738285686#t=36s)
 
-Krell and the Destruction of Worlds, presented by MESS/Liquid Architecture, 2022
+^ Krell and the Destruction of Worlds, presented by MESS/Liquid Architecture, 2022
 
 - Established in 2020 by Sean Dockray, James Parker, and Joel Stern, [**Machine Listening**](https://machinelistening.exposed/) is a platform for collaborative research and artistic experimentation, focused on the political and aesthetic dimensions of the computation of sound and speech
 

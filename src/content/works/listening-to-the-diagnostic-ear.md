@@ -7,7 +7,7 @@ Date: 2020
 
 ![Sean Dockray, *Listening to the Diagnostic Ear*, 2020, audio-video essay, presented as part of Machine Listening Ep 3: Listening With The Pandemic, Liquid Architecture and Unsound, (video still).](../_assets/works/listening-to-the-diagnostic-ear/Screenshot_2024-12-20_at_12.24.23_PM.png)
 
-Sean Dockray, *Listening to the Diagnostic Ear*, 2020, audio-video essay, presented as part of Machine Listening Ep 3: Listening With The Pandemic, Liquid Architecture and Unsound, (video still).
+^ Sean Dockray, *Listening to the Diagnostic Ear*, 2020, audio-video essay, presented as part of Machine Listening Ep 3: Listening With The Pandemic, Liquid Architecture and Unsound, (video still).
 
 *Listening to the Diagnostic Ear,* 2020
 
@@ -25,7 +25,7 @@ The commissioned work, [*Listening to the Diagnostic Ear](http://e-rat.org/list
 
 [Sean Dockray, *Listening to the Diagnostic Ear*, 2020, audio-video essay, presented as part of Machine Listening Ep 3: Listening With The Pandemic, Liquid Architecture and Unsound.](https://youtu.be/7mcBE-qTcVI?si=5LkPDlNM8GtUa8Cu&t=1356)
 
-Sean Dockray, *Listening to the Diagnostic Ear*, 2020, audio-video essay, presented as part of Machine Listening Ep 3: Listening With The Pandemic, Liquid Architecture and Unsound.
+^ Sean Dockray, *Listening to the Diagnostic Ear*, 2020, audio-video essay, presented as part of Machine Listening Ep 3: Listening With The Pandemic, Liquid Architecture and Unsound.
 
 **Presentations:**
 

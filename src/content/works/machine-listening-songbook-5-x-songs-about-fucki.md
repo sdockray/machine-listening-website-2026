@@ -7,7 +7,7 @@ Date: 2024
 
 ![Machine Listening, *Machine Listening Songbook (5-x) ft.* Jennifer Walshe and Tomomi Adachi*,* 2024, performance at SOFT CENTRE SUPERMODEL, Victorian Trades Hall. 31 August 2025. **Photo by Will Hamilton-Coates](../_assets/works/machine-listening-songbook-5-x-songs-about-fucki/SOFT_CENTRE_-_LATE_NIGHT_-_soft_centre_-_Josh_Pickup_-_pickupjosh-7.jpg)
 
-Machine Listening, *Machine Listening Songbook (5-x) ft.* Jennifer Walshe and Tomomi Adachi*,* 2024, performance at SOFT CENTRE SUPERMODEL, Victorian Trades Hall. 31 August 2025. **Photo by Will Hamilton-Coates[.](https://www.instagram.com/will.hamiltoncoates/)
+^ Machine Listening, *Machine Listening Songbook (5-x) ft.* Jennifer Walshe and Tomomi Adachi*,* 2024, performance at SOFT CENTRE SUPERMODEL, Victorian Trades Hall. 31 August 2025. **Photo by Will Hamilton-Coates[.](https://www.instagram.com/will.hamiltoncoates/)
 
 *Machine Listening Songbook: Songs About Fucking Suno,* 2024
 Audio, audio-video, essay and live performance.

@@ -10,7 +10,7 @@ Video installation (2-channel video, 4-channel audio)
 
 Researched, written and produced: Machine Listening (Sean Dockray, James Parker, Joel Stern)
 
-Dataset: “High quality fall simulation data” created by Advanced Integrated Sensing lab at the Faculty of Engineering Technology of KU Leuven ****
+Dataset: “High quality fall simulation data” created by Advanced Integrated Sensing lab at the Faculty of Engineering Technology of KU Leuven
 
 *A series of simulated accidents are projected onto two large, leaning screens: young people pretending to be old repeatedly enter a room and fall. They pass into the windowless space, hunched and hesitant, clutching walking aids like props in an unconvincing theatre, before improvising their own descent to the floor where they lie motionless for precisely measured intervals.* 
 

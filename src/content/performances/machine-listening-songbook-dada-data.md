@@ -6,7 +6,7 @@ location: ""
 
 ![ICE Krakow. Unsound Festival. 2023.](../_assets/performances/machine-listening-songbook-dada-data/oh_god_god.jpg)
 
-ICE Krakow. Unsound Festival. 2023.
+^ ICE Krakow. Unsound Festival. 2023.
 
 *Machine Listening Songbook (1-4)*, 2023 - ongoing
 Audio and audio-video
@@ -31,7 +31,7 @@ The *Machine Listening Songbook* was made using the second iteration of Sean Doc
 
 ![Kino Kijów. Unsound Festival. 5 Oct 2023.](../_assets/performances/machine-listening-songbook-dada-data/clone_ursonate.jpg)
 
-Kino Kijów. Unsound Festival. 5 Oct 2023.
+^ Kino Kijów. Unsound Festival. 5 Oct 2023.
 
 **2 Screeching Phonograph** 
 
@@ -48,7 +48,7 @@ Performed at Kamienna 12 club space. Unsound Festival. 5 Oct 2023.
 
 [Performed at ICE Krakow. Unsound Festival. 7 Oct 2023.](https://www.youtube.com/embed/bpI85fLL8EQ?si=Q52AjtQdw4XoeOr2&amp;controls=0)
 
-Performed at ICE Krakow. Unsound Festival. 7 Oct 2023.
+^ Performed at ICE Krakow. Unsound Festival. 7 Oct 2023.
 
 **4 Orchard Farming**
 
@@ -56,7 +56,7 @@ Performed at ICE Krakow. Unsound Festival. 7 Oct 2023.
 
 [Performed at ICE Krakow. Unsound Festival. 8 Oct 2023.](https://youtu.be/_18luNkqV8Y)
 
-Performed at ICE Krakow. Unsound Festival. 8 Oct 2023.
+^ Performed at ICE Krakow. Unsound Festival. 8 Oct 2023.
 
 **Reviews**
 

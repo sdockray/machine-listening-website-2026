@@ -7,7 +7,7 @@ Date: 2022
 
 ![Machine Listening, *After words,* 2022, detail, Australian Centre for Contemporary Art (ACCA), Melbourne. Design: Stuart Geddes. Photograph: Matthew Stanton.](../_assets/works/after-words/26384db1658c6226c52ba4d871f09d4ab464d10a-1920x1280.jpg-3.webp)
 
-Machine Listening, *After words,* 2022, detail, Australian Centre for Contemporary Art (ACCA), Melbourne. Design: Stuart Geddes. Photograph: Matthew Stanton.
+^ Machine Listening, *After words,* 2022, detail, Australian Centre for Contemporary Art (ACCA), Melbourne. Design: Stuart Geddes. Photograph: Matthew Stanton.
 
 *After Words*, 2022.
 8-channel sound installation (18 minutes, looped), printed material.
@@ -30,11 +30,11 @@ Data is never mined. It is always made. A computational theatre. Many datasets a
 
 [After Words (2022), stereo mix.](../../_assets/works/after-words/After_Words_(2022).mp3)
 
-After Words (2022), stereo mix.
+^ After Words (2022), stereo mix.
 
 ![Machine Listening, *After words,* 2022, installation view, Australian Centre for Contemporary Art (ACCA), Melbourne. Photograph: Lucy Foster.](../_assets/works/after-words/Untitled.png)
 
-Machine Listening, *After words,* 2022, installation view, Australian Centre for Contemporary Art (ACCA), Melbourne. Photograph: Lucy Foster.
+^ Machine Listening, *After words,* 2022, installation view, Australian Centre for Contemporary Art (ACCA), Melbourne. Photograph: Lucy Foster.
 
 This work contains audio material from the following datasets: Consensus Auditory-Perceptual Evaluation of Voice Dataset (2009), Toronto Emotional Speech Dataset (2010), DCASE Sound Event Detection: Office Live Testing Dataset (2013), DCASE Synthetic Audio Sound Event Detection: Train and Development Dataset (2016), Google AudioSet (2017).
 
@@ -58,7 +58,7 @@ For information about installing this work in an exhibition, email us at machine
 
 ![Machine Listening, *After words,* 2022, detail, Australian Centre for Contemporary Art (ACCA), Melbourne. Design: Stuart Geddes. Photograph: Matthew Stanton.](../_assets/works/after-words/After-Words-Print_reduced.jpg)
 
-Machine Listening, *After words,* 2022, detail, Australian Centre for Contemporary Art (ACCA), Melbourne. Design: Stuart Geddes. Photograph: Matthew Stanton.
+^ Machine Listening, *After words,* 2022, detail, Australian Centre for Contemporary Art (ACCA), Melbourne. Design: Stuart Geddes. Photograph: Matthew Stanton.
 
 **Presentations:** 
 
