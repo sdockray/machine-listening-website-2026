@@ -1,43 +1,77 @@
-# Astro Starter Kit: Minimal
+# Machine Listening Website 2026
 
-```sh
-npm create astro@latest -- --template minimal
-```
+This project started from Astro minimal, but it is not running with default Astro configuration anymore.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+This document records every intentional configuration change so future contributors do not need to reverse-engineer behavior from source files.
 
-## 🚀 Project Structure
+## Astro Configuration Changes From Defaults
 
-Inside of your Astro project, you'll see the following folders and files:
+Source of truth: [astro.config.mjs](astro.config.mjs)
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+1. Site URL is explicitly set.
+Value: site = https://sdockray.github.io
+Reason: Generates correct canonical URLs and absolute URLs for sitemap/social metadata in production.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+2. Base path is explicitly set.
+Value: base = /machine-listening-website-2026
+Reason: The site is deployed to a GitHub Pages subpath, not domain root.
+Impact: Internal links and generated asset URLs are prefixed with this base path.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+3. Vite define injects MEDIA_BASE_URL.
+Value: process.env.MEDIA_BASE_URL is injected at build time.
+Source: MEDIA_BASE_URL environment variable, normalized to remove trailing slashes.
+Reason: Keeps media host configurable per environment while avoiding malformed double-slash URLs.
 
-Any static assets, like images, can be placed in the `public/` directory.
+4. Astro markdown processor is replaced with a custom unified processor.
+Default Astro behavior uses built-in markdown pipeline.
+Current behavior uses @astrojs/markdown-remark and a custom unified processor.
 
-## 🧞 Commands
+5. Custom remark plugin: wiki links.
+Plugin: src/lib/remark-wikilinks.mjs
+Configured with: basePath = /machine-listening-website-2026
+Reason: Rewrites wiki-style links into deploy-safe URLs under the configured base path.
 
-All commands are run from the root of the project, from a terminal:
+6. Custom remark plugin: media embeds.
+Plugin: src/lib/remark-media-embeds.mjs
+Configured with:
+- basePath = /machine-listening-website-2026
+- mediaBaseUrl = normalized MEDIA_BASE_URL
+Reason: Converts media references to the expected runtime URL format for local/dev and hosted media scenarios.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## TypeScript Configuration Changes
 
-## 👀 Want to learn more?
+Source of truth: [tsconfig.json](tsconfig.json)
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+1. Strict Astro TypeScript profile is enabled.
+Value: extends = astro/tsconfigs/strict
+Reason: Enforces stricter type checking than a looser baseline.
+
+2. Include and exclude are explicitly set.
+Values:
+- include: .astro/types.d.ts and all project files
+- exclude: dist
+Reason: Ensures generated Astro types are included for editor/typecheck accuracy and avoids checking build output.
+
+## Environment Variables Used By Config
+
+1. MEDIA_BASE_URL
+Used by: astro.config.mjs (vite.define and remark-media-embeds)
+Default behavior when unset: empty string
+Normalization: trailing slashes are removed before use
+Example value: https://example-cdn.com/media
+
+## Operational Notes For Maintainers
+
+1. If deployment path changes, update BASE_PATH in [astro.config.mjs](astro.config.mjs) and verify links, assets, and markdown-generated URLs.
+2. If markdown link/media behavior changes, audit both custom plugins in src/lib and the markdown.processor config together.
+3. If MEDIA_BASE_URL handling changes, preserve trailing-slash normalization unless you also update URL-join behavior in plugins.
+
+## Commands
+
+All commands run from project root.
+
+- npm install: install dependencies
+- npm run dev: start local dev server
+- npm run build: build production output
+- npm run preview: preview built site
+- npm run astro -- --help: Astro CLI help
