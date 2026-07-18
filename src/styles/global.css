@@ -43,6 +43,7 @@ body {
   line-height: 1.55;
   color: var(--ml-text);
   background: var(--ml-bg);
+  overflow-x: hidden;
 }
 
 a {
@@ -258,9 +259,11 @@ main p.content-caption {
 
 .home-hero {
   display: grid;
-  grid-template-columns: minmax(260px, 34%) 1fr;
-  gap: 1.5rem;
+  grid-template-columns: 1fr minmax(280px, 340px) 1fr;
+  gap: 3rem;
   align-items: start;
+  margin-inline: calc(50% - 50vw);
+  padding-inline: 4rem;
 }
 
 .home-hero-media img {
@@ -271,7 +274,22 @@ main p.content-caption {
   background: #f7f6f5;
 }
 
-.home-hero-copy p {
+.home-hero-left h1,
+.home-hero-right h1 {
+  display: none;
+}
+
+.home-hero-right .quote {
+  /* A block quote with an indentation and a line to the left */
+  margin-left: -1.2rem;
+  padding-left: 1.2rem;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.0rem;
+}
+
+.home-hero-left p,
+.home-hero-right p {
   margin: 0 0 1rem;
 }
 
@@ -307,5 +325,7 @@ main p.content-caption {
 
   .home-hero {
     grid-template-columns: 1fr;
+    margin-inline: 0;
+    padding-inline: 0;
   }
 }

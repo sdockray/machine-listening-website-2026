@@ -7,37 +7,17 @@ const withBase = (path: string) => `${normalizedBaseUrl}${path.replace(/^\//, ''
 ---
 <BaseLayout title="Home">
   <section class="home-hero">
-    <div class="home-hero-media">
-      <img
-        src={withBase('/images/home/hero.png')}
-        alt="Machine Listening"
-        loading="lazy"
-      />
-    </div>
-
-    <div class="home-hero-copy">
-      <h1>Machine Listening</h1>
-      <p>
-        Our devices are listening to us. Previous generations of audio-technology
-        transmitted, recorded or manipulated sound. Today our digital voice assistants,
-        smart speakers and a growing range of related technologies are increasingly able
-        to analyse and respond to it as well. Scientists and engineers increasingly refer
-        to this as machine listening, though the first widespread use of the term was in
-        computer music. Machine listening is much more than just a new scientific
-        discipline or vein of technical innovation however. It is also an emergent field of
-        knowledge-power, of data extraction and colonialism, of capital accumulation,
-        automation and control. It demands critical and artistic attention.
-      </p>
+    <div class="home-hero-left">
       <p>
         Machine Listening is a platform for collaborative research and artistic
         experimentation, founded in 2020 by Sean Dockray, James Parker, and Joel Stern in
         order to subject automated systems to political and aesthetic scrutiny.
       </p>
       <p>
-        The collective works across writing, installation, performance, music, software,
-        curation, pedagogy, and radio.
+        The collective works across <a href={withBase('/texts/')}>writing</a>, <a href={withBase('/works/')}>installation</a>, <a href={withBase('/performances/')}>performance</a>, music, <a href={withBase('/software/')}>software</a>,
+        <a href={withBase('/curation/')}>curation</a>, <a href={withBase('/curriculum/')}>pedagogy</a>, and radio.
       </p>
-
+<!--
       <div class="home-links" aria-label="Project links">
         <a href={withBase('/complaints/')}>complaints</a>
         <a href={withBase('/terms-and-conditions/')}>Terms and Conditions</a>
@@ -50,6 +30,29 @@ const withBase = (path: string) => `${normalizedBaseUrl}${path.replace(/^\//, ''
           />
         </a>
       </div>
+-->
+    </div>
+
+    <div class="home-hero-media">
+      <img
+        src={withBase('/images/home/hero.png')}
+        alt="Machine Listening"
+        loading="lazy"
+      />
+    </div>
+
+    <div class="home-hero-right">
+      <p class="quote">
+        Our devices are listening to us. Previous generations of audio-technology
+        transmitted, recorded or manipulated sound. Today our digital voice assistants,
+        smart speakers and a growing range of related technologies are increasingly able
+        to analyse and respond to it as well. Scientists and engineers increasingly refer
+        to this as machine listening, though the first widespread use of the term was in
+        computer music. Machine listening is much more than just a new scientific
+        discipline or vein of technical innovation however. It is also an emergent field of
+        knowledge-power, of data extraction and colonialism, of capital accumulation,
+        automation and control. It demands critical and artistic attention.
+      </p>
     </div>
   </section>
 </BaseLayout>
