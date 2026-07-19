@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "works/how-to-read-a-dataset.md",
+                "file": "_templates/works.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "how-to-read-a-dataset"
+              "title": "works"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "works/how-to-read-a-dataset.md",
+                "file": "_templates/works.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for how-to-read-a-dataset"
+              "title": "Backlinks for works"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "works/how-to-read-a-dataset.md",
+                "file": "_templates/works.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from how-to-read-a-dataset"
+              "title": "Outgoing links from works"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "works/how-to-read-a-dataset.md",
+                "file": "_templates/works.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of how-to-read-a-dataset"
+              "title": "Outline of works"
             }
           }
         ]
@@ -186,8 +186,20 @@
   },
   "active": "59d3f25dadeb6c3a",
   "lastOpenFiles": [
-    "curriculum/how-to-read-a-dataset/proceedings-of-semeval-2020-task-11.md",
+    "_templates/texts.md",
+    "_templates/software.md",
+    "_templates/performances.md",
+    "_templates/people.md",
+    "_templates/interviews.md",
+    "_templates/events.md",
+    "_templates/curriculum.md",
+    "_templates/curation.md",
+    "_templates/blog.md",
+    "blog/nz-notes.md",
+    "blog/hello-world.md",
     "works/how-to-read-a-dataset.md",
+    "blog",
+    "curriculum/how-to-read-a-dataset/proceedings-of-semeval-2020-task-11.md",
     "works/c.md",
     "interviews/entries/santiago-rentiera.md",
     "works/after-words.md",
@@ -201,12 +213,9 @@
     "curation/curation.md",
     "performances/performances.md",
     "performances/untitled.md",
-    "works/environments-12-new-concepts-in-acoustic-enrichmen.md",
-    "works/works.md",
     "_assets/curriculum/how-to-read-a-dataset/proceedings-of-semeval-2020-task-11-1",
     "_assets/curriculum/how-to-read-a-dataset/proceedings-of-semeval-2020-task-11",
     "_assets/curriculum/how-to-read-a-dataset",
-    "curriculum/how-to-read-a-dataset/example-articles-2.md",
     "curriculum/how-to-read-a-dataset",
     "_assets/works/after-words/IMG_3149.jpg",
     "works/_assets/${notepath}/after-words/IMG_3149.jpg",
@@ -216,17 +225,8 @@
     "_assets/notion-import/Machine Listening/complaints/Complaints_Hotline.mp3",
     "_assets/notion-import/Machine Listening/Untitled.png",
     "_assets/notion-import/Machine Listening/instagram-logo-instagram-icon-transparent-free-png.webp",
-    "works/how-to-play-a-dataset.md",
-    "people/people.md",
-    "people/sean-dockray.md",
-    "events/events.md",
-    "curriculum/curriculum.md",
-    "_templates/works.md",
-    "works/machine-listening-songbook-5-x-songs-about-fucki.md",
-    "_templates/events.md",
     "_templates",
     "_assets/works/machine-listening-songbook-5-x-songs-about-fucki/SOFT_CENTRE_-_LATE_NIGHT_-_soft_centre_-_Josh_Pickup_-_pickupjosh-7.jpg",
-    "interviews/entries",
     "_assets/performances/machine-listening-songbook-5-x/SOFT_CENTRE_-_LATE_NIGHT_-_soft_centre_-_Josh_Pickup_-_pickupjosh-5.jpg",
     "_assets/works/c/25-2_MUMA_Image_5.jpg",
     "_assets/works/c/25-2_MUMA_Image_7.jpg",

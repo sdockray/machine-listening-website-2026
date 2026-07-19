@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const allPosts = await getCollection('blog');
+  
+  return allPosts.map(post => {
+    const category = post.data.category;
+    // If it has a category, URL is /blog/category/slug
+    // If not, URL is /blog/slug
+    const slug = category ? `${category}/${post.id}` : post.id;
+    return {
+      params: { slug },
+      props: { post, category },
+    };
+  });
+}
+
+const { post, category } = Astro.props;
+const { Content } = await render(post);
+
+const baseUrl = import.meta.env.BASE_URL;
+const normalizedBaseUrl = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
+const withBase = (path: string) => `${normalizedBaseUrl}${path.replace(/^\//, '')}`;
+
+// Determine the skin: use explicitly defined skin, fallback to category
+const skin = post.data.skin || category;
+---
+<BaseLayout title={post.data.title} skin={skin}>
+  <p>
+    <a href={withBase('/blog/')}>Blog</a>
+    {category && (
+      <> / <a href={withBase(`/blog/${category}/`)}>{category}</a></>
+    )}
+  </p>
+  <h1>{post.data.title}</h1>
+  
+  {post.data.author && <p class="collection-meta">By {post.data.author}</p>}
+  {post.data.date && <p class="collection-meta">{new Date(post.data.date).toLocaleDateString()}</p>}
+  
+  {post.data.coverImage && (
+    <div class="content-figure">
+      <img src={withBase(post.data.coverImage)} alt="" loading="lazy" />
+    </div>
+  )}
+
+  <div class="blog-content">
+    <Content />
+  </div>
+</BaseLayout>

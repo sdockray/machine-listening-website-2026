@@ -1,0 +1,12 @@
+/* src/styles/skins.css */
+/* Base skins for blog categories */
+
+/* Example skin: dataset-larp */
+body.skin-dataset-larp {
+  --ml-bg: #ecbe52;
+  --ml-text: #1e1b1b;
+  --ml-muted: #7a611e;
+  --ml-border: #333333;
+  --ml-link: #5b28e7;
+  --ml-link-hover: #4405d8;
+}

@@ -1,0 +1,50 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const allPosts = await getCollection('blog');
+  
+  // Extract all unique categories
+  const categories = [...new Set(allPosts.map(post => post.data.category).filter(Boolean))];
+  
+  return categories.map(category => {
+    const categoryPosts = allPosts.filter(post => post.data.category === category);
+    
+    // Sort by date descending
+    categoryPosts.sort((a, b) => {
+      const dateA = a.data.date ? new Date(a.data.date).getTime() : 0;
+      const dateB = b.data.date ? new Date(b.data.date).getTime() : 0;
+      return dateB - dateA;
+    });
+
+    return {
+      params: { category },
+      props: { posts: categoryPosts, category },
+    };
+  });
+}
+
+const { posts, category } = Astro.props;
+
+const baseUrl = import.meta.env.BASE_URL;
+const normalizedBaseUrl = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
+const withBase = (path: string) => `${normalizedBaseUrl}${path.replace(/^\//, '')}`;
+---
+<BaseLayout title={category} skin={category}>
+  <p><a href={withBase('/blog/')}>Blog</a> / {category}</p>
+  <h1>{category}</h1>
+  
+  <ul class="collection-grid">
+    {posts.map((post) => (
+      <li class="collection-card">
+        <a href={withBase(`/blog/${category}/${post.id}/`)}>
+          {post.data.coverImage && (
+            <img src={withBase(post.data.coverImage)} alt="" loading="lazy" />
+          )}
+          <h2>{post.data.title}</h2>
+        </a>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>

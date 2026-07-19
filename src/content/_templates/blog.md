@@ -1,10 +1,9 @@
 ---
-title: ""
+title:
 date:
 coverImage: ""
 hideFromIndex: false
-priority: 1
+category:
+author:
 ---
-
-##
-
+## 

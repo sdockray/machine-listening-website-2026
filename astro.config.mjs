@@ -4,11 +4,13 @@ import { unified } from '@astrojs/markdown-remark';
 import { remarkWikiLinks } from './src/lib/remark-wikilinks.mjs';
 import { remarkMediaEmbeds } from './src/lib/remark-media-embeds.mjs';
 
-const BASE_PATH = '/machine-listening-website-2026';
+// const BASE_PATH = '/machine-listening-website-2026';
+const BASE_PATH = '/';
 const MEDIA_BASE_URL = (process.env.MEDIA_BASE_URL || '').replace(/\/+$/, '');
 
 export default defineConfig({
-  site: 'https://sdockray.github.io',
+  // site: 'https://sdockray.github.io',
+  site: 'https://future.machinelistening.exposed',
   base: BASE_PATH,
   vite: {
     define: {

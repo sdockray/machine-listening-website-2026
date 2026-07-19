@@ -108,4 +108,17 @@ const events = defineCollection({
   }),
 });
 
-export const collections = { people, works, performances, curation, software, curriculum, texts, interviews, events };
+const blog = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/blog' }),
+  schema: z.object({
+    title: z.string(),
+    date: z.coerce.date().optional(),
+    category: z.string().nullable().optional(),
+    skin: z.string().optional(),
+    author: z.string().nullable().optional(),
+    coverImage: z.string().optional(),
+    hideFromIndex: z.boolean().default(false),
+  }),
+});
+
+export const collections = { people, works, performances, curation, software, curriculum, texts, interviews, events, blog };

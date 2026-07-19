@@ -43,8 +43,8 @@
       "template": "_templates/texts.md"
     },
     {
-      "folder": "",
-      "template": ""
+      "folder": "blog",
+      "template": "_templates/blog.md"
     }
   ],
   "enable_file_templates": false,
