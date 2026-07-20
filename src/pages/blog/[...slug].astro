@@ -24,8 +24,8 @@ const baseUrl = import.meta.env.BASE_URL;
 const normalizedBaseUrl = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 const withBase = (path: string) => `${normalizedBaseUrl}${path.replace(/^\//, '')}`;
 
-// Determine the skin: use explicitly defined skin, fallback to category
-const skin = post.data.skin || category;
+// Determine the skin: use explicitly defined skin, fallback to category, then 'default-blog'
+const skin = post.data.skin || category || 'default-blog';
 ---
 <BaseLayout title={post.data.title} skin={skin}>
   <p>

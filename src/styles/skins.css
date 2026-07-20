@@ -1,7 +1,17 @@
 /* src/styles/skins.css */
 /* Base skins for blog categories */
 
-/* Example skin: dataset-larp */
+/* Default when no category is selected */
+body.skin-default-blog {
+  --ml-bg: hsl(184, 80%, 62%);
+  --ml-text: #1e1b1b;
+  --ml-muted: hsl(199, 61%, 30%);
+  --ml-border: #333333;
+  --ml-link: hsl(15, 80%, 53%);
+  --ml-link-hover: hsl(346, 95%, 43%);
+}
+
+/* Category skin: dataset-larp */
 body.skin-dataset-larp {
   --ml-bg: #ecbe52;
   --ml-text: #1e1b1b;
