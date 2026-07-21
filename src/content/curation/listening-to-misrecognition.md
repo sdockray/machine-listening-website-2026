@@ -1,5 +1,9 @@
 ---
 title: "Listening to Misrecognition"
+date:
+coverImage: ""
+hideFromIndex: false
+priority: 1
 ---
 date: 2022, 2023
 Institutional partner: Unsound

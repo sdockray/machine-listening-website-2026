@@ -1,6 +1,7 @@
 ---
 title: "Unsound residency"
 location: ""
+date:
 ---
 [[after-words|After words]]
 

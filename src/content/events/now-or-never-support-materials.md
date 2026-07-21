@@ -1,6 +1,7 @@
 ---
 title: "Now or Never support materials"
 location: ""
+date:
 ---
 [**Machine Listening**](https://machinelistening.exposed/) is an ongoing artistic collaboration and research investigation instigated by Sean Dockray, James Parker and Joel Stern, beginning in 2020, exploring the politics and aesthetics of sound and listening in the age of big data. The project encompasses a range of different activities such as:
 

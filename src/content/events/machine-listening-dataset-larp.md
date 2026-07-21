@@ -1,6 +1,7 @@
 ---
 title: "Machine Listening: Dataset LARP"
 location: ""
+date:
 ---
 proposal for Abbotsford Convent
 

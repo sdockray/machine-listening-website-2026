@@ -2,6 +2,11 @@
 title: "After Words"
 year: 2022
 description: ""
+type: ["installation"]
+coverImage: ""
+collaborators: []
+hideFromIndex: false
+priority: 1
 ---
 Date: 2022
 

@@ -1,8 +1,15 @@
 ---
 title: "Machine Listening Songbook: 5-x"
-location: ""
+year: 2024
+type:
+  - performance
+coverImage: ""
+collaborators: []
+description: ""
+hideFromIndex: false
+priority: 1
 ---
-![Machine Listening, *Machine Listening Songbook (5-x) ft.* Jennifer Walshe and Tomomi Adachi*,* 2024, performance at SOFT CENTRE SUPERMODEL, Victorian Trades Hall. 31 August 2025. **Photo by Will Hamilton-Coates](../_assets/performances/machine-listening-songbook-5-x/SOFT_CENTRE_-_LATE_NIGHT_-_soft_centre_-_Josh_Pickup_-_pickupjosh-5.jpg)
+![Machine Listening, *Machine Listening Songbook (5-x) ft.* Jennifer Walshe and Tomomi Adachi*,* 2024, performance at SOFT CENTRE SUPERMODEL, Victorian Trades Hall. 31 August 2025. **Photo by Will Hamilton-Coates](../_assets/works/machine-listening-songbook-5-x/SOFT_CENTRE_-_LATE_NIGHT_-_soft_centre_-_Josh_Pickup_-_pickupjosh-5.jpg)
 
 ^ Machine Listening, *Machine Listening Songbook (5-x) ft.* Jennifer Walshe and Tomomi Adachi*,* 2024, performance at SOFT CENTRE SUPERMODEL, Victorian Trades Hall. 31 August 2025. **Photo by Will Hamilton-Coates[.](https://www.instagram.com/will.hamiltoncoates/)
 
@@ -17,7 +24,7 @@ Videos: Emile Zile.
 
 Presented: [SOFT CENTRE:](https://www.softcentre.com.au) SUPERMODEL Now or Never
 
-![Machine Listening, *Machine Listening Songbook (5-x) ft.* Jennifer Walshe and Tomomi Adachi*,* 2024, performance at SOFT CENTRE SUPERMODEL, Victorian Trades Hall. 31 August 2025. **Photo by Josh Pickup.](../_assets/performances/machine-listening-songbook-5-x/SOFT_CENTRE_-_LATE_NIGHT_-_soft_centre_-_Josh_Pickup_-_pickupjosh-7.jpg)
+![Machine Listening, *Machine Listening Songbook (5-x) ft.* Jennifer Walshe and Tomomi Adachi*,* 2024, performance at SOFT CENTRE SUPERMODEL, Victorian Trades Hall. 31 August 2025. **Photo by Josh Pickup.](../_assets/works/machine-listening-songbook-5-x/SOFT_CENTRE_-_LATE_NIGHT_-_soft_centre_-_Josh_Pickup_-_pickupjosh-7.jpg)
 
 ^ Machine Listening, *Machine Listening Songbook (5-x) ft.* Jennifer Walshe and Tomomi Adachi*,* 2024, performance at SOFT CENTRE SUPERMODEL, Victorian Trades Hall. 31 August 2025. **Photo by Josh Pickup.
 
@@ -27,11 +34,11 @@ The Machine Listening Songbook joins this tradition by using automatic transcrip
 
 Read more about this work: [[machine-listening-songbook-5-x-songs-about-fucki|Songs About Fucking Suno.]]
 
-![SOFT CENTRE - LATE NIGHT - @soft_centre - Josh Pickup - @pickupjosh-11.jpg](../_assets/performances/machine-listening-songbook-5-x/SOFT_CENTRE_-_LATE_NIGHT_-_soft_centre_-_Josh_Pickup_-_pickupjosh-11.jpg)
+![SOFT CENTRE - LATE NIGHT - @soft_centre - Josh Pickup - @pickupjosh-11.jpg](../_assets/works/machine-listening-songbook-5-x/SOFT_CENTRE_-_LATE_NIGHT_-_soft_centre_-_Josh_Pickup_-_pickupjosh-11.jpg)
 
-![SOFT CENTRE - LATE NIGHT - @soft_centre - Josh Pickup - @pickupjosh-3.jpg](../_assets/performances/machine-listening-songbook-5-x/SOFT_CENTRE_-_LATE_NIGHT_-_soft_centre_-_Josh_Pickup_-_pickupjosh-3.jpg)
+![SOFT CENTRE - LATE NIGHT - @soft_centre - Josh Pickup - @pickupjosh-3.jpg](../_assets/works/machine-listening-songbook-5-x/SOFT_CENTRE_-_LATE_NIGHT_-_soft_centre_-_Josh_Pickup_-_pickupjosh-3.jpg)
 
-![Machine Listening, *Machine Listening Songbook (5-x) ft.* Jennifer Walshe and Tomomi Adachi*,* 2024, performance at SOFT CENTRE SUPERMODEL, Victorian Trades Hall. 31 August 2025. **Photo by Josh Pickup.](../_assets/performances/machine-listening-songbook-5-x/SOFT_CENTRE_-_LATE_NIGHT_-_soft_centre_-_Will_Hamilton-Coates_-_will.hamiltoncoates-23.jpg)
+![Machine Listening, *Machine Listening Songbook (5-x) ft.* Jennifer Walshe and Tomomi Adachi*,* 2024, performance at SOFT CENTRE SUPERMODEL, Victorian Trades Hall. 31 August 2025. **Photo by Josh Pickup.](../_assets/works/machine-listening-songbook-5-x/SOFT_CENTRE_-_LATE_NIGHT_-_soft_centre_-_Will_Hamilton-Coates_-_will.hamiltoncoates-23.jpg)
 
 ^ Machine Listening, *Machine Listening Songbook (5-x) ft.* Jennifer Walshe and Tomomi Adachi*,* 2024, performance at SOFT CENTRE SUPERMODEL, Victorian Trades Hall. 31 August 2025. **Photo by Josh Pickup.
 

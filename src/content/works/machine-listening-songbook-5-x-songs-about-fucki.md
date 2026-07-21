@@ -2,6 +2,12 @@
 title: "Machine Listening Songbook: (5-x) Songs about fucking Suno"
 year: 2024
 description: ""
+type:
+  - performance
+coverImage: ""
+collaborators: []
+hideFromIndex: false
+priority: 1
 ---
 Date: 2024
 

@@ -1,12 +1,19 @@
 ---
-title: "Stenographer’s memorial"
-location: ""
+title: Stenographer’s memorial
+year: 2017
+type:
+  - performance
+coverImage: ""
+collaborators: []
+description: ""
+hideFromIndex: false
+priority: 1
 ---
-![image.png](../_assets/performances/stenographers-memorial/image.png)
+![image.png](../_assets/works/stenographers-memorial/image.png)
 
-![image.png](../_assets/performances/stenographers-memorial/image%201.png)
+![image.png](../_assets/works/stenographers-memorial/image%201.png)
 
-![image.png](../_assets/performances/stenographers-memorial/image%202.png)
+![image.png](../_assets/works/stenographers-memorial/image%202.png)
 
 Written and performed by Sean Dockray as part of [Acoustic Justice](https://liquidarchitecture.org.au/events/acoustic-justice/), a performance program curated by James Parker and Joel Stern for Liquid Architecture, and staged in Court 8A at the Federal Court Building, Melbourne.
 

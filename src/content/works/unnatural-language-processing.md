@@ -1,7 +1,13 @@
 ---
-title: "Unnatural Language Processing"
+title: Unnatural Language Processing
 year: 2021
 description: ""
+type:
+  - performance
+coverImage: ""
+collaborators: []
+hideFromIndex: false
+priority: 1
 ---
 Date: 2021
 

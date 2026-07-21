@@ -1,8 +1,15 @@
 ---
-title: "Environments 12 (live shows)"
-location: ""
+title: Environments 12 (live shows)
+year: 2025
+type:
+  - performance
+coverImage: ""
+collaborators: []
+description: ""
+hideFromIndex: false
+priority: 1
 ---
-![Machine Listening, *Environments 12*, 2023, presented at Deep Assignments London July 2025.](../_assets/performances/environments-12-live-shows/dc39f340-c27d-4e02-8821-426b7cdf1e5b_4032x3024.webp)
+![Machine Listening, *Environments 12*, 2023, presented at Deep Assignments London July 2025.](../_assets/works/environments-12-live-shows/dc39f340-c27d-4e02-8821-426b7cdf1e5b_4032x3024.webp)
 
 ^ Machine Listening, *Environments 12*, 2023, presented at Deep Assignments London July 2025.
 

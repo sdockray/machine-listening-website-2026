@@ -5,6 +5,7 @@ coverImage: ""
 hideFromIndex: false
 category:
 author:
+skin: ""
 ---
 ## Some notes
 

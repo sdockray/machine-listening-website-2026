@@ -1,5 +1,9 @@
 ---
 title: "Eavesdropping"
+date:
+coverImage: ""
+hideFromIndex: false
+priority: 1
 ---
 Institutional partner: City Gallery Wellington, Ian Potter Museum of Art
 

@@ -1,6 +1,8 @@
 ---
 title: ""
 year:
+endYear:
+type: []
 coverImage: ""
 collaborators: []
 description: ""

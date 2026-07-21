@@ -1,5 +1,6 @@
 ---
 title: "Curriculum"
+date:
 ---
 ‘Machine Listening, a Curriculum’ is an evolving resource, comprising: reading lists, a library, discussions, prompts and exercises, existing and newly commissioned writing, interviews, music, artworks, and documentation of online events, performances, and workshops.
 

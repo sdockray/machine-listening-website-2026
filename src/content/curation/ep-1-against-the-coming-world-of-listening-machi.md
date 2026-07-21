@@ -1,5 +1,9 @@
 ---
 title: "Ep 1: (Against) the coming world of listening machines"
+date:
+coverImage: ""
+hideFromIndex: false
+priority: 1
 ---
 Institutional partner: Unsound
 

@@ -1,6 +1,9 @@
 ---
 title: "Ep 2: Lessons in how (not) to be heard"
 date: 2020-01-01
+coverImage: ""
+hideFromIndex: false
+priority: 1
 ---
 date: 2020
 Institutional partner: Unsound

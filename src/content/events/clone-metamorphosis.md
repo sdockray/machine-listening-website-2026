@@ -1,6 +1,7 @@
 ---
 title: "Clone Metamorphosis"
 location: ""
+date:
 ---
 In this interactive workshop, Joel Stern and Sean Dockray will present the Machine Listening project, before engaging participants in a collective activity to produce AI-generated voice clones. These clones will be utilised to read excerpts from Kafka's "Metamorphosis" and other texts in which the transformation of voices is pivotal. The workshop aims to explore the concept of the voice as a technology capable of eliciting both recognition and estrangement. [Chris Danta](https://www.unsw.edu.au/staff/chris-danta) will provide insights during the event, informed by his research in literature, evolutionary theory, and artificial intelligence.
 

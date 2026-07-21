@@ -1,7 +1,13 @@
 ---
-title: "Listening to the Diagnostic Ear"
+title: Listening to the Diagnostic Ear
 year: 2020
 description: ""
+type:
+  - performance
+coverImage: ""
+collaborators: []
+hideFromIndex: false
+priority: 1
 ---
 Date: 2020
 

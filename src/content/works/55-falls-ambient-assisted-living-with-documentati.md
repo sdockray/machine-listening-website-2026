@@ -1,6 +1,12 @@
 ---
 title: "55 Falls / Ambient Assisted Living (with documentation)"
 description: ""
+year:
+type: ["installation"]
+coverImage: ""
+collaborators: []
+hideFromIndex: false
+priority: 1
 ---
 ![image.png](../_assets/works/55-falls-ambient-assisted-living-with-documentati/image.png)
 

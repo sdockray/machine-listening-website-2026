@@ -1,6 +1,7 @@
 ---
 title: "Environments 12"
 location: ""
+date:
 ---
 [**Environments 12 liner notes**
 ](../_assets/events/environments-12/Untitled.pdf)

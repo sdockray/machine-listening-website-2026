@@ -1,6 +1,16 @@
 ---
 title: "Bernard Mont Reynaud transcript"
 interviewee: ""
+date:
+entryType: interview
+name: ""
+description: ""
+dateText: ""
+transcriptType: none
+transcriptTarget: ""
+transcriptLabel: "Transcript"
+audioFiles: []
+priority: 1
 ---
 *NB time codes are a rough guide only. they are retained from the original audio, which has since been edited for clarity and continuity.*
 

@@ -1,6 +1,7 @@
 ---
 title: "Egocentric Perception Workshop"
 location: ""
+date:
 ---
 **Date**: Wed, 19th Feb 2025
 

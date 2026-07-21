@@ -2,6 +2,11 @@
 title: "Environments 12"
 year: 2023
 description: ""
+type: ["installation"]
+coverImage: ""
+collaborators: []
+hideFromIndex: false
+priority: 1
 ---
 Date: 2023
 Date 1: August 1, 2023

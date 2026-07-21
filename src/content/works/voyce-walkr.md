@@ -1,7 +1,14 @@
 ---
-title: "Voyce Walkr"
+title: Voyce Walkr
 year: 2025
 description: ""
+type:
+  - installation
+  - radio
+coverImage: ""
+collaborators: []
+hideFromIndex: false
+priority: 1
 ---
 Date: 2025
 

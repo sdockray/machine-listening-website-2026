@@ -2,6 +2,11 @@
 title: "#C"
 year: 2025
 description: ""
+type: ["installation"]
+coverImage: ""
+collaborators: []
+hideFromIndex: false
+priority: 1
 ---
 
 ![Machine Listening, *#C,* 2025, 4-channel video, audio, 75 mins, (Video Still).](../_assets/works/c/Screenshot_2025-03-12_at_4.36.51_pm.png)

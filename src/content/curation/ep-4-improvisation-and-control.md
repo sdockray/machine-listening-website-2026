@@ -1,6 +1,9 @@
 ---
 title: "Ep 4: Improvisation and Control"
 date: 2021-01-01
+coverImage: ""
+hideFromIndex: false
+priority: 1
 ---
 date: 2021
 Institutional partner: CCA NTU, Unsound

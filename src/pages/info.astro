@@ -1,0 +1,55 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getEntry, render } from 'astro:content';
+
+const peopleEntry = await getEntry('people', 'people');
+const peopleRender = peopleEntry ? await render(peopleEntry) : null;
+const PeopleContent = peopleRender?.Content;
+
+const eventsEntry = await getEntry('events', 'events');
+const eventsRender = eventsEntry ? await render(eventsEntry) : null;
+const EventsContent = eventsRender?.Content;
+
+const baseUrl = import.meta.env.BASE_URL;
+const normalizedBaseUrl = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
+const eventsUrl = `${normalizedBaseUrl}events/`;
+---
+<BaseLayout title="Info">
+  <div class="info-container">
+    <section class="people-section">
+      {PeopleContent ? <PeopleContent /> : <p>People content not found.</p>}
+    </section>
+
+    <section class="events-section">
+      <h2>Recent Events</h2>
+      <div class="recent-events">
+        {EventsContent ? <EventsContent /> : <p>Events content not found.</p>}
+      </div>
+      <p class="view-all-events"><a href={eventsUrl}>View all events →</a></p>
+    </section>
+  </div>
+</BaseLayout>
+
+<style>
+  .info-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding-top: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    .info-container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .recent-events :global(ul > li:nth-child(n+11)) {
+    display: none;
+  }
+  
+  .view-all-events {
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+</style>

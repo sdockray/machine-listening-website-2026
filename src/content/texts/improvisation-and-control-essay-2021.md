@@ -1,6 +1,7 @@
 ---
 title: "Improvisation and control (essay, 2021)"
 author: ""
+date:
 ---
 *This text was originally performed as a Zoom essay at CCA NTU Singapore.  An archival version with embedded audio is available here, and in German translation here. But we have also extracted the text for the purposes of legibility.*
 

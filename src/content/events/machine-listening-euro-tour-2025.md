@@ -1,6 +1,7 @@
 ---
 title: "Machine Listening Euro Tour 2025"
 location: ""
+date:
 ---
 ### Machine listening
 

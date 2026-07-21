@@ -1,6 +1,9 @@
 ---
 title: "Ep 3: Listening with the pandemic"
 date: 2020-01-01
+coverImage: ""
+hideFromIndex: false
+priority: 1
 ---
 date: 2020
 Institutional partner: Unsound

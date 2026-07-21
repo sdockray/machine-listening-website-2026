@@ -1,6 +1,7 @@
 ---
 title: "Texts"
 author: ""
+date:
 ---
 - Dockray, Parker and Stern, [‘New Concepts in Acoustic Enrichment: An Interview with Machine Listening’](https://www.highpitchmagazine.com/issues/issue-02/new-concepts-in-acoustic-enrichment), High Pitch (2025)
 - Parker, [[texts|‘What wake words do’]], under review at *Cultural Studies*.

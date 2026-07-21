@@ -1,6 +1,7 @@
 ---
 title: "(Against) the coming world of listening machines (essay, 2020)"
 author: ""
+date:
 ---
 *This text was originally published as a topic essay in the Curriculum. An archival version with embedded audio is available here, and in German translation here. But we have also extracted the text for the purposes of legibility. [formatting is a work in progress]*
 

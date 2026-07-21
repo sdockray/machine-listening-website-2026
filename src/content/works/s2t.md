@@ -1,10 +1,17 @@
 ---
-title: "s2t"
-location: ""
+title: s2t
+year: 2015
+type:
+  - performance
+coverImage: ""
+collaborators: []
+description: ""
+hideFromIndex: false
+priority: 1
 ---
 2026: September 24, 2015
 
-![image.png](../_assets/performances/s2t/image.png)
+![image.png](../_assets/works/s2t/image.png)
 
 [https://www.youtube.com/watch?v=NYzuxpuGk-Q](https://www.youtube.com/watch?v=NYzuxpuGk-Q)
 

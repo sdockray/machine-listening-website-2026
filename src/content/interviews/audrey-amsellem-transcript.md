@@ -1,6 +1,16 @@
 ---
 title: "Audrey Amsellem transcript"
 interviewee: ""
+date:
+entryType: interview
+name: ""
+description: ""
+dateText: ""
+transcriptType: none
+transcriptTarget: ""
+transcriptLabel: "Transcript"
+audioFiles: []
+priority: 1
 ---
 James Parker - Thanks so much for joining us, Audrey.
 

@@ -1,6 +1,7 @@
 ---
 title: "CV2024 - Uncomputable"
 location: ""
+date:
 ---
 > ‘Ask cryptographers about the "uncomputable" and they will respond: how much computing power do you have at your disposal? Can you afford to crunch the numbers until the sun burns out?’ - Alexander Galloway.
 > 

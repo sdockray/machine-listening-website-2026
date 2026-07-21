@@ -1,7 +1,7 @@
 import { visit } from 'unist-util-visit';
 
 const AUDIO_RE = /\.mp3(?:[?#].*)?$/i;
-const VIDEO_RE = /\.mp4(?:[?#].*)?$/i;
+const VIDEO_RE = /\.(?:mp4|mov|webm)(?:[?#].*)?$/i;
 const CAPTION_RE = /^(?:\^|caption:)\s*(.+)$/i;
 
 function withLeadingSlash(value) {
@@ -342,8 +342,14 @@ export function remarkMediaEmbeds(options = {}) {
       }
     });
 
+    visit(tree, ['link'], (node) => {
+      if (node.url && node.url.includes('_assets/')) {
+        node.url = normalizeMediaUrl(node.url, basePath, mediaBaseUrl);
+      }
+    });
+
     if (mediaBaseUrl) {
-      visit(tree, ['link', 'image'], (node) => {
+      visit(tree, ['image'], (node) => {
         if (node.url && node.url.includes('_assets/')) {
           node.url = normalizeMediaUrl(node.url, basePath, mediaBaseUrl);
         }

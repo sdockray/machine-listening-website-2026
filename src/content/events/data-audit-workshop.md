@@ -1,6 +1,7 @@
 ---
 title: "Data audit workshop"
 location: ""
+date:
 ---
 ### Some audio datasets
 

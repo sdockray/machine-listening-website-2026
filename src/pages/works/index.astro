@@ -31,7 +31,11 @@ const getListingImage = (entry: (typeof works)[number]) => resolveMediaUrl(entry
               <img src={listingImage} alt={work.data.title} loading="lazy" />
             )}
             <h2>{work.data.title}</h2>
-            {work.data.year && <p class="collection-meta">{work.data.year}</p>}
+            <p class="collection-meta">
+              {work.data.type && work.data.type.length > 0 && <span style="text-transform: capitalize;">{work.data.type.join(', ')}</span>}
+              {work.data.type && work.data.type.length > 0 && work.data.year && <span> &middot; </span>}
+              {work.data.year && <span>{work.data.year}{work.data.endYear ? `–${work.data.endYear}` : ''}</span>}
+            </p>
           </a>
         </li>
       );

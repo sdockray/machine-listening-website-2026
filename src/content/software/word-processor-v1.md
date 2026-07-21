@@ -2,16 +2,22 @@
 title: "Word Processor v1"
 repoUrl: ""
 description: ""
+coverImage: ""
+hideFromIndex: false
+priority: 1
 ---
 Date: 2021 - ongoing
 
-![Untitled](../_assets/software/word-processor-v1/Untitled.png)
+![Machine Listening, *Word Processor*, 2021-ongoing, software instrument, (detail).](../_assets/software/word-processor-v1/Untitled.png)
+
+^ Machine Listening, *Word Processor*, 2021-ongoing, software instrument, (detail).
 
 *Word Processor*, 2021-ongoing
-software instrument
+
+Software instrument.
 
 Programming and Build: Sean Dockray, with Reduct
-Concept and Development: Sean Dockray, James Parker, Joel Stern
+Concept and Development: Machine Listening (Sean Dockray, James Parker, Joel Stern)
 
 > instrument (n.), from the Latin *instruere:* to “arrange, prepare, set in order; inform, teach”
 > 
@@ -25,3 +31,7 @@ An unlisted playlist of Word Processor experiments [lives here](https://www.yout
 Thao Phan’s performance lecture [[listening-to-misrecognition|Listening for Misrecognition]], which extensively deploys the Word Processor is available [[listening-to-misrecognition|here]]
 
 In 2023, we have begun to develop the next iteration of Word Processor (WP2) for live and offline performance. We plan to share this too. For now, WP2 will be launched live at Unsound 2023 in Krakow.
+
+![Machine Listening, *Word Processor*, 2021-ongoing, software instrument, (detail).](../_assets/software/word-processor-v1/Screenshot_2025-04-03_at_11.09.51_am.png)
+
+^ Machine Listening, *Word Processor*, 2021-ongoing, software instrument, (detail).

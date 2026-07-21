@@ -14,15 +14,12 @@ const normalizedBaseUrl = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 const withBase = (path: string) => `${normalizedBaseUrl}${path.replace(/^\//, '')}`;
 
 const NAV_LINKS = [
-  { label: 'People', href: withBase('/people/') },
   { label: 'Works', href: withBase('/works/') },
-  { label: 'Performances', href: withBase('/performances/') },
   { label: 'Curation', href: withBase('/curation/') },
   { label: 'Software', href: withBase('/software/') },
   { label: 'Curriculum', href: withBase('/curriculum/') },
   { label: 'Texts', href: withBase('/texts/') },
-  { label: 'Interviews', href: withBase('/interviews/') },
-  { label: 'Events', href: withBase('/events/') },
+  { label: 'Info', href: withBase('/info/') },
 ];
 ---
 <html lang="en">

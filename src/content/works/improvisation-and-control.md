@@ -1,7 +1,13 @@
 ---
-title: "Improvisation and Control"
+title: Improvisation and Control
 year: 2021
 description: ""
+type:
+  - performance
+coverImage: ""
+collaborators: []
+hideFromIndex: false
+priority: 1
 ---
 Date: 2021
 

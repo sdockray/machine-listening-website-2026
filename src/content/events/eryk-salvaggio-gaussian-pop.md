@@ -1,6 +1,7 @@
 ---
 title: "Eryk Salvaggio: Gaussian Pop"
 location: ""
+date:
 ---
 ![Degaussed Gaussian Noise (2024)](https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbbef0da1-4bec-4dbc-8729-9ca83c54046c_1344x896.png)
 

@@ -2,6 +2,11 @@
 title: "55 Falls / Ambient Assisted Living"
 year: 2025
 description: ""
+type: ["installation"]
+coverImage: ""
+collaborators: []
+hideFromIndex: false
+priority: 1
 ---
 Date: 2025
 

@@ -1,6 +1,16 @@
 ---
 title: "Max Ritts transcript"
 interviewee: ""
+date:
+entryType: interview
+name: ""
+description: ""
+dateText: ""
+transcriptType: none
+transcriptTarget: ""
+transcriptLabel: "Transcript"
+audioFiles: []
+priority: 1
 ---
 *minor edits by James Parker. time stamps reflect unedited recording, so are a little off throughout.*
 

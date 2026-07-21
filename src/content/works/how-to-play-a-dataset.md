@@ -1,7 +1,13 @@
 ---
-title: "How to play a dataset"
+title: How to play a dataset
 year: 2025
 description: ""
+type:
+  - workshop
+coverImage: ""
+collaborators: []
+hideFromIndex: false
+priority: 1
 ---
 Date: 2025
 

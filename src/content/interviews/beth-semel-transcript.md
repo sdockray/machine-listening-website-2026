@@ -1,6 +1,16 @@
 ---
 title: "Beth Semel transcript"
 interviewee: ""
+date:
+entryType: interview
+name: ""
+description: ""
+dateText: ""
+transcriptType: none
+transcriptTarget: ""
+transcriptLabel: "Transcript"
+audioFiles: []
+priority: 1
 ---
 James Parker (00:00:46) - Thanks so much Beth. I was wondering, maybe would you like to start off just by introducing yourself however seems right to you?
 

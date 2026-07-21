@@ -1,6 +1,16 @@
 ---
 title: "Santiago Rentiera transcript"
 interviewee: ""
+date:
+entryType: interview
+name: ""
+description: ""
+dateText: ""
+transcriptType: none
+transcriptTarget: ""
+transcriptLabel: "Transcript"
+audioFiles: []
+priority: 1
 ---
 **James Parker:** So thanks so much for joining us, Santiago. Could you maybe begin by introducing yourself just briefly, however feels right to you?
 

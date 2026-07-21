@@ -1,6 +1,16 @@
 ---
 title: "Guillaume Heuguet transcript"
 interviewee: ""
+date:
+entryType: interview
+name: ""
+description: ""
+dateText: ""
+transcriptType: none
+transcriptTarget: ""
+transcriptLabel: "Transcript"
+audioFiles: []
+priority: 1
 ---
 James Parker (00:00:00) - Well, thanks for joining us Guillaume. Perhaps you could start by introducing yourself. You know, however feels right to you.
 

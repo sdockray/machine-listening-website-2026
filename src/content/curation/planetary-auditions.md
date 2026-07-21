@@ -1,6 +1,9 @@
 ---
 title: "Planetary Auditions"
 date: 2023-01-01
+coverImage: ""
+hideFromIndex: false
+priority: 1
 ---
 date: 2023
 Institutional partner: RMIT Design Hub

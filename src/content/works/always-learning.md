@@ -2,6 +2,11 @@
 title: "Always Learning"
 year: 2018
 description: ""
+type: ["installation"]
+coverImage: ""
+collaborators: []
+hideFromIndex: false
+priority: 1
 ---
 Date: 2018
 

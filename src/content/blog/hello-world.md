@@ -5,6 +5,7 @@ coverImage: ""
 hideFromIndex: false
 category: dataset-larp
 author:
+skin: ""
 ---
 This is a test post for the Dataset LARP blog category!!
 

@@ -1,7 +1,13 @@
 ---
-title: "Here is a Dataset"
+title: Here is a Dataset
 year: 2025
 description: ""
+type:
+  - radio
+coverImage: ""
+collaborators: []
+hideFromIndex: false
+priority: 1
 ---
 Date: 2025
 

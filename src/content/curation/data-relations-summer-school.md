@@ -1,6 +1,9 @@
 ---
 title: "Data Relations Summer School"
 date: 2023-01-01
+coverImage: ""
+hideFromIndex: false
+priority: 1
 ---
 date: 2023
 Institutional partner: ACCA, ADM+S

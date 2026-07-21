@@ -1,7 +1,13 @@
 ---
-title: "Learning from Youtube"
+title: Learning from Youtube
 year: 2018
 description: ""
+type:
+  - video
+coverImage: ""
+collaborators: []
+hideFromIndex: false
+priority: 1
 ---
 Date: 2018
 

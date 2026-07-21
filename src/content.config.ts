@@ -17,7 +17,9 @@ const works = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/works' }),
   schema: z.object({
     title: z.string(),
-    year: z.number().optional(),
+    year: z.number().nullable().optional(),
+    endYear: z.union([z.number(), z.string()]).nullable().optional(),
+    type: z.array(z.string()).nullable().optional(),
     coverImage: z.string().optional(),
     collaborators: z.array(z.string()).optional(),
     description: z.string().optional(),
@@ -26,23 +28,12 @@ const works = defineCollection({
   }),
 });
 
-const performances = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/performances' }),
-  schema: z.object({
-    title: z.string(),
-    date: z.coerce.date().optional(),
-    location: z.string().optional(),
-    coverImage: z.string().optional(),
-    hideFromIndex: z.boolean().default(false),
-    priority: z.number().default(1),
-  }),
-});
 
 const curation = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/curation' }),
   schema: z.object({
     title: z.string(),
-    date: z.coerce.date().optional(),
+    date: z.coerce.date().nullable().optional(),
     coverImage: z.string().optional(),
     hideFromIndex: z.boolean().default(false),
     priority: z.number().default(1),
@@ -65,7 +56,7 @@ const curriculum = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/curriculum' }),
   schema: z.object({
     title: z.string(),
-    date: z.coerce.date().optional(),
+    date: z.coerce.date().nullable().optional(),
   }),
 });
 
@@ -74,7 +65,7 @@ const texts = defineCollection({
   schema: z.object({
     title: z.string(),
     author: z.string().optional(),
-    date: z.coerce.date().optional(),
+    date: z.coerce.date().nullable().optional(),
   }),
 });
 
@@ -83,7 +74,7 @@ const interviews = defineCollection({
   schema: z.object({
     title: z.string(),
     interviewee: z.string().optional(),
-    date: z.coerce.date().optional(),
+    date: z.coerce.date().nullable().optional(),
     entryType: z.enum(['interview']).optional(),
     name: z.string().optional(),
     description: z.string().optional(),
@@ -103,7 +94,7 @@ const events = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/events' }),
   schema: z.object({
     title: z.string(),
-    date: z.coerce.date().optional(),
+    date: z.coerce.date().nullable().optional(),
     location: z.string().optional(),
   }),
 });
@@ -112,7 +103,7 @@ const blog = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/blog' }),
   schema: z.object({
     title: z.string(),
-    date: z.coerce.date().optional(),
+    date: z.coerce.date().nullable().optional(),
     category: z.string().nullable().optional(),
     skin: z.string().optional(),
     author: z.string().nullable().optional(),
@@ -121,4 +112,4 @@ const blog = defineCollection({
   }),
 });
 
-export const collections = { people, works, performances, curation, software, curriculum, texts, interviews, events, blog };
+export const collections = { people, works, curation, software, curriculum, texts, interviews, events, blog };

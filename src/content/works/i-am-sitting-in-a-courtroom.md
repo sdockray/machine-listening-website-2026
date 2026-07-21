@@ -1,10 +1,17 @@
 ---
-title: "I am sitting in a courtroom"
-location: ""
+title: I am sitting in a courtroom
+year: 2017
+type:
+  - performance
+coverImage: ""
+collaborators: []
+description: ""
+hideFromIndex: false
+priority: 1
 ---
 2026: July 15, 2017
 
-![image.png](../_assets/performances/i-am-sitting-in-a-courtroom/image.png)
+![image.png](../_assets/works/i-am-sitting-in-a-courtroom/image.png)
 
 *I am sitting in a courtroom*
 
