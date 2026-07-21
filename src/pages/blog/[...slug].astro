@@ -26,8 +26,18 @@ const withBase = (path: string) => `${normalizedBaseUrl}${path.replace(/^\//, ''
 
 // Determine the skin: use explicitly defined skin, fallback to category, then 'default-blog'
 const skin = post.data.skin || category || 'default-blog';
+
+let pageImage = post.data.coverImage;
+if (!pageImage && post.body) {
+  const match = post.body.match(/!\[.*?\]\((.*?)\)/);
+  if (match) pageImage = match[1].trim();
+}
+if (pageImage && pageImage.includes('_assets/')) {
+  pageImage = `/_assets/${pageImage.split('_assets/')[1]}`;
+}
+
 ---
-<BaseLayout title={post.data.title} skin={skin}>
+<BaseLayout title={post.data.title} skin={skin} image={pageImage}>
   <p>
     <a href={withBase('/blog/')}>Blog</a>
     {category && (

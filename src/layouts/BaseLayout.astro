@@ -6,9 +6,10 @@ import '../styles/skins.css';
 interface Props {
   title: string;
   skin?: string;
+  image?: string;
 }
 
-const { title, skin } = Astro.props;
+const { title, skin, image } = Astro.props;
 const baseUrl = import.meta.env.BASE_URL;
 const normalizedBaseUrl = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 const withBase = (path: string) => `${normalizedBaseUrl}${path.replace(/^\//, '')}`;
@@ -21,12 +22,21 @@ const NAV_LINKS = [
   { label: 'Texts', href: withBase('/texts/') },
   { label: 'Info', href: withBase('/info/') },
 ];
+
+const siteUrl = Astro.site || Astro.url;
+const defaultImage = new URL(withBase('/favicon.gif'), siteUrl).toString();
+const ogImage = image ? new URL(image, siteUrl).toString() : defaultImage;
 ---
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title} · Machine Listening</title>
+    <link rel="icon" type="image/gif" href={withBase('/favicon.gif')} />
+    <meta property="og:title" content={`${title} · Machine Listening`} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:image" content={ogImage} />
   </head>
   <body class={skin ? `skin-${skin}` : ''}>
     <header class="site-header">

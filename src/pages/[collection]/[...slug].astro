@@ -33,8 +33,18 @@ export async function getStaticPaths() {
 const { entry, collectionName } = Astro.props;
 const { Content } = await render(entry);
 const heading = entry.data.title ?? entry.data.name; // "works" uses title, "people" uses name
+
+let pageImage = entry.data.coverImage;
+if (!pageImage && entry.body) {
+  const match = entry.body.match(/!\[.*?\]\((.*?)\)/);
+  if (match) pageImage = match[1].trim();
+}
+if (pageImage && pageImage.includes('_assets/')) {
+  pageImage = `/_assets/${pageImage.split('_assets/')[1]}`;
+}
+
 ---
-<BaseLayout title={heading}>
+<BaseLayout title={heading} image={pageImage}>
   <!--<p><a href="../../">Home</a> / {collectionName}</p>-->
   <h1>{heading}</h1>
   <Content />
