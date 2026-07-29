@@ -10,7 +10,7 @@ const MEDIA_BASE_URL = (process.env.MEDIA_BASE_URL || '').replace(/\/+$/, '');
 
 export default defineConfig({
   // site: 'https://sdockray.github.io',
-  site: 'https://future.machinelistening.exposed',
+  site: 'https://machinelistening.exposed',
   base: BASE_PATH,
   vite: {
     define: {
