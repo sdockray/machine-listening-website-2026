@@ -3,13 +3,18 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 const CONTENT_DIR = path.resolve('./src/content');
-const WIKI_LINK_REGEX = /\[\[([^\]|]+?)(?:\|([^\]]+))?\]\]/g;
+const WIKI_LINK_REGEX = /(!?)\[\[([^\]|]+?)(?:\|([^\]]+))?\]\]/g;
+
+const IMAGE_EXT_RE = /\.(jpe?g|png|gif|svg|webp|avif|bmp|tiff)$/i;
+const AUDIO_EXT_RE = /\.(mp3|wav|ogg|m4a|flac|aac)$/i;
+const VIDEO_EXT_RE = /\.(mp4|webm|mov|m4v|ogv)$/i;
 
 function slugify(str) {
   return str.trim().toLowerCase().replace(/[\s_]+/g, '-');
 }
 
 function getMdFilesRecursive(dir, baseDir, files = []) {
+  if (!fs.existsSync(dir)) return files;
   const entries = fs.readdirSync(dir, { withFileTypes: true });
   for (const entry of entries) {
     const fullPath = path.join(dir, entry.name);
@@ -26,7 +31,6 @@ function getMdFilesRecursive(dir, baseDir, files = []) {
   return files;
 }
 
-// Walk every collection folder once at build start and build a slug -> {collection, id} lookup
 function buildLinkIndex() {
   const index = new Map();
 
@@ -41,10 +45,14 @@ function buildLinkIndex() {
       const mdFiles = getMdFilesRecursive(collectionPath, collectionPath);
       
       for (const file of mdFiles) {
-        const id = file.relativePath.replace(/\.md$/, '');
+        const id = file.relativePath.replace(/\.md$/, '').replace(/\\/g, '/');
         const filenameWithoutExt = file.filename.replace(/\.md$/, '');
-        const key = slugify(filenameWithoutExt);
-        index.set(key, { collection: collection.name, id });
+        const entryObj = { collection: collection.name, id, filename: file.filename };
+
+        index.set(slugify(filenameWithoutExt), entryObj);
+        index.set(slugify(id), entryObj);
+        index.set(slugify(`${collection.name}/${id}`), entryObj);
+        index.set(slugify(`${collection.name}/${filenameWithoutExt}`), entryObj);
       }
     }
   } catch (err) {
@@ -53,13 +61,111 @@ function buildLinkIndex() {
   return index;
 }
 
+function getAllAssetsRecursive(dir, baseDir, files = []) {
+  if (!fs.existsSync(dir)) return files;
+  const entries = fs.readdirSync(dir, { withFileTypes: true });
+  for (const entry of entries) {
+    const fullPath = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      if (entry.name === '.obsidian') continue;
+      getAllAssetsRecursive(fullPath, baseDir, files);
+    } else if (entry.isFile()) {
+      if (entry.name === '.DS_Store' || entry.name.endsWith('.md')) continue;
+      const relativeFromContent = path.relative(baseDir, fullPath).replace(/\\/g, '/');
+      files.push({
+        fullPath,
+        relativeFromContent,
+        filename: entry.name,
+      });
+    }
+  }
+  return files;
+}
 
+function buildAssetIndex() {
+  const assetFiles = getAllAssetsRecursive(CONTENT_DIR, CONTENT_DIR);
+  const pathMap = new Map();
+  const filenameMap = new Map();
+
+  for (const asset of assetFiles) {
+    const rel = asset.relativeFromContent;
+    const relLower = rel.toLowerCase();
+    pathMap.set(relLower, rel);
+
+    const relNoAssets = rel.replace(/^_assets\//, '');
+    const relNoAssetsLower = relNoAssets.toLowerCase();
+    pathMap.set(relNoAssetsLower, rel);
+
+    const fnLower = asset.filename.toLowerCase();
+    if (!filenameMap.has(fnLower)) {
+      filenameMap.set(fnLower, []);
+    }
+    filenameMap.get(fnLower).push({ rel, relNoAssets, fullPath: asset.fullPath });
+  }
+
+  return { pathMap, filenameMap };
+}
+
+function resolveAsset(target, currentRelativeDir, assetIndex) {
+  if (!target) return null;
+  
+  let cleanTarget = target.trim().replace(/\\/g, '/');
+  cleanTarget = cleanTarget.replace(/^(\.\.\/|\.\/|\/)+/, '');
+  cleanTarget = cleanTarget.replace(/^_assets\//, '');
+  const cleanTargetLower = cleanTarget.toLowerCase();
+
+  if (assetIndex.pathMap.has(cleanTargetLower)) {
+    return assetIndex.pathMap.get(cleanTargetLower);
+  }
+
+  if (currentRelativeDir) {
+    const combined = path.posix.join(currentRelativeDir, cleanTarget).toLowerCase();
+    if (assetIndex.pathMap.has(combined)) {
+      return assetIndex.pathMap.get(combined);
+    }
+  }
+
+  const filename = path.basename(cleanTarget).toLowerCase();
+  const matches = assetIndex.filenameMap.get(filename);
+  if (matches && matches.length > 0) {
+    if (matches.length === 1) {
+      return matches[0].rel;
+    }
+    if (currentRelativeDir) {
+      const dirLower = currentRelativeDir.toLowerCase();
+      const bestMatch = matches.find((m) => m.relNoAssets.toLowerCase().startsWith(dirLower));
+      if (bestMatch) return bestMatch.rel;
+    }
+    return matches[0].rel;
+  }
+
+  return null;
+}
+
+function formatAssetUrl(relPath, basePath, mediaBaseUrl) {
+  if (mediaBaseUrl) {
+    const assetTail = relPath.replace(/^_assets\//, '');
+    return `${mediaBaseUrl.replace(/\/+$/, '')}/${assetTail}`;
+  }
+  const prefix = basePath ? (basePath.endsWith('/') ? basePath : `${basePath}/`) : '/';
+  return `${prefix}${relPath.replace(/^\//, '')}`;
+}
 
 export function remarkWikiLinks(options = {}) {
   const basePath = String(options.basePath || '').trim().replace(/\/+$/, '');
+  const mediaBaseUrl = String(options.mediaBaseUrl || process.env.MEDIA_BASE_URL || '').replace(/\/+$/, '');
   const linkIndex = buildLinkIndex();
+  const assetIndex = buildAssetIndex();
 
-  return (tree) => {
+  return (tree, vfile) => {
+    let currentRelativeDir = '';
+    if (vfile?.path) {
+      const absPath = path.resolve(vfile.path);
+      const relToContent = path.relative(CONTENT_DIR, absPath);
+      currentRelativeDir = path.dirname(relToContent).replace(/\\/g, '/');
+      if (currentRelativeDir === '.') currentRelativeDir = '';
+    }
+
     visit(tree, 'text', (node, index, parent) => {
       if (!parent || index === null) return;
       const matches = [...node.value.matchAll(WIKI_LINK_REGEX)];
@@ -69,29 +175,96 @@ export function remarkWikiLinks(options = {}) {
       let lastIndex = 0;
 
       for (const match of matches) {
-        const [fullMatch, target, alias] = match;
+        const [fullMatch, embedPrefix, targetRaw, aliasRaw] = match;
         const matchStart = match.index;
 
         if (matchStart > lastIndex) {
           newChildren.push({ type: 'text', value: node.value.slice(lastIndex, matchStart) });
         }
 
-        const key = slugify(target);
-        const entry = linkIndex.get(key);
-        const displayText = alias || target;
+        const isEmbed = embedPrefix === '!';
+        const target = targetRaw ? targetRaw.trim() : '';
+        const alias = aliasRaw ? aliasRaw.trim() : null;
 
-        if (entry) {
-          newChildren.push({
-            type: 'link',
-            url: `${basePath}/${entry.collection}/${entry.id}/`,
-            children: [{ type: 'text', value: displayText }],
-          });
+        if (isEmbed) {
+          const resolvedAsset = resolveAsset(target, currentRelativeDir, assetIndex);
+          if (resolvedAsset) {
+            const assetUrl = formatAssetUrl(resolvedAsset, basePath, mediaBaseUrl);
+            const isImage = IMAGE_EXT_RE.test(target) || IMAGE_EXT_RE.test(resolvedAsset);
+            const isAudio = AUDIO_EXT_RE.test(target) || AUDIO_EXT_RE.test(resolvedAsset);
+            const isVideo = VIDEO_EXT_RE.test(target) || VIDEO_EXT_RE.test(resolvedAsset);
+
+            if (isImage) {
+              const altText = (alias && !/^\d+(x\d+)?$/.test(alias)) ? alias : '';
+              newChildren.push({
+                type: 'image',
+                url: assetUrl,
+                alt: altText,
+              });
+            } else if (isAudio) {
+              newChildren.push({
+                type: 'html',
+                value: `<audio class="content-audio" controls preload="none" src="${assetUrl}"></audio>`,
+              });
+            } else if (isVideo) {
+              newChildren.push({
+                type: 'html',
+                value: `<video class="content-video" controls preload="metadata" playsinline><source src="${assetUrl}" type="video/mp4" /></video>`,
+              });
+            } else {
+              const displayText = alias || path.basename(resolvedAsset);
+              newChildren.push({
+                type: 'link',
+                url: assetUrl,
+                children: [{ type: 'text', value: displayText }],
+              });
+            }
+          } else {
+            console.warn(`[wiki-links] Asset embed not found: ![[${target}]] in ${vfile?.path || 'unknown file'}`);
+            const displayText = alias || target;
+            newChildren.push({
+              type: 'html',
+              value: `<span class="wiki-link-broken" title="Asset not found: ${target}">![[${displayText}]]</span>`,
+            });
+          }
         } else {
-          console.warn(`[wiki-links] Broken link: [[${target}]]`);
-          newChildren.push({
-            type: 'html',
-            value: `<span class="wiki-link-broken" title="Page not found: ${target}">${displayText}</span>`,
-          });
+          let cleanTarget = target.replace(/^(\/|\.\/)+/, '');
+          let anchor = '';
+          const hashIdx = cleanTarget.indexOf('#');
+          if (hashIdx !== -1) {
+            anchor = cleanTarget.slice(hashIdx);
+            cleanTarget = cleanTarget.slice(0, hashIdx);
+          }
+          cleanTarget = cleanTarget.replace(/\.md$/i, '');
+
+          const key = slugify(cleanTarget);
+          const entry = linkIndex.get(key);
+          const displayText = alias || cleanTarget;
+
+          if (entry) {
+            const linkUrl = `${basePath}/${entry.collection}/${entry.id}/${anchor}`;
+            newChildren.push({
+              type: 'link',
+              url: linkUrl,
+              children: [{ type: 'text', value: displayText }],
+            });
+          } else {
+            const resolvedAsset = resolveAsset(target, currentRelativeDir, assetIndex);
+            if (resolvedAsset) {
+              const assetUrl = formatAssetUrl(resolvedAsset, basePath, mediaBaseUrl);
+              newChildren.push({
+                type: 'link',
+                url: assetUrl,
+                children: [{ type: 'text', value: displayText }],
+              });
+            } else {
+              console.warn(`[wiki-links] Broken link: [[${target}]] in ${vfile?.path || 'unknown file'}`);
+              newChildren.push({
+                type: 'html',
+                value: `<span class="wiki-link-broken" title="Page not found: ${target}">${displayText}</span>`,
+              });
+            }
+          }
         }
 
         lastIndex = matchStart + fullMatch.length;
@@ -105,3 +278,4 @@ export function remarkWikiLinks(options = {}) {
     });
   };
 }
+

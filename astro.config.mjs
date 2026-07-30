@@ -20,7 +20,7 @@ export default defineConfig({
   markdown: {
     processor: unified({
       remarkPlugins: [
-        [remarkWikiLinks, { basePath: BASE_PATH }],
+        [remarkWikiLinks, { basePath: BASE_PATH, mediaBaseUrl: MEDIA_BASE_URL }],
         [remarkMediaEmbeds, { basePath: BASE_PATH, mediaBaseUrl: MEDIA_BASE_URL }],
       ],
     }),
