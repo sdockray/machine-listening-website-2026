@@ -1,8 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
-import { extractFirstMarkdownImage } from '../../lib/content-images';
-import { resolveMediaUrl } from '../../lib/media-url';
+import { getCoverImage } from '../../lib/content-images';
 
 const works = (await getCollection('works'))
   .filter((entry) => !entry.data.hideFromIndex)
@@ -17,18 +16,24 @@ const works = (await getCollection('works'))
     return a.data.title.localeCompare(b.data.title);
   });
 
-const getListingImage = (entry: (typeof works)[number]) => resolveMediaUrl(entry.data.coverImage || extractFirstMarkdownImage(entry.body || ''));
+const baseUrl = import.meta.env.BASE_URL;
+const normalizedBaseUrl = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
+const withBase = (path: string) => `${normalizedBaseUrl}${path.replace(/^\//, '')}`;
+
+const firstWorkWithCover = works.find((w) => getCoverImage(w));
+const indexShareImage = firstWorkWithCover ? getCoverImage(firstWorkWithCover) : undefined;
 ---
-<BaseLayout title="Works">
+<BaseLayout title="Works" image={indexShareImage}>
   <h1>Works</h1>
   <ul class="collection-grid">
     {works.map((work) => {
-      const listingImage = getListingImage(work);
+      const listingImage = getCoverImage(work);
+      const listingImageUrl = listingImage ? (listingImage.startsWith('http') || listingImage.startsWith('//') ? listingImage : withBase(listingImage)) : undefined;
       return (
         <li class="collection-card">
           <a href={`./${work.id}/`}>
-            {listingImage && (
-              <img src={listingImage} alt={work.data.title} loading="lazy" />
+            {listingImageUrl && (
+              <img src={listingImageUrl} alt={work.data.title} loading="lazy" />
             )}
             <h2>{work.data.title}</h2>
             <p class="collection-meta">
@@ -42,3 +47,4 @@ const getListingImage = (entry: (typeof works)[number]) => resolveMediaUrl(entry
     })}
   </ul>
 </BaseLayout>
+

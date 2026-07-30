@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection, render } from 'astro:content';
+import { getCoverImage } from '../../lib/content-images';
 
 export async function getStaticPaths() {
   const allPosts = await getCollection('blog');
@@ -27,14 +28,9 @@ const withBase = (path: string) => `${normalizedBaseUrl}${path.replace(/^\//, ''
 // Determine the skin: use explicitly defined skin, fallback to category, then 'default-blog'
 const skin = post.data.skin || category || 'default-blog';
 
-let pageImage = post.data.coverImage;
-if (!pageImage && post.body) {
-  const match = post.body.match(/!\[.*?\]\((.*?)\)/);
-  if (match) pageImage = match[1].trim();
-}
-if (pageImage && pageImage.includes('_assets/')) {
-  pageImage = `/_assets/${pageImage.split('_assets/')[1]}`;
-}
+const pageImage = getCoverImage(post);
+const explicitCover = post.data.coverImage ? getCoverImage(post) : undefined;
+const explicitCoverUrl = explicitCover ? (explicitCover.startsWith('http') || explicitCover.startsWith('//') ? explicitCover : withBase(explicitCover)) : undefined;
 
 ---
 <BaseLayout title={post.data.title} skin={skin} image={pageImage}>
@@ -49,9 +45,9 @@ if (pageImage && pageImage.includes('_assets/')) {
   {post.data.author && <p class="collection-meta">By {post.data.author}</p>}
   {post.data.date && <p class="collection-meta">{new Date(post.data.date).toLocaleDateString()}</p>}
   
-  {post.data.coverImage && (
+  {explicitCoverUrl && (
     <div class="content-figure">
-      <img src={withBase(post.data.coverImage)} alt="" loading="lazy" />
+      <img src={explicitCoverUrl} alt="" loading="lazy" />
     </div>
   )}
 
@@ -59,3 +55,4 @@ if (pageImage && pageImage.includes('_assets/')) {
     <Content />
   </div>
 </BaseLayout>
+

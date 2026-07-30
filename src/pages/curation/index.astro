@@ -1,8 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
-import { extractFirstMarkdownImage } from '../../lib/content-images';
-import { resolveMediaUrl } from '../../lib/media-url';
+import { getCoverImage } from '../../lib/content-images';
 
 const curationItems = (await getCollection('curation'))
   .filter((entry) => !entry.data.hideFromIndex)
@@ -17,18 +16,24 @@ const curationItems = (await getCollection('curation'))
     return a.data.title.localeCompare(b.data.title);
   });
 
-const getListingImage = (entry: (typeof curationItems)[number]) => resolveMediaUrl(entry.data.coverImage || extractFirstMarkdownImage(entry.body || ''));
+const baseUrl = import.meta.env.BASE_URL;
+const normalizedBaseUrl = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
+const withBase = (path: string) => `${normalizedBaseUrl}${path.replace(/^\//, '')}`;
+
+const firstCurationWithCover = curationItems.find((item) => getCoverImage(item));
+const indexShareImage = firstCurationWithCover ? getCoverImage(firstCurationWithCover) : undefined;
 ---
-<BaseLayout title="Curation">
+<BaseLayout title="Curation" image={indexShareImage}>
   <h1>Curation</h1>
   <ul class="collection-grid">
     {curationItems.map((item) => {
-      const listingImage = getListingImage(item);
+      const listingImage = getCoverImage(item);
+      const listingImageUrl = listingImage ? (listingImage.startsWith('http') || listingImage.startsWith('//') ? listingImage : withBase(listingImage)) : undefined;
       return (
         <li class="collection-card">
           <a href={`./${item.id}/`}>
-            {listingImage && (
-              <img src={listingImage} alt={item.data.title} loading="lazy" />
+            {listingImageUrl && (
+              <img src={listingImageUrl} alt={item.data.title} loading="lazy" />
             )}
             <h2>{item.data.title}</h2>
             {item.data.date && <p class="collection-meta">{new Date(item.data.date).getFullYear()}</p>}
@@ -38,3 +43,4 @@ const getListingImage = (entry: (typeof curationItems)[number]) => resolveMediaU
     })}
   </ul>
 </BaseLayout>
+

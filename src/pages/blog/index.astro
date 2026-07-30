@@ -1,8 +1,9 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import { getCoverImage } from '../../lib/content-images';
 
-const allPosts = await getCollection('blog');
+const allPosts = (await getCollection('blog')).filter((entry) => !entry.data.hideFromIndex);
 
 // Sort by date descending
 allPosts.sort((a, b) => {
@@ -14,18 +15,23 @@ allPosts.sort((a, b) => {
 const baseUrl = import.meta.env.BASE_URL;
 const normalizedBaseUrl = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 const withBase = (path: string) => `${normalizedBaseUrl}${path.replace(/^\//, '')}`;
+
+const firstPostWithCover = allPosts.find((p) => getCoverImage(p));
+const indexShareImage = firstPostWithCover ? getCoverImage(firstPostWithCover) : undefined;
 ---
-<BaseLayout title="Blog">
+<BaseLayout title="Blog" skin="default-blog" image={indexShareImage}>
   <h1>Blog</h1>
   
   <ul class="collection-grid">
     {allPosts.map((post) => {
       const categoryPath = post.data.category ? `${post.data.category}/` : '';
+      const cover = getCoverImage(post);
+      const coverUrl = cover ? (cover.startsWith('http') || cover.startsWith('//') ? cover : withBase(cover)) : undefined;
       return (
         <li class="collection-card">
           <a href={withBase(`/blog/${categoryPath}${post.id}/`)}>
-            {post.data.coverImage && (
-              <img src={withBase(post.data.coverImage)} alt="" loading="lazy" />
+            {coverUrl && (
+              <img src={coverUrl} alt="" loading="lazy" />
             )}
             <h2>{post.data.title}</h2>
             {post.data.category && (
@@ -37,3 +43,4 @@ const withBase = (path: string) => `${normalizedBaseUrl}${path.replace(/^\//, ''
     })}
   </ul>
 </BaseLayout>
+

@@ -2,7 +2,7 @@
 title: Egocentrism as a way of life
 date: 2026-07-20
 coverImage: ""
-hideFromIndex: false
+hideFromIndex: true
 category: dataset-larp
 author:
 skin: ""

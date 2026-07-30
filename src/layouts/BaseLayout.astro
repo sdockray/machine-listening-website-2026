@@ -20,12 +20,18 @@ const NAV_LINKS = [
   { label: 'Software', href: withBase('/software/') },
   { label: 'Curriculum', href: withBase('/curriculum/') },
   { label: 'Texts', href: withBase('/texts/') },
+  { label: 'Blog', href: withBase('/blog/') },
   { label: 'Info', href: withBase('/info/') },
 ];
 
 const siteUrl = Astro.site || Astro.url;
-const defaultImage = new URL(withBase('/favicon.gif'), siteUrl).toString();
-const ogImage = image ? new URL(image, siteUrl).toString() : defaultImage;
+const defaultImage = new URL(withBase('/images/home/hero.png'), siteUrl).toString();
+
+let ogImage = defaultImage;
+if (image) {
+  const imageUrl = image.startsWith('http') || image.startsWith('//') ? image : withBase(image);
+  ogImage = new URL(imageUrl, siteUrl).toString();
+}
 ---
 <html lang="en">
   <head>

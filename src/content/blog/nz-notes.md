@@ -2,7 +2,7 @@
 title: Notes from NZ
 date: 2026-07-19
 coverImage: ""
-hideFromIndex: false
+hideFromIndex: true
 category:
 author:
 skin: ""

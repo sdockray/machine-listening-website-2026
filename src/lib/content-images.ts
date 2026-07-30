@@ -1,4 +1,47 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import { resolveMediaUrl } from './media-url';
+
 const IMAGE_EXT_RE = /\.(jpe?g|png|gif|svg|webp|avif|bmp|tiff)$/i;
+const CONTENT_DIR = path.resolve('./src/content');
+
+let cachedAssetMap: Map<string, string> | null = null;
+
+function getAssetMap(): Map<string, string> {
+  if (cachedAssetMap) return cachedAssetMap;
+
+  const map = new Map<string, string>();
+  const assetsDir = path.join(CONTENT_DIR, '_assets');
+
+  function scan(dir: string) {
+    if (!fs.existsSync(dir)) return;
+    const entries = fs.readdirSync(dir, { withFileTypes: true });
+    for (const entry of entries) {
+      const fullPath = path.join(dir, entry.name);
+      if (entry.isDirectory()) {
+        if (entry.name === '.obsidian') continue;
+        scan(fullPath);
+      } else if (entry.isFile()) {
+        if (entry.name === '.DS_Store' || entry.name.endsWith('.md')) continue;
+        const relativeFromContent = path.relative(CONTENT_DIR, fullPath).replace(/\\/g, '/');
+        const urlPath = `/${relativeFromContent.replace(/^\//, '')}`;
+
+        map.set(relativeFromContent.toLowerCase(), urlPath);
+        const relNoAssets = relativeFromContent.replace(/^_assets\//, '');
+        map.set(relNoAssets.toLowerCase(), urlPath);
+
+        const fnLower = entry.name.toLowerCase();
+        if (!map.has(fnLower)) {
+          map.set(fnLower, urlPath);
+        }
+      }
+    }
+  }
+
+  scan(assetsDir);
+  cachedAssetMap = map;
+  return map;
+}
 
 export function extractFirstMarkdownImage(markdown: string): string | undefined {
   if (!markdown) return undefined;
@@ -67,4 +110,39 @@ export function extractFirstMarkdownImage(markdown: string): string | undefined 
 
   return undefined;
 }
+
+export function resolveContentImage(rawUrl: string | undefined | null): string | undefined {
+  if (!rawUrl) return undefined;
+  const value = String(rawUrl).trim();
+  if (!value) return undefined;
+
+  if (/^(?:[a-z][a-z\d+.-]*:|\/\/|#)/i.test(value)) {
+    return value;
+  }
+
+  if (value.includes('_assets/')) {
+    const assetTail = value.split('_assets/').pop();
+    if (assetTail) {
+      const canonical = `/_assets/${assetTail.replace(/^\//, '')}`;
+      return resolveMediaUrl(canonical) || canonical;
+    }
+  }
+
+  const cleanTarget = value.replace(/^(\.\.\/|\.\/|\/)+/, '').toLowerCase();
+  const assetMap = getAssetMap();
+  const found = assetMap.get(cleanTarget) || assetMap.get(path.basename(cleanTarget).toLowerCase());
+  if (found) {
+    return resolveMediaUrl(found) || found;
+  }
+
+  const formatted = value.startsWith('/') ? value : `/${value}`;
+  return resolveMediaUrl(formatted) || formatted;
+}
+
+export function getCoverImage(entry: { data?: { coverImage?: string | null }; body?: string } | undefined | null): string | undefined {
+  if (!entry) return undefined;
+  const raw = entry.data?.coverImage || extractFirstMarkdownImage(entry.body || '');
+  return resolveContentImage(raw);
+}
+
 
