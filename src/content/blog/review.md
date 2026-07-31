@@ -13,6 +13,6 @@ The lecture used our new software instrument konvolute, which allows us to play 
 
 Anyway, Callum Gallagher reviewed the program for [Memo Issue 5](https://www.memoreview.net/magazine) and was very kind about it. Thanks Callum!
 
-![[memo ML 1.jpg]]
+![[memo ML 1.jpg|350]]
 
 ![[WhatsApp Image 2026-04-09 at 18.58.47-1-1-1.jpeg]]
