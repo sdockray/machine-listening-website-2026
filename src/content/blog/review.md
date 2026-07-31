@@ -11,9 +11,8 @@ In April 2026, we gave a performance lecture at the Museum of Contemporary Art i
 
 The lecture used our new software instrument konvolute, which allows us to play datasets according to how they sound. We've since used konvolute for [[konvolute-hate-speech|live improvisation]] and [[how-to-play-a-dataset|workshops]] (dedicated page coming soon). 
 
-Anyway, Callum Gallagher reviewed the program for Memo and was very kind about it. Thanks Callum!
+Anyway, Callum Gallagher reviewed the program for [Memo Issue 5](https://www.memoreview.net/magazine) and was very kind about it. Thanks Callum!
 
-
-![[WhatsApp Image 2026-07-30 at 22.32.41-1.jpeg|350]]
+![[memo ML 1.jpg]]
 
 ![[WhatsApp Image 2026-04-09 at 18.58.47-1-1-1.jpeg]]
