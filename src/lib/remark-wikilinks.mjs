@@ -195,12 +195,42 @@ export function remarkWikiLinks(options = {}) {
             const isVideo = VIDEO_EXT_RE.test(target) || VIDEO_EXT_RE.test(resolvedAsset);
 
             if (isImage) {
-              const altText = (alias && !/^\d+(x\d+)?$/.test(alias)) ? alias : '';
-              newChildren.push({
+              let width = undefined;
+              let height = undefined;
+              const altParts = [];
+
+              if (alias) {
+                const parts = alias.split('|').map((p) => p.trim()).filter(Boolean);
+                for (const part of parts) {
+                  const dimMatch = part.match(/^(\d+)(?:px)?(?:[xX](\d+)(?:px)?)?$/);
+                  if (dimMatch) {
+                    width = dimMatch[1];
+                    if (dimMatch[2]) height = dimMatch[2];
+                  } else {
+                    altParts.push(part);
+                  }
+                }
+              }
+
+              const altText = altParts.join(' ');
+              const imageNode = {
                 type: 'image',
                 url: assetUrl,
                 alt: altText,
-              });
+              };
+
+              if (width) {
+                const hProperties = { width };
+                if (height) {
+                  hProperties.height = height;
+                  hProperties.style = `max-width: ${width}px; width: 100%; height: ${height}px; object-fit: cover;`;
+                } else {
+                  hProperties.style = `max-width: ${width}px; width: 100%; height: auto;`;
+                }
+                imageNode.data = { hProperties };
+              }
+
+              newChildren.push(imageNode);
             } else if (isAudio) {
               newChildren.push({
                 type: 'html',
