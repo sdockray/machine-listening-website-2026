@@ -19,6 +19,20 @@ function normalizeBasePath(basePath) {
   return withTrailingSlash(withLeadingSlash(String(basePath).trim()));
 }
 
+function encodePathSegments(pathStr) {
+  if (!pathStr) return pathStr;
+  return pathStr
+    .split('/')
+    .map((segment) => {
+      try {
+        return encodeURIComponent(decodeURIComponent(segment));
+      } catch {
+        return encodeURIComponent(segment);
+      }
+    })
+    .join('/');
+}
+
 function normalizeMediaUrl(url, basePath = '/', mediaBaseUrl = '') {
   const value = String(url || '').trim();
   if (!value) return value;
@@ -30,14 +44,14 @@ function normalizeMediaUrl(url, basePath = '/', mediaBaseUrl = '') {
 
   const normalizedMediaBaseUrl = String(mediaBaseUrl || process.env.MEDIA_BASE_URL || '').replace(/\/+$/, '');
 
-  if (value.includes('_assets/')) {
-    const parts = value.split('_assets/');
-    const assetTail = parts[parts.length - 1];
+  if (value.includes('_assets/') || value.includes('/assets/')) {
+    const parts = value.split(/_?assets\//);
+    const assetTail = encodePathSegments(parts[parts.length - 1]);
     if (normalizedMediaBaseUrl) {
       return `${normalizedMediaBaseUrl}/${assetTail}`;
     }
     const basePrefix = normalizeBasePath(basePath);
-    return `${basePrefix}_assets/${assetTail}`;
+    return `${basePrefix}assets/${assetTail}`;
   }
 
   return value;

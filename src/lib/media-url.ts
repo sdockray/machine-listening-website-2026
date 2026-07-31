@@ -2,6 +2,20 @@ function normalizeMediaBaseUrl() {
   return String(process.env.MEDIA_BASE_URL || '').trim().replace(/\/+$/, '');
 }
 
+function encodePathSegments(pathStr: string): string {
+  if (!pathStr) return pathStr;
+  return pathStr
+    .split('/')
+    .map((segment) => {
+      try {
+        return encodeURIComponent(decodeURIComponent(segment));
+      } catch {
+        return encodeURIComponent(segment);
+      }
+    })
+    .join('/');
+}
+
 export function resolveMediaUrl(url: string | undefined | null): string | undefined {
   if (!url) return undefined;
 
@@ -13,12 +27,12 @@ export function resolveMediaUrl(url: string | undefined | null): string | undefi
   }
 
   const mediaBaseUrl = normalizeMediaBaseUrl();
-  if (!mediaBaseUrl || !value.includes('_assets/')) {
+  if (!mediaBaseUrl || (!value.includes('_assets/') && !value.includes('/assets/'))) {
     return value;
   }
 
-  const assetTail = value.split('_assets/').pop();
+  const assetTail = value.split(/_?assets\//).pop();
   if (!assetTail) return value;
 
-  return `${mediaBaseUrl}/${assetTail}`;
+  return `${mediaBaseUrl}/${encodePathSegments(assetTail)}`;
 }

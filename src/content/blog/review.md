@@ -16,4 +16,4 @@ Anyway, Callum Gallagher reviewed the program for Memo and was very kind about i
 
 ![[WhatsApp Image 2026-07-30 at 22.32.41-1.jpeg|350]]
 
-![[WhatsApp Image 2026-04-09 at 18.58.47-1-1.jpeg]]
+![[WhatsApp Image 2026-04-09 at 18.58.47-1-1-1.jpeg]]

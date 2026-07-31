@@ -111,7 +111,7 @@ function resolveAsset(target, currentRelativeDir, assetIndex) {
   
   let cleanTarget = target.trim().replace(/\\/g, '/');
   cleanTarget = cleanTarget.replace(/^(\.\.\/|\.\/|\/)+/, '');
-  cleanTarget = cleanTarget.replace(/^_assets\//, '');
+  cleanTarget = cleanTarget.replace(/^(_assets|assets)\//, '');
   const cleanTargetLower = cleanTarget.toLowerCase();
 
   if (assetIndex.pathMap.has(cleanTargetLower)) {
@@ -139,25 +139,69 @@ function resolveAsset(target, currentRelativeDir, assetIndex) {
     return matches[0].rel;
   }
 
+  // Fallback: try matching stem without any sequence of -1, -2 suffixes
+  const ext = path.extname(filename);
+  const stem = path.basename(filename, ext).replace(/(?:-\d+)+$/, '');
+  for (const [fnKey, fileMatches] of assetIndex.filenameMap.entries()) {
+    const fnExt = path.extname(fnKey);
+    if (ext && fnExt !== ext) continue;
+    const fnStem = path.basename(fnKey, fnExt).replace(/(?:-\d+)+$/, '');
+    if (fnStem === stem) {
+      if (currentRelativeDir) {
+        const dirLower = currentRelativeDir.toLowerCase();
+        const bestMatch = fileMatches.find((m) => m.relNoAssets.toLowerCase().startsWith(dirLower));
+        if (bestMatch) return bestMatch.rel;
+      }
+      return fileMatches[0].rel;
+    }
+  }
+
+  // Fallback: if in document directory and matching extension
+  if (currentRelativeDir) {
+    const dirLower = currentRelativeDir.toLowerCase();
+    for (const [fnKey, fileMatches] of assetIndex.filenameMap.entries()) {
+      const fnExt = path.extname(fnKey);
+      if (ext && fnExt !== ext) continue;
+      const bestMatch = fileMatches.find((m) => m.relNoAssets.toLowerCase().startsWith(dirLower));
+      if (bestMatch) return bestMatch.rel;
+    }
+  }
+
   return null;
 }
 
+function encodePathSegments(pathStr) {
+  if (!pathStr) return pathStr;
+  return pathStr
+    .split('/')
+    .map((segment) => {
+      try {
+        return encodeURIComponent(decodeURIComponent(segment));
+      } catch {
+        return encodeURIComponent(segment);
+      }
+    })
+    .join('/');
+}
+
 function formatAssetUrl(relPath, basePath, mediaBaseUrl) {
+  const cleanRel = relPath.replace(/^\//, '').replace(/^_assets\//, 'assets/');
+  const encodedRel = encodePathSegments(cleanRel);
   if (mediaBaseUrl) {
-    const assetTail = relPath.replace(/^_assets\//, '');
+    const assetTail = encodedRel.replace(/^assets\//, '');
     return `${mediaBaseUrl.replace(/\/+$/, '')}/${assetTail}`;
   }
   const prefix = basePath ? (basePath.endsWith('/') ? basePath : `${basePath}/`) : '/';
-  return `${prefix}${relPath.replace(/^\//, '')}`;
+  return `${prefix}${encodedRel}`;
 }
 
 export function remarkWikiLinks(options = {}) {
   const basePath = String(options.basePath || '').trim().replace(/\/+$/, '');
   const mediaBaseUrl = String(options.mediaBaseUrl || process.env.MEDIA_BASE_URL || '').replace(/\/+$/, '');
   const linkIndex = buildLinkIndex();
-  const assetIndex = buildAssetIndex();
 
   return (tree, vfile) => {
+    const assetIndex = buildAssetIndex();
     let currentRelativeDir = '';
     if (vfile?.path) {
       const absPath = path.resolve(vfile.path);

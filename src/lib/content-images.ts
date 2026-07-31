@@ -34,6 +34,11 @@ function getAssetMap(): Map<string, string> {
         if (!map.has(fnLower)) {
           map.set(fnLower, urlPath);
         }
+        const ext = path.extname(fnLower);
+        const stemNoSuffix = path.basename(fnLower, ext).replace(/-\d+$/, '') + ext;
+        if (!map.has(stemNoSuffix)) {
+          map.set(stemNoSuffix, urlPath);
+        }
       }
     }
   }
@@ -111,6 +116,20 @@ export function extractFirstMarkdownImage(markdown: string): string | undefined 
   return undefined;
 }
 
+function encodePathSegments(pathStr: string): string {
+  if (!pathStr) return pathStr;
+  return pathStr
+    .split('/')
+    .map((segment) => {
+      try {
+        return encodeURIComponent(decodeURIComponent(segment));
+      } catch {
+        return encodeURIComponent(segment);
+      }
+    })
+    .join('/');
+}
+
 export function resolveContentImage(rawUrl: string | undefined | null): string | undefined {
   if (!rawUrl) return undefined;
   const value = String(rawUrl).trim();
@@ -120,10 +139,10 @@ export function resolveContentImage(rawUrl: string | undefined | null): string |
     return value;
   }
 
-  if (value.includes('_assets/')) {
-    const assetTail = value.split('_assets/').pop();
+  if (value.includes('_assets/') || value.includes('/assets/')) {
+    const assetTail = value.split(/_?assets\//).pop();
     if (assetTail) {
-      const canonical = `/_assets/${assetTail.replace(/^\//, '')}`;
+      const canonical = `/assets/${encodePathSegments(assetTail.replace(/^\//, ''))}`;
       return resolveMediaUrl(canonical) || canonical;
     }
   }
@@ -132,11 +151,14 @@ export function resolveContentImage(rawUrl: string | undefined | null): string |
   const assetMap = getAssetMap();
   const found = assetMap.get(cleanTarget) || assetMap.get(path.basename(cleanTarget).toLowerCase());
   if (found) {
-    return resolveMediaUrl(found) || found;
+    const cleanFound = found.replace(/^\/_assets\//, '/assets/');
+    const encoded = encodePathSegments(cleanFound);
+    return resolveMediaUrl(encoded) || encoded;
   }
 
   const formatted = value.startsWith('/') ? value : `/${value}`;
-  return resolveMediaUrl(formatted) || formatted;
+  const encodedFormatted = encodePathSegments(formatted);
+  return resolveMediaUrl(encodedFormatted) || encodedFormatted;
 }
 
 export function getCoverImage(entry: { data?: { coverImage?: string | null }; body?: string } | undefined | null): string | undefined {
