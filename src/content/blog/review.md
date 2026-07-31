@@ -7,7 +7,7 @@ category:
 author:
 skin: ""
 ---
-In April, we gave a performance lecture at the Museum of Contemporary Art in Sydney as part of the MCA / Power Institute's *Vision Machines*, which is the public program accompanying their 'summer blockbuster' exhibition *Data Dreams: Art and AI*. 
+In April 2026, we gave a performance lecture at the Museum of Contemporary Art in Sydney as part of the MCA / Power Institute's *Vision Machines*, which is the public program accompanying their 'summer blockbuster' exhibition *Data Dreams: Art and AI*. 
 
 The lecture used our new software instrument konvolute, which allows us to play datasets according to how they sound. We've since used konvolute for [[konvolute-hate-speech|live improvisation]] and [[how-to-play-a-dataset|workshops]] (dedicated page coming soon). 
 
