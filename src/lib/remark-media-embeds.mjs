@@ -348,12 +348,53 @@ export function remarkMediaEmbeds(options = {}) {
       }
     });
 
-    if (mediaBaseUrl) {
-      visit(tree, ['image'], (node) => {
-        if (node.url && node.url.includes('_assets/')) {
-          node.url = normalizeMediaUrl(node.url, basePath, mediaBaseUrl);
+    visit(tree, ['image'], (node) => {
+      if (node.url && node.url.includes('_assets/')) {
+        node.url = normalizeMediaUrl(node.url, basePath, mediaBaseUrl);
+      }
+
+      let width = undefined;
+      let height = undefined;
+
+      // Handle URL hash dimension: image.jpg#385 or image.jpg#385x200 or image.jpg#width=385
+      if (node.url) {
+        const hashMatch = node.url.match(/#(?:width=)?(\d+)(?:px)?(?:[xX](\d+)(?:px)?)?$/i);
+        if (hashMatch) {
+          width = hashMatch[1];
+          if (hashMatch[2]) height = hashMatch[2];
+          node.url = node.url.replace(/#(?:width=)?\d+(?:px)?(?:[xX]\d+(?:px)?)?$/i, '');
         }
-      });
-    }
+      }
+
+      // Handle pipe dimension in alt text: ![alt|385](url) or ![385](url)
+      if (node.alt) {
+        const parts = node.alt.split('|').map((p) => p.trim());
+        const lastPart = parts[parts.length - 1];
+        const dimMatch = lastPart ? lastPart.match(/^(\d+)(?:px)?(?:[xX](\d+)(?:px)?)?$/i) : null;
+        if (dimMatch && (parts.length > 1 || /^\d+(?:px)?(?:[xX]\d+(?:px)?)?$/i.test(node.alt))) {
+          width = dimMatch[1];
+          if (dimMatch[2]) height = dimMatch[2];
+          if (parts.length > 1) {
+            parts.pop();
+            node.alt = parts.join(' ').trim();
+          } else {
+            node.alt = '';
+          }
+        }
+      }
+
+      if (width) {
+        node.data = node.data || {};
+        const hProperties = node.data.hProperties || {};
+        hProperties.width = width;
+        if (height) {
+          hProperties.height = height;
+          hProperties.style = `max-width: ${width}px; width: 100%; height: ${height}px; object-fit: cover;`;
+        } else {
+          hProperties.style = `max-width: ${width}px; width: 100%; height: auto;`;
+        }
+        node.data.hProperties = hProperties;
+      }
+    });
   };
 }
