@@ -26,9 +26,7 @@ Voices: Orin Howard, Jasper Dockray, Beatrix Hughes Stern, Vyvyan Hughes Stern, 
 
 Commissioned: National Communication Museum (NCM) for the exhibition 'Signal to Noise' curated by Eryk Salvaggio, Joel Stern, and Emily Siddons. 
 
-[https://soundcloud.com/ncm_melbourne/4-voice-walkin-4?utm_source=clipboard&utm_campaign=wtshare&utm_medium=widget&utm_content=https%253A%252F%252Fsoundcloud.com%252Fncm_melbourne%252F4-voice-walkin-4](https://soundcloud.com/ncm_melbourne/4-voice-walkin-4?utm_source=clipboard&utm_campaign=wtshare&utm_medium=widget&utm_content=https%253A%252F%252Fsoundcloud.com%252Fncm_melbourne%252F4-voice-walkin-4)
-
-[https://soundcloud.com/ncm_melbourne/2-the-user-story-2](https://soundcloud.com/ncm_melbourne/2-the-user-story-2)
+![[Voyce Walkr final stereo mix.mp3]]
 
 *Voyce* *Walkr* by Machine Listening is a reimagining of Russel Hoban’s post-apocalyptic 1980 novel *Riddley Walker*, updated, reworked, and distilled in response to our technological present, and then staged at the NCM as an installation for four vintage radios.
 
