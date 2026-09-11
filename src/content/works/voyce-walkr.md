@@ -52,6 +52,7 @@ Read the *Voyce Walkr* essay in full and listen to excerpts [here](https://ncm.o
 
 - [*Signal to Noise,* 12 April - 14 September 2025, National Communication Museum (NCM), Melbourne](https://ncm.org.au/exhibitions/signal-to-noise).
 - [*Silicon Forest: Understories of Trees and Data,* 18 April - 21 June, PRAx Oregon, US.](https://www.e-flux.com/announcements/664336/futurefarmerssilicon-forest/)
+- [Radiophrenia, Glasgow, 2026](https://radiophrenia.scot/)
 
 **Reviews:**
 
