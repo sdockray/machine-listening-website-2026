@@ -72,18 +72,17 @@ In sum, Environments 12 is deeply perplexing, beautifully garish, and an unbridl
 - *Environments 12* LP launch, [Deep Assignments at Apiary Studios](https://deepassignmentsldn.substack.com/p/deep-assignments-01), London, 2 June 2025.
 - *Mono55,* [Room 40 at Institute of Modern Art (IMA), Brisbane](https://www.ima.org.au/ima-events/mono-55/), 13 November 2025.
 - [*Direct Bodily Empathy — Sound, Signal, Feedback*](https://govettbrewster.com/exhibitions/2026/direct-bodily-empathy-sound-signal-feedback), Govett-Brewster Art Gallery, 4 April – 11 October, Govett-Brewster Art Gallery, New Plymouth, New Zealand.
-    
-    
-    **Reviews:**
-    
-    - [Wild Hope](https://artandaustralia.com/58_2/review-wild-hope.html), Audrey Pfister, Art + Australia, 11 October 2023.
-    - [Environments 12: new concepts in acoustic enrichment](https://acloserlisten.com/2025/06/24/machine-listening-environments-12-new-concepts-in-acoustic-enrichment/), Richard Allen, A Closer Listen, 24 June 2025.
-    - [The Best Field Recordings on Bandcamp, June 2025](https://daily.bandcamp.com/best-field-recordings/the-best-field-recordings-on-bandcamp-june-2025?utm_source=notification), Matthew Blackwell, Bandcamp, 2 July 2025.
-    - [Martin Beck’s ‘Environments’ Art Summons New Age Sights and Sounds](https://www.artnews.com/art-news/artists/martin-beck-environments-art-1234749668/#:~:text=volume%20imagined%20by-,Machine%20Listening,-%2C%20an%20artist%2Dresearch), Andy Battaglia, Artnews, 21 August 2025
-    - [Against the Grain: Listening after Palantir](https://www.thewire.co.uk/in-writing/collateral-damage/against-the-grain-listening-after-palantir), Stephen Roddy, _The Wire_ 512, October 2026
-    
-    **Interviews:**
-    
+
+**Reviews:**
+
+- [Wild Hope](https://artandaustralia.com/58_2/review-wild-hope.html), Audrey Pfister, Art + Australia, 11 October 2023.
+- [Environments 12: new concepts in acoustic enrichment](https://acloserlisten.com/2025/06/24/machine-listening-environments-12-new-concepts-in-acoustic-enrichment/), Richard Allen, A Closer Listen, 24 June 2025.
+- [The Best Field Recordings on Bandcamp, June 2025](https://daily.bandcamp.com/best-field-recordings/the-best-field-recordings-on-bandcamp-june-2025?utm_source=notification), Matthew Blackwell, Bandcamp, 2 July 2025.
+- [Martin Beck’s ‘Environments’ Art Summons New Age Sights and Sounds](https://www.artnews.com/art-news/artists/martin-beck-environments-art-1234749668/#:~:text=volume%20imagined%20by-,Machine%20Listening,-%2C%20an%20artist%2Dresearch), Andy Battaglia, Artnews, 21 August 2025
+- [Against the Grain: Listening after Palantir](https://www.thewire.co.uk/in-writing/collateral-damage/against-the-grain-listening-after-palantir), Stephen Roddy, _The Wire_ 512, October 2026
+
+**Interviews:**
+
 
 - [https://open.substack.com/pub/deepassignmentsldn/p/deep-assignments-01-the-planetisation?r=8p7o&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false](https://open.substack.com/pub/deepassignmentsldn/p/deep-assignments-01-the-planetisation?r=8p7o&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false)
 
