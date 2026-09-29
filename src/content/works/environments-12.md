@@ -66,6 +66,7 @@ In sum, Environments 12 is deeply perplexing, beautifully garish, and an unbridl
 - *Environments 12* LP launch, [Ephemera Festival at Museum of Modern Art](https://ephemerafestival.com/),  Warsaw, 14 June 2025.
 - *Environments 12* LP launch, [Deep Assignments at Apiary Studios](https://deepassignmentsldn.substack.com/p/deep-assignments-01), London, 2 June 2025.
 - *Mono55,* [Room 40 at Institute of Modern Art (IMA), Brisbane](https://www.ima.org.au/ima-events/mono-55/), 13 November 2025.
+- 
     
     
     **Reviews:**
@@ -74,12 +75,13 @@ In sum, Environments 12 is deeply perplexing, beautifully garish, and an unbridl
     - [Environments 12: new concepts in acoustic enrichment](https://acloserlisten.com/2025/06/24/machine-listening-environments-12-new-concepts-in-acoustic-enrichment/), Richard Allen, A Closer Listen, 24 June 2025.
     - [The Best Field Recordings on Bandcamp, June 2025](https://daily.bandcamp.com/best-field-recordings/the-best-field-recordings-on-bandcamp-june-2025?utm_source=notification), Matthew Blackwell, Bandcamp, 2 July 2025.
     - [Martin Beck’s ‘Environments’ Art Summons New Age Sights and Sounds](https://www.artnews.com/art-news/artists/martin-beck-environments-art-1234749668/#:~:text=volume%20imagined%20by-,Machine%20Listening,-%2C%20an%20artist%2Dresearch), Andy Battaglia, Artnews, 21 August 2025
+    - [Against the Grain: Listening after Palantir](https://www.thewire.co.uk/in-writing/collateral-damage/against-the-grain-listening-after-palantir), Stephen Roddy, _The Wire_ 512, October 2026
     
     **Interviews:**
     
 
-[https://open.substack.com/pub/deepassignmentsldn/p/deep-assignments-01-the-planetisation?r=8p7o&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false](https://open.substack.com/pub/deepassignmentsldn/p/deep-assignments-01-the-planetisation?r=8p7o&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false)
+- [https://open.substack.com/pub/deepassignmentsldn/p/deep-assignments-01-the-planetisation?r=8p7o&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false](https://open.substack.com/pub/deepassignmentsldn/p/deep-assignments-01-the-planetisation?r=8p7o&utm_campaign=post&utm_medium=web&showWelcomeOnShare=false)
 
-[Irv Teibel’s Environments, AI Audio, and the Future of Listening w/ Machine Listening](https://www.mackhagood.com/podcast/irv-teibels-environments-ai-audio-and-the-future-of-listening-w-machine-listening/)
+- [Irv Teibel’s Environments, AI Audio, and the Future of Listening w/ Machine Listening](https://www.mackhagood.com/podcast/irv-teibels-environments-ai-audio-and-the-future-of-listening-w-machine-listening/)
 
-[https://youtu.be/ShB9Blu9ObU?si=PGiZEPo5JKBY9uSv](https://youtu.be/ShB9Blu9ObU?si=PGiZEPo5JKBY9uSv)
+- [https://youtu.be/ShB9Blu9ObU?si=PGiZEPo5JKBY9uSv](https://youtu.be/ShB9Blu9ObU?si=PGiZEPo5JKBY9uSv)
