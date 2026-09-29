@@ -49,6 +49,11 @@ Link to [sleeve art and liner notes.](https://drive.google.com/open?id=15EeFrev
 
 ^ Wild Hope Exhibition, RMIT Design Hub. 2023. Photo by Tobias Titz
 
+![Machine Listening, Environments 12. Govett-Brewster installation image. Photo: Cheska Brown.](e12-gb.jpg)
+
+^  Album cover installation outside Len Lye Cinema where *Environments 12* was being screened daily as part of [*Direct Bodily Empathy — Sound, Signal, Feedback*](https://govettbrewster.com/exhibitions/2026/direct-bodily-empathy-sound-signal-feedback). Screenprinting: Trent Walter. Photo: Cheska Brown.
+
+
 **_Environments 12_, 2025, Stereo LP, 35 mins. Future Resistenza.**
 
 [https://futuraresistenza.bandcamp.com/album/environments-12-new-concepts-in-acoustic-enrichment](https://futuraresistenza.bandcamp.com/album/environments-12-new-concepts-in-acoustic-enrichment)
@@ -66,7 +71,7 @@ In sum, Environments 12 is deeply perplexing, beautifully garish, and an unbridl
 - *Environments 12* LP launch, [Ephemera Festival at Museum of Modern Art](https://ephemerafestival.com/),  Warsaw, 14 June 2025.
 - *Environments 12* LP launch, [Deep Assignments at Apiary Studios](https://deepassignmentsldn.substack.com/p/deep-assignments-01), London, 2 June 2025.
 - *Mono55,* [Room 40 at Institute of Modern Art (IMA), Brisbane](https://www.ima.org.au/ima-events/mono-55/), 13 November 2025.
-- 
+- [*Direct Bodily Empathy — Sound, Signal, Feedback*](https://govettbrewster.com/exhibitions/2026/direct-bodily-empathy-sound-signal-feedback), Govett-Brewster Art Gallery, 4 April – 11 October, Govett-Brewster Art Gallery, New Plymouth, New Zealand.
     
     
     **Reviews:**
