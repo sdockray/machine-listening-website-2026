@@ -49,7 +49,7 @@ Link to [sleeve art and liner notes.](https://drive.google.com/open?id=15EeFrev
 
 ^ Wild Hope Exhibition, RMIT Design Hub. 2023. Photo by Tobias Titz
 
-![Machine Listening, Environments 12. Govett-Brewster installation image. Photo: Cheska Brown.](e12-gb.jpg)
+![Machine Listening, Environments 12. Govett-Brewster installation image. Photo: Cheska Brown.](../_assets/works/environments-12/e12-gb.jpg)
 
 ^  Album cover installation outside Len Lye Cinema where *Environments 12* was being screened daily as part of [*Direct Bodily Empathy — Sound, Signal, Feedback*](https://govettbrewster.com/exhibitions/2026/direct-bodily-empathy-sound-signal-feedback). Screenprinting: Trent Walter. Photo: Cheska Brown.
 
