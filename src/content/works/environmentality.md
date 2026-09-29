@@ -7,7 +7,7 @@ type:
 coverImage: ""
 collaborators: []
 description: ""
-hideFromIndex: true
+hideFromIndex: false
 priority: 1
 ---
 ![[Pasted image 20260929163944.png]]
