@@ -15,15 +15,9 @@ date:
 - [[ep-3-listening-with-the-pandemic|Dockray, Parker and Stern, ‘Listening with the pandemic’ in Machine Listening: A Curriculum (2020)]]
 - [[lessons-in-how-not-to-be-heard-essay-2020|Dockray, Parker and Stern, ‘Lessons in how (not) to be heard’ in Machine Listening: A Curriculum (2020)]]
 - [Dockray, Parker and Stern, ‘(Against) the coming world of listening machines’ in *Machine Listening: A Curriculum*  (2020)](../_assets/texts/texts/Dockray_et_al._-_(Gegen)_die_kommende_Welt_horender_Maschinen.pdf)
-
-[Dockray, Parker and Stern, ‘Improvisation und Kontrolle’](../_assets/texts/texts/Dockray_et_al._-_Improvisation_und_Kontrolle.pdf)
-
-[Dockray, Parker and Stern, ‘Lektionen, wie man (nicht) gehört wird’.pdf](../_assets/texts/texts/Dockray_et_al._-_Lektionen_wie_man_(nicht)_gehort_wird.pdf)
-
-[Dockray, Parker, and Stern, ‘Machine Listening’ in Unsound Intermission.pdf](../_assets/texts/texts/Unsound_Intermission.pdf)
-
-[Parker, Stern eds., ‘Eavesdropping: A Reader’](../_assets/texts/texts/Eavesdropping.pdf)
-
-[Dockray, Performing Algorithms: Automation and Accident (2019).pdf](../_assets/texts/texts/Dockray_Sean_Performing_Algorithms_Automation_and_Accident_2019.pdf)
-
-[Dockray, Learning from YouTube.pdf](../_assets/texts/texts/Dockray_Sean_2018_Learning_from_YouTube.pdf)
+- [Dockray, Parker and Stern, ‘Improvisation und Kontrolle’](../_assets/texts/texts/Dockray_et_al._-_Improvisation_und_Kontrolle.pdf)
+- [Dockray, Parker and Stern, ‘Lektionen, wie man (nicht) gehört wird’.pdf](../_assets/texts/texts/Dockray_et_al._-_Lektionen_wie_man_(nicht)_gehort_wird.pdf)
+- [Dockray, Parker, and Stern, ‘Machine Listening’ in Unsound Intermission.pdf](../_assets/texts/texts/Unsound_Intermission.pdf)
+- [Parker, Stern eds., ‘Eavesdropping: A Reader’](../_assets/texts/texts/Eavesdropping.pdf)
+- [Dockray, Performing Algorithms: Automation and Accident (2019).pdf](../_assets/texts/texts/Dockray_Sean_Performing_Algorithms_Automation_and_Accident_2019.pdf)
+- [Dockray, Learning from YouTube.pdf](../_assets/texts/texts/Dockray_Sean_2018_Learning_from_YouTube.pdf)
