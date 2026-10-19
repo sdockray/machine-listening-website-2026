@@ -10,9 +10,9 @@ description: ""
 hideFromIndex: false
 priority: 1
 ---
-![[Pasted image 20260929163944.png]]
 
-^ Audio Foundation poster for the first stop on our North Island tour of our lecture-performance _Environmentality_ (2026)
+
+![[Video-63460.mp4]]
 
 What kind of planet would the planetisation of machine listening make? Microphones and loudspeakers are being laced through the biosphere. AI systems monitor forests, oceans, reefs and skies, all in the name of a cybernetic ecology. But who governs this listening infrastructure? Who is heard, and what does it even mean to be heard? What is unheard?  
   
