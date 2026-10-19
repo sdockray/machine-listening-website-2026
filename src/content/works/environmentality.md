@@ -12,7 +12,7 @@ priority: 1
 ---
 ![[Pasted image 20260929163944.png]]
 
-^ Audio Foundation poster for the first stop on our north island tour of our lecture-performance _Environmentality_ (2026)
+^ Audio Foundation poster for the first stop on our North Island tour of our lecture-performance _Environmentality_ (2026)
 
 What kind of planet would the planetisation of machine listening make? Microphones and loudspeakers are being laced through the biosphere. AI systems monitor forests, oceans, reefs and skies, all in the name of a cybernetic ecology. But who governs this listening infrastructure? Who is heard, and what does it even mean to be heard? What is unheard?  
   
@@ -20,6 +20,7 @@ In this lecture-performance presented in response to their installation Environm
 
 **Presentations:**
 
+- *Environmentality* as part of the 2026 [ADM+S Symposium: Automated Human + Planetary Health](https://www.admscentre.org.au/event/2026-symposium-event/), 29 October 2026
 - *Environmentality*, [Audio Foundation](https://audiofoundation.org.nz/staging/machine-listening-environmentality/), Auckland, Aotearoa, 25 June 2026. 
 - *Environmentality*, as part of Opening Day Programme for [_Direct Bodily Empathy — Sound, Signal, Feedback_](https://govettbrewster.com/exhibitions/2026/direct-bodily-empathy-sound-signal-feedback), at [Govett-Brewster Art Gallery/ Len Lye Centre](https://govettbrewster.com/), New Plymouth, Aotearoa, 27 June 2026.
 - *Environmentality*, [CIRCUIT Artist Moving Image](https://www.pyramidclub.org.nz/offsite-machine-listening-australia-circuit), Wellington, Aotearoa, 29 June 2026.

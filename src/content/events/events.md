@@ -2,6 +2,7 @@
 title: "Events"
 location: ""
 ---
+- **29 October 2026**, performance of *Environmentality* as part of the 2026 [ADM+S Symposium: Automated Human + Planetary Health](https://www.admscentre.org.au/event/2026-symposium-event/)
 - **26 September 2026**, showed a new video extending our work in [[ego-trip|Ego Trip]] and [[c|#C]] for [The Crack and the Boom: Listening Session and Discussion](https://www.barbican.org.uk/whats-on/2026/event/lawrence-abu-hamdan-the-crack-and-the-boom), a panel discussion at the [Barbican](https://www.barbican.org.uk/) with Caline Matar, Susan Schuppli, and Mhamad Safa, moderated by Matthew Herbert as part of [Lawrence Abu Hamdan: Repercussions](https://www.barbican.org.uk/whats-on/2026/series/lawrence-abu-hamdan-repercussions). 
 - **29 June 2026**, *[[environmentality|Environmentality]]* lecture-performance, [CIRCUIT Artist Moving Image](https://www.pyramidclub.org.nz/offsite-machine-listening-australia-circuit), Wellington, Aotearoa.
 - **28 June 2026**, [Konvolute B: Environments / How to Play a Dataset](https://machinelistening.exposed/site-map/works-1/how-to-play-a-dataset), Govett Brewster
